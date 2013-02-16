@@ -1,0 +1,168 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+@import "variables";
+
+
+body {
+	background-color: $beige;	
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	font-size: 22px; 
+	text-align: center; 
+	min-width: 500px; 
+	padding: 0;
+	margin: 0;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+p {
+	color: #4c5351;
+	width: 660px;
+	text-align: left;
+	line-height: 34px;
+	padding: 0 0 20px 0;
+}
+
+.postImageFull {
+	margin: 0 0 20px 0;
+}
+
+.postImageGutter {
+	float: right;
+	margin: 0 0 20px 40px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.callOut {
+	padding: 0 10px 20px 60px;
+}
+
+.label, h2, h3 {
+	font-family: 'Kreon', serif;
+    font-weight: 700;
+    color: #1e2221;
+    padding: 0;
+}
+
+.blogContent {
+    padding-top: 40px;
+}
+
+
+#mainImage {
+	position: absolute;
+	right: -40px;
+	top: 300px;
+}
+
+#previewImage {
+    position: absolute;
+    right: 0px;
+    bottom: -140px;
+    @include rotate(60deg);
+}
+
+#topColor {
+	background-color: $brightGreen;
+	width: 100%;
+	margin: 0;
+	padding: 80px 0 80px 0; 
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+    overflow: hidden;
+}
+
+.topPadding {
+	padding: 80px 0 20px 0;
+}
+
+#blogTitle {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200; 
+	font-size: 80px;
+	color: $beige;
+	width: 600px;
+	line-height: 100px;
+    padding: 60px 0 30px 0;
+	span {
+	    font-size: 20px;
+	    line-height: 50px;
+	    color: $brightBlue;
+	    left: 0px;
+	    position: relative;
+	}
+}
+
+#topColorBlue {
+    background-color: $brightBlue;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    &:hover{
+    	background-color: darken($brightBlue, 10%);
+	    img {
+			bottom: 20px;
+			@include rotate(0deg);
+		}
+		span {
+		    left: 40;
+		    color: #105f66;
+		}
+	}
+}
+
+#topColorBlue:hover *, #topColorBlue *, #topColorBlue {
+	@include transition(all 600ms cubic-bezier(0.530, 1.635, 0.850, 0.820));
+}
+
+#topColorBlue:hover img, #topColorBlue img {
+	@include transition(all 600ms cubic-bezier(0.000, 0.000, 0.010, 1.000));
+}
+
+
+code {
+ 	font-family: Menlo, Monaco, "Courier New", monospace;
+ 	font-size: 18px;
+  	color: #71aebd;
+  	-webkit-border-radius: 3px;
+  	-moz-border-radius: 3px;
+  	border-radius: 3px;
+  	padding: 3px 6px;
+  	background-color: #f7f5eb;
+  	border: 1px solid #ebe9df;
+}
+
+/******** Links ********/
+
+a {
+	color: #28b98d;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #8abdad;
+}
+
+a:hover {
+	background-color: #28b98d;
+	color: #ffffff;
+}
+
+// IMPORTS
+@import "jessechapologo";
+@import "footnotes";

@@ -1,0 +1,474 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/style.scss */
+body {
+  background-color: #fffdf2;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  min-width: 500px;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 25, ../sass/style.scss */
+p {
+  color: #4c5351;
+  width: 660px;
+  text-align: left;
+  line-height: 34px;
+  padding: 0 0 20px 0;
+}
+
+/* line 33, ../sass/style.scss */
+.postImageFull {
+  margin: 0 0 20px 0;
+}
+
+/* line 37, ../sass/style.scss */
+.postImageGutter {
+  float: right;
+  margin: 0 0 20px 40px;
+}
+
+/* line 42, ../sass/style.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 46, ../sass/style.scss */
+.callOut {
+  padding: 0 10px 20px 60px;
+}
+
+/* line 50, ../sass/style.scss */
+.label, h2, h3 {
+  font-family: 'Kreon', serif;
+  font-weight: 700;
+  color: #1e2221;
+  padding: 0;
+}
+
+/* line 57, ../sass/style.scss */
+.blogContent {
+  padding-top: 40px;
+}
+
+/* line 62, ../sass/style.scss */
+#mainImage {
+  position: absolute;
+  right: -40px;
+  top: 300px;
+}
+
+/* line 68, ../sass/style.scss */
+#previewImage {
+  position: absolute;
+  right: 0px;
+  bottom: -140px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 75, ../sass/style.scss */
+#topColor {
+  background-color: #37e6b1;
+  width: 100%;
+  margin: 0;
+  padding: 80px 0 80px 0;
+}
+
+/* line 82, ../sass/style.scss */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 90, ../sass/style.scss */
+.topPadding {
+  padding: 80px 0 20px 0;
+}
+
+/* line 94, ../sass/style.scss */
+#blogTitle {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-size: 80px;
+  color: #fffdf2;
+  width: 600px;
+  line-height: 100px;
+  padding: 60px 0 30px 0;
+}
+/* line 102, ../sass/style.scss */
+#blogTitle span {
+  font-size: 20px;
+  line-height: 50px;
+  color: #37d7e6;
+  left: 0px;
+  position: relative;
+}
+
+/* line 111, ../sass/style.scss */
+#topColorBlue {
+  background-color: #37d7e6;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 116, ../sass/style.scss */
+#topColorBlue:hover {
+  background-color: #1ac0d0;
+}
+/* line 118, ../sass/style.scss */
+#topColorBlue:hover img {
+  bottom: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 122, ../sass/style.scss */
+#topColorBlue:hover span {
+  left: 40;
+  color: #105f66;
+}
+
+/* line 129, ../sass/style.scss */
+#topColorBlue:hover *, #topColorBlue *, #topColorBlue {
+  -webkit-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -moz-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -o-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+}
+
+/* line 133, ../sass/style.scss */
+#topColorBlue:hover img, #topColorBlue img {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
+  -moz-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
+  -o-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
+}
+
+/* line 138, ../sass/style.scss */
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 18px;
+  color: #71aebd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #f7f5eb;
+  border: 1px solid #ebe9df;
+}
+
+/******** Links ********/
+/* line 152, ../sass/style.scss */
+a {
+  color: #28b98d;
+  text-decoration: none;
+}
+
+/* line 157, ../sass/style.scss */
+a:visited {
+  color: #8abdad;
+}
+
+/* line 161, ../sass/style.scss */
+a:hover {
+  background-color: #28b98d;
+  color: #ffffff;
+}
+
+/* line 1, ../sass/_jessechapologo.scss */
+#jessePhoto {
+  width: 0px;
+  height: 0px;
+  border: 6px solid #fffdf1;
+  -webkit-border-radius: 51px;
+  -moz-border-radius: 51px;
+  border-radius: 51px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  -webkit-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -moz-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -o-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+}
+
+/* line 12, ../sass/_jessechapologo.scss */
+#box {
+  width: 244px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+/* line 18, ../sass/_jessechapologo.scss */
+#box:hover {
+  width: 334px;
+}
+/* line 20, ../sass/_jessechapologo.scss */
+#box:hover #jessePhoto {
+  width: 92px;
+  height: 92px;
+  margin-top: -34px;
+}
+/* line 25, ../sass/_jessechapologo.scss */
+#box:hover .banner {
+  width: 324px;
+}
+
+/* line 31, ../sass/_jessechapologo.scss */
+.banner {
+  width: 234px;
+  height: 38px;
+  background: #fffdf2;
+  margin-left: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+/* line 37, ../sass/_jessechapologo.scss */
+.banner span {
+  background-color: #fffdf2;
+  font-size: 20px;
+  color: #28b98d;
+  margin: 0;
+  padding: 10px 0 6px 6px;
+  letter-spacing: 8px;
+  display: inline-block;
+  top: 0px;
+  position: relative;
+  vertical-align: top;
+}
+
+/* line 51, ../sass/_jessechapologo.scss */
+#box, .banner, .banner span {
+  -webkit-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -moz-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  -o-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+  transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
+}
+
+/* line 55, ../sass/_jessechapologo.scss */
+.ribbon {
+  width: 10px;
+  height: 38px;
+  background: #fffdf2;
+  position: absolute;
+}
+/* line 60, ../sass/_jessechapologo.scss */
+.ribbon.left {
+  top: 0;
+  left: 0;
+}
+/* line 63, ../sass/_jessechapologo.scss */
+.ribbon.left:before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 30px solid #fffdf2;
+  border-top: 0 solid transparent;
+  border-bottom: 37.5px solid transparent;
+}
+/* line 74, ../sass/_jessechapologo.scss */
+.ribbon.left:after {
+  content: "";
+  position: absolute;
+  left: -29px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 30px solid #fffdf2;
+  border-top: 37.5px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+/* line 86, ../sass/_jessechapologo.scss */
+.ribbon.right {
+  top: 0;
+  right: 10px;
+}
+/* line 89, ../sass/_jessechapologo.scss */
+.ribbon.right:before {
+  content: "";
+  position: absolute;
+  right: -29px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #fffdf2;
+  border-top: 0 solid transparent;
+  border-bottom: 37.5px solid transparent;
+}
+/* line 100, ../sass/_jessechapologo.scss */
+.ribbon.right:after {
+  content: "";
+  position: absolute;
+  right: -29px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #fffdf2;
+  border-top: 37.5px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+/* line 2, ../sass/_footnotes.scss */
+a[rel="footnote"], a[rev="footnote"] {
+  border-bottom: none;
+  font-family: 'Kreon', serif;
+  font-weight: 700;
+  color: #28b98d;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 0;
+  padding: 4px 0 2px 2px;
+  letter-spacing: 2px;
+}
+
+/* line 14, ../sass/_footnotes.scss */
+a[rel="footnote"]:hover, a[rev="footnote"]:hover {
+  background-color: #28b98d;
+  color: #fffdf2;
+}
+
+/* line 19, ../sass/_footnotes.scss */
+a[rel="footnote"]:before {
+  content: "[";
+}
+
+/* line 23, ../sass/_footnotes.scss */
+a[rel="footnote"]:after {
+  content: "]";
+}
+
+/* line 27, ../sass/_footnotes.scss */
+hr {
+  color: #e1e1e1;
+  background-color: #e1e1e1;
+  height: 2px;
+  border: 0;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+/* line 36, ../sass/_footnotes.scss */
+li {
+  color: #656e6b;
+  font-size: 16px;
+  padding: 10px 0 20px 0;
+}
+
+/* line 42, ../sass/_footnotes.scss */
+ol {
+  counter-reset: li;
+  /* Initiate a counter */
+  margin-left: 0;
+  padding-left: 0;
+  padding: 20px 0 70px 0;
+  width: 600px;
+}
+
+/* line 50, ../sass/_footnotes.scss */
+ol > li {
+  position: relative;
+  margin: 0 0 10px 46px;
+  /* Give each list item a left margin to make room for the numbers */
+  padding: 0 10px 10px 10px;
+  list-style: none;
+}
+
+/* line 57, ../sass/_footnotes.scss */
+ol > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  position: absolute;
+  width: 20px;
+  left: -28px;
+  margin-right: 10px;
+  padding: 4px;
+  font-family: 'Kreon', serif;
+  font-weight: 700;
+  text-align: center;
+}

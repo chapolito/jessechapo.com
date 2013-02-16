@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,700|Kreon:700|Titillium+Web:200' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style.css">
+	<title>Jesse Chapo</title>
+</head>
+<body>
+	<div id="topColor">
+		<div class="wrapper topPadding">
+			<img src="img/cutout.png" id="mainImage">
+			<div id="box">	
+				<div class="banner">
+					<div class="ribbon left"></div>
+					<span>JESSE</span> 
+						<img src="img/jesse-chapo-portrait.png" id="jessePhoto">
+					<span>CHAPO</span>
+					<div class="ribbon right"></div>
+				</div>
+			</div>
+			<div id="blogTitle">
+				A Developer's Guide to Images
+				<span>February 20, 2013</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<p>
+			I’ve regularly recieved questions from my dev friends who were miffed at images and the plethora of formats. I’m also aware that some developers tell me this is what they hate - receiving a PSD with no instructions and having to wade through the overwhelming options of Photoshop. This guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when working with images for both the web and iOS. If you want to geek out, I’ve got some fun links at the bottom.<sup id="fnref:gifs"><a href="#fn:gifs" rel="footnote">1</a></sup>
+		</p>
+		<h2>You Say JPEG I Say JPG</h2>
+		<p>
+			There are two types of images you will encounter when coding - PNGs and JPGs. Between these two we will be able cover the gamut of any web or mobile app. JPGs are meant for photos. <strong>If you have a photo it should be a JPG format.</strong> This part is pretty simple. JPGs do not support transparency and are lossy, meaning that while saving the photo Photoshop the color information of some pixels will be approximated from their surrounding photos. This is what causes Artifacts, but more on that later. 
+		</p>
+		<img src="img/different-png-alphas-chart.png" class="postImageFull">
+		<p>
+			PNGs are for graphics. They are lossless, meaning all of the color information for every pixel is retained. This is both good and bad - good because you are guaranteed to have crisp and clean graphics, but often will result in larger file sizes when you have complex images. If you have an icon or other interface element it should be a PNG. What do I mean by Complex? Complexity of an image can mean two things - a lot of colors (aka a large gamut) or intricate details/textures/gradients.
+		</p>
+		<p class="callOut">
+			<strong class="label">1-bit:</strong> either a pixel is a 100% opaque or 100% transparent (this is the only transparency GIFs support)
+		</p>
+		<p class="callOut">
+			<strong class="label">1-bit:</strong> either a pixel is a 100% opaque or 100% transparent (this is the only transparency GIFs support)
+		</p>
+		<img src="img/truecolor-pixel-data.png" class="postImageGutter">
+		
+		<h3>What about GIFs?</h3>
+		<p>
+			Don’t use GIFs, they are an old standard that has been replaced by PNG <code>File > Save for Web | ctrl+shift+alt+s</code> Except they have the ability to support animation, so they aren’t going anywhere, but for the average web app this isn’t applicable.
+		</p>
+		
+		<ol>
+			<hr>
+			<li id="fn:gifs">
+				There are actually so really cool things being done with animated GIFs called Cinemagraphs, check out: <a href="http://en.wikipedia.org/wiki/Cinemagraph">http://en.wikipedia.org/wiki/Cinemagraph</a> <a href="#fnref:gifs" rev="footnote" title="Jump back to footnote 1 in the text">↩</a>
+			</li>
+			<li>
+				PNG actually supports color depths up to 48-bits (aka deep color)  providing you billions of different colors; however, the vast majority of consumer monitors and screens do not support more than 24-bit, so this is for the most part useless to us. <a href="#fnref:refs" rev="footnote" title="Jump back to footnote 1 in the text">↩</a>
+			</li>
+		</ol>
+	</div>
+</body>
+</html>
