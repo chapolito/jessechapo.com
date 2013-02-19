@@ -8,6 +8,8 @@
 @import "compass/typography";
 @import "compass/utilities";
 @import "variables";
+@import "normalizeBoilerplate";
+@import "mainBoilerplate";
 
 
 body {
@@ -15,19 +17,25 @@ body {
 	font-family: 'Signika Negative', sans-serif;
 	font-weight: 300;
 	font-size: 22px; 
-	text-align: center; 
-	min-width: 500px; 
-	padding: 0;
+	text-align: center;  
+	padding: 0 0 140px 0;
 	margin: 0;
 	-webkit-transform: translate3d(0,0,0);
 }
 
 p {
-	color: #4c5351;
-	width: 660px;
+	color: $textGreen;
+	width: 100%;
+	max-width: 660px;
 	text-align: left;
 	line-height: 34px;
 	padding: 0 0 20px 0;
+	a {
+    	padding: 0 3px;
+    }
+    .callOut {
+		padding: 0 10px 20px 60px;
+	}
 }
 
 .postImageFull {
@@ -43,10 +51,6 @@ strong {
 	font-weight: 700;
 }
 
-.callOut {
-	padding: 0 10px 20px 60px;
-}
-
 .label, h2, h3 {
 	font-family: 'Kreon', serif;
     font-weight: 700;
@@ -58,21 +62,7 @@ strong {
     padding-top: 40px;
 }
 
-
-#mainImage {
-	position: absolute;
-	right: -40px;
-	top: 300px;
-}
-
-#previewImage {
-    position: absolute;
-    right: 0px;
-    bottom: -140px;
-    @include rotate(60deg);
-}
-
-#topColor {
+#header {
 	background-color: $brightGreen;
 	width: 100%;
 	margin: 0;
@@ -80,7 +70,7 @@ strong {
 }
 
 .wrapper {
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
 	text-align: left;
 	position: relative;
@@ -91,46 +81,91 @@ strong {
 	padding: 80px 0 20px 0;
 }
 
-#blogTitle {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200; 
-	font-size: 80px;
-	color: $beige;
-	width: 600px;
-	line-height: 100px;
-    padding: 60px 0 30px 0;
-	span {
-	    font-size: 20px;
-	    line-height: 50px;
-	    color: $brightBlue;
-	    left: 0px;
-	    position: relative;
-	}
-}
-
-#topColorBlue {
-    background-color: $brightBlue;
+.colorStripe {
     width: 100%;
-    margin: 0;
-    padding: 0; 
-    &:hover{
-    	background-color: darken($brightBlue, 10%);
-	    img {
+    img{
+    	position: absolute;
+		right: 0px;
+	    &#previewImage {
+		    bottom: -140px;
+		    @include rotate(60deg);
+		}
+		&#mainImage {
+		    top: 20px;
+		}
+	}
+	#blogTitle {
+		width: 100%;
+		max-width: 600px;
+		padding: 60px 0 60px 0;
+		span {
+			font-family: 'Titillium Web', sans-serif;
+			font-weight: 200; 
+			font-size: 80px;
+			color: $beige;
+			line-height: 100px;
+			&.date {
+			    font-size: 20px;
+			    line-height: 20px;
+			    left: 0px;
+			    position: relative;
+			    display: block;
+			    padding: 10px 0 0 0;
+			}
+		}
+	}
+    &:hover {
+	    #previewImage {
 			bottom: 20px;
 			@include rotate(0deg);
 		}
-		span {
-		    left: 40;
-		    color: #105f66;
+		#blogTitle span.date {
+		    left: 40px;
 		}
 	}
+
+	&#post01 { 
+    	background-color: $post01Color; 
+    	span.date {
+    		color: $post01Color;
+    	}
+    	&:hover {
+	    	background-color: darken($post01Color, 10%);
+	    	span.date {
+			    color: darken($post01Color, 30%);
+			}
+			&.postPage {
+				background-color: $post01Color;
+				span.date {
+					left: 0px;
+				}
+			} 
+	    }
+	    &.postPage span.date {
+			color: darken($post01Color, 30%);
+		} 
+    }
+
+	&#post02 { 
+		background-color: $post02Color; 
+		span.date {
+    		color: $post02Color;
+    	}
+    	&:hover {
+	    	background-color: darken($post02Color, 10%);
+	    	span.date {
+			    color: darken($post02Color, 30%);
+			}
+	    }
+	}
+	
 }
 
-#topColorBlue:hover *, #topColorBlue *, #topColorBlue {
+.colorStripe:hover *, .colorStripe * {
 	@include transition(all 600ms cubic-bezier(0.530, 1.635, 0.850, 0.820));
 }
 
-#topColorBlue:hover img, #topColorBlue img {
+.colorStripe:hover img#previewImage, .colorStripe img#previewImage, .colorStripe {
 	@include transition(all 600ms cubic-bezier(0.000, 0.000, 0.010, 1.000));
 }
 
@@ -139,9 +174,7 @@ code {
  	font-family: Menlo, Monaco, "Courier New", monospace;
  	font-size: 18px;
   	color: #71aebd;
-  	-webkit-border-radius: 3px;
-  	-moz-border-radius: 3px;
-  	border-radius: 3px;
+  	@include border-radius(3px);
   	padding: 3px 6px;
   	background-color: #f7f5eb;
   	border: 1px solid #ebe9df;
@@ -164,5 +197,6 @@ a:hover {
 }
 
 // IMPORTS
+@import "forms";
 @import "jessechapologo";
 @import "footnotes";

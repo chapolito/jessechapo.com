@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jesse Chapo
+
+# THANKS
+
+    Tiny Factory - tinfactory.co
+
+    Alex Clemesha - clemesha.org
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, Compass, Jekyll
+    Normalize.css, jQuery, Modernizr

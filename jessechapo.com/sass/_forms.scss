@@ -1,0 +1,56 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+form {
+	margin: 10px 0 40px 0;
+	div {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 5px;
+	}
+}
+
+
+input {
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	font-size: 18px; 
+	height: 40px;
+	@include border-radius(3px);
+	//@include background-clip(padding-box);
+	border: 1px solid $brightGreen;  
+	&[type=email] {
+		padding: 0 10px;
+		width: 300px;
+		background-color: #fff;
+	}	
+	&[type=submit] {
+		border: none;
+		padding: 0 20px;
+		background-color: $brightGreen;
+		color: $beige;
+		font-weight: 700;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		&:hover {
+			cursor: pointer;
+			background-color: darken($brightGreen, 10%)
+		}
+	}
+}
+
+.focusField{   
+    color: $textGreen;  
+}  
+.idleField{  
+    color: #e5e4da;  
+    border: solid 1px #e5e4da; 
+} 
+.completedField{  
+    color: $textGreen;  
+    border: solid 1px #e5e4da; 
+} 
