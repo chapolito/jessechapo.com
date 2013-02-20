@@ -11,6 +11,39 @@
 @import "normalizeBoilerplate";
 @import "mainBoilerplate";
 
+#hackerNewsButton {
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 700;
+	font-size: 18px; 
+	height: 40px;
+	display: inline-block;
+	width: 300px;
+	@include border-radius(3px);
+	border: none;
+	padding: 10px 20px;
+	background-color: $hackerNewsOrange;
+	color: $beige;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	&:hover {
+		background-color: darken($hackerNewsOrange, 10%)
+	}
+}
+
+a {
+	color: #28b98d;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #8abdad;
+}
+
+a:hover {
+	background-color: #28b98d;
+	color: #ffffff;
+}
 
 body {
 	background-color: $beige;	
@@ -71,6 +104,7 @@ strong {
 
 .wrapper {
 	width: 90%;
+	max-width: 960px;
 	margin: 0 auto;
 	text-align: left;
 	position: relative;
@@ -180,21 +214,6 @@ code {
   	border: 1px solid #ebe9df;
 }
 
-/******** Links ********/
-
-a {
-	color: #28b98d;
-    text-decoration: none;
-}
-
-a:visited {
-	color: #8abdad;
-}
-
-a:hover {
-	background-color: #28b98d;
-	color: #ffffff;
-}
 
 // IMPORTS
 @import "forms";
