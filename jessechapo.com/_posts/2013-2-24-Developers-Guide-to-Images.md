@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Jesse Chapo</title>
-    <meta name="description" content="A blog about the web, coding &amp; design.">
-    <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,700|Kreon:700|Titillium+Web:200' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
-	<!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-
-	<div id="header">
-		<a href="../">
-		<div id="box">	
-			<div class="banner">
-				<div class="ribbon left"></div>
-				<span>JESSE</span> 
-				<img src="img/jesse-chapo-portrait.png" id="jessePhoto">
-				<span>CHAPO</span>
-				<div class="ribbon right"></div>
-			</div>
-		</div>
-		</a>
-	</div>
+---
+layout: post
+title: - Developers Guide to Images
+---
 	
 	<div class="colorStripe postPage" id="post01">
 		<div class="wrapper">
@@ -79,9 +50,3 @@
 				PNG actually supports color depths up to 48-bits (aka deep color)  providing you billions of different colors; however, the vast majority of consumer monitors and screens do not support more than 24-bit, so this is for the most part useless to us. <a href="#fnref:refs" rev="footnote" title="Jump back to footnote 1 in the text">↩</a>
 			</li>
 		</ol>
-
-		
-
-	</div>
-</body>
-</html>
