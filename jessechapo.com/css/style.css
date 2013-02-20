@@ -74,7 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /**
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 22, ../sass/_normalizeBoilerplate.scss */
+/* line 22, ../_sass/_normalizeBoilerplate.scss */
 article,
 aside,
 details,
@@ -93,7 +93,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-/* line 32, ../sass/_normalizeBoilerplate.scss */
+/* line 32, ../_sass/_normalizeBoilerplate.scss */
 audio,
 canvas,
 video {
@@ -106,7 +106,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 44, ../sass/_normalizeBoilerplate.scss */
+/* line 44, ../_sass/_normalizeBoilerplate.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -116,7 +116,7 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
-/* line 54, ../sass/_normalizeBoilerplate.scss */
+/* line 54, ../_sass/_normalizeBoilerplate.scss */
 [hidden] {
   display: none;
 }
@@ -130,7 +130,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 69, ../sass/_normalizeBoilerplate.scss */
+/* line 69, ../_sass/_normalizeBoilerplate.scss */
 html {
   font-size: 100%;
   /* 1 */
@@ -144,7 +144,7 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 84, ../sass/_normalizeBoilerplate.scss */
+/* line 84, ../_sass/_normalizeBoilerplate.scss */
 html,
 button,
 input,
@@ -156,7 +156,7 @@ textarea {
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
-/* line 92, ../sass/_normalizeBoilerplate.scss */
+/* line 92, ../_sass/_normalizeBoilerplate.scss */
 body {
   margin: 0;
 }
@@ -167,7 +167,7 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 104, ../sass/_normalizeBoilerplate.scss */
+/* line 104, ../_sass/_normalizeBoilerplate.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -175,7 +175,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 113, ../sass/_normalizeBoilerplate.scss */
+/* line 113, ../_sass/_normalizeBoilerplate.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -189,37 +189,37 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-/* line 127, ../sass/_normalizeBoilerplate.scss */
+/* line 127, ../_sass/_normalizeBoilerplate.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 132, ../sass/_normalizeBoilerplate.scss */
+/* line 132, ../_sass/_normalizeBoilerplate.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 137, ../sass/_normalizeBoilerplate.scss */
+/* line 137, ../_sass/_normalizeBoilerplate.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 142, ../sass/_normalizeBoilerplate.scss */
+/* line 142, ../_sass/_normalizeBoilerplate.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 147, ../sass/_normalizeBoilerplate.scss */
+/* line 147, ../_sass/_normalizeBoilerplate.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 152, ../sass/_normalizeBoilerplate.scss */
+/* line 152, ../_sass/_normalizeBoilerplate.scss */
 h6 {
   font-size: 0.67em;
   margin: 2.33em 0;
@@ -228,7 +228,7 @@ h6 {
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-/* line 161, ../sass/_normalizeBoilerplate.scss */
+/* line 161, ../_sass/_normalizeBoilerplate.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -236,13 +236,13 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 170, ../sass/_normalizeBoilerplate.scss */
+/* line 170, ../_sass/_normalizeBoilerplate.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 174, ../sass/_normalizeBoilerplate.scss */
+/* line 174, ../_sass/_normalizeBoilerplate.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -250,7 +250,7 @@ blockquote {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 182, ../sass/_normalizeBoilerplate.scss */
+/* line 182, ../_sass/_normalizeBoilerplate.scss */
 dfn {
   font-style: italic;
 }
@@ -259,7 +259,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  * Known issue: no IE 6/7 normalization.
  */
-/* line 191, ../sass/_normalizeBoilerplate.scss */
+/* line 191, ../_sass/_normalizeBoilerplate.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -269,7 +269,7 @@ hr {
 /**
  * Address styling not present in IE 6/7/8/9.
  */
-/* line 201, ../sass/_normalizeBoilerplate.scss */
+/* line 201, ../_sass/_normalizeBoilerplate.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -278,7 +278,7 @@ mark {
 /**
  * Address margins set differently in IE 6/7.
  */
-/* line 211, ../sass/_normalizeBoilerplate.scss */
+/* line 211, ../_sass/_normalizeBoilerplate.scss */
 p,
 pre {
   margin: 1em 0;
@@ -287,7 +287,7 @@ pre {
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 222, ../sass/_normalizeBoilerplate.scss */
+/* line 222, ../_sass/_normalizeBoilerplate.scss */
 code,
 kbd,
 pre,
@@ -300,7 +300,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 232, ../sass/_normalizeBoilerplate.scss */
+/* line 232, ../_sass/_normalizeBoilerplate.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -310,7 +310,7 @@ pre {
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
-/* line 242, ../sass/_normalizeBoilerplate.scss */
+/* line 242, ../_sass/_normalizeBoilerplate.scss */
 q {
   quotes: none;
 }
@@ -318,7 +318,7 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
-/* line 251, ../sass/_normalizeBoilerplate.scss */
+/* line 251, ../_sass/_normalizeBoilerplate.scss */
 q:before,
 q:after {
   content: '';
@@ -328,7 +328,7 @@ q:after {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 260, ../sass/_normalizeBoilerplate.scss */
+/* line 260, ../_sass/_normalizeBoilerplate.scss */
 small {
   font-size: 80%;
 }
@@ -336,7 +336,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 269, ../sass/_normalizeBoilerplate.scss */
+/* line 269, ../_sass/_normalizeBoilerplate.scss */
 sub,
 sup {
   font-size: 75%;
@@ -345,12 +345,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 276, ../sass/_normalizeBoilerplate.scss */
+/* line 276, ../_sass/_normalizeBoilerplate.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 280, ../sass/_normalizeBoilerplate.scss */
+/* line 280, ../_sass/_normalizeBoilerplate.scss */
 sub {
   bottom: -0.25em;
 }
@@ -361,7 +361,7 @@ sub {
 /**
  * Address margins set differently in IE 6/7.
  */
-/* line 295, ../sass/_normalizeBoilerplate.scss */
+/* line 295, ../_sass/_normalizeBoilerplate.scss */
 dl,
 menu,
 ol,
@@ -369,7 +369,7 @@ ul {
   margin: 1em 0;
 }
 
-/* line 299, ../sass/_normalizeBoilerplate.scss */
+/* line 299, ../_sass/_normalizeBoilerplate.scss */
 dd {
   margin: 0 0 0 40px;
 }
@@ -377,7 +377,7 @@ dd {
 /**
  * Address paddings set differently in IE 6/7.
  */
-/* line 309, ../sass/_normalizeBoilerplate.scss */
+/* line 309, ../_sass/_normalizeBoilerplate.scss */
 menu,
 ol,
 ul {
@@ -387,7 +387,7 @@ ul {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
-/* line 318, ../sass/_normalizeBoilerplate.scss */
+/* line 318, ../_sass/_normalizeBoilerplate.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -401,7 +401,7 @@ nav ol {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
-/* line 332, ../sass/_normalizeBoilerplate.scss */
+/* line 332, ../_sass/_normalizeBoilerplate.scss */
 img {
   border: 0;
   /* 1 */
@@ -412,7 +412,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 341, ../sass/_normalizeBoilerplate.scss */
+/* line 341, ../_sass/_normalizeBoilerplate.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -423,7 +423,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 353, ../sass/_normalizeBoilerplate.scss */
+/* line 353, ../_sass/_normalizeBoilerplate.scss */
 figure {
   margin: 0;
 }
@@ -434,7 +434,7 @@ figure {
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
-/* line 365, ../sass/_normalizeBoilerplate.scss */
+/* line 365, ../_sass/_normalizeBoilerplate.scss */
 form {
   margin: 0;
 }
@@ -442,7 +442,7 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 373, ../sass/_normalizeBoilerplate.scss */
+/* line 373, ../_sass/_normalizeBoilerplate.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -454,7 +454,7 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 385, ../sass/_normalizeBoilerplate.scss */
+/* line 385, ../_sass/_normalizeBoilerplate.scss */
 legend {
   border: 0;
   /* 1 */
@@ -471,7 +471,7 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-/* line 402, ../sass/_normalizeBoilerplate.scss */
+/* line 402, ../_sass/_normalizeBoilerplate.scss */
 button,
 input,
 select,
@@ -490,7 +490,7 @@ textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 415, ../sass/_normalizeBoilerplate.scss */
+/* line 415, ../_sass/_normalizeBoilerplate.scss */
 button,
 input {
   line-height: normal;
@@ -502,7 +502,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 427, ../sass/_normalizeBoilerplate.scss */
+/* line 427, ../_sass/_normalizeBoilerplate.scss */
 button,
 select {
   text-transform: none;
@@ -517,7 +517,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 444, ../sass/_normalizeBoilerplate.scss */
+/* line 444, ../_sass/_normalizeBoilerplate.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -533,7 +533,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 455, ../sass/_normalizeBoilerplate.scss */
+/* line 455, ../_sass/_normalizeBoilerplate.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -545,7 +545,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 467, ../sass/_normalizeBoilerplate.scss */
+/* line 467, ../_sass/_normalizeBoilerplate.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -563,7 +563,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 480, ../sass/_normalizeBoilerplate.scss */
+/* line 480, ../_sass/_normalizeBoilerplate.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -577,7 +577,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 493, ../sass/_normalizeBoilerplate.scss */
+/* line 493, ../_sass/_normalizeBoilerplate.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -586,7 +586,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
-/* line 502, ../sass/_normalizeBoilerplate.scss */
+/* line 502, ../_sass/_normalizeBoilerplate.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -597,7 +597,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 512, ../sass/_normalizeBoilerplate.scss */
+/* line 512, ../_sass/_normalizeBoilerplate.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -611,7 +611,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 525, ../sass/_normalizeBoilerplate.scss */
+/* line 525, ../_sass/_normalizeBoilerplate.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -627,7 +627,7 @@ table {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 18, ../sass/_mainBoilerplate.scss */
+/* line 18, ../_sass/_mainBoilerplate.scss */
 html,
 button,
 input,
@@ -641,13 +641,13 @@ textarea {
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-/* line 30, ../sass/_mainBoilerplate.scss */
+/* line 30, ../_sass/_mainBoilerplate.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 35, ../sass/_mainBoilerplate.scss */
+/* line 35, ../_sass/_mainBoilerplate.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -668,7 +668,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 58, ../sass/_mainBoilerplate.scss */
+/* line 58, ../_sass/_mainBoilerplate.scss */
 img {
   vertical-align: middle;
 }
@@ -676,7 +676,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 66, ../sass/_mainBoilerplate.scss */
+/* line 66, ../_sass/_mainBoilerplate.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -686,7 +686,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 76, ../sass/_mainBoilerplate.scss */
+/* line 76, ../_sass/_mainBoilerplate.scss */
 textarea {
   resize: vertical;
 }
@@ -694,7 +694,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 84, ../sass/_mainBoilerplate.scss */
+/* line 84, ../_sass/_mainBoilerplate.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -708,7 +708,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 100, ../sass/_mainBoilerplate.scss */
+/* line 100, ../_sass/_mainBoilerplate.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -717,7 +717,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 108, ../sass/_mainBoilerplate.scss */
+/* line 108, ../_sass/_mainBoilerplate.scss */
 .ir:before {
   content: "";
   display: block;
@@ -728,7 +728,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 119, ../sass/_mainBoilerplate.scss */
+/* line 119, ../_sass/_mainBoilerplate.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -737,7 +737,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 128, ../sass/_mainBoilerplate.scss */
+/* line 128, ../_sass/_mainBoilerplate.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -753,7 +753,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 145, ../sass/_mainBoilerplate.scss */
+/* line 145, ../_sass/_mainBoilerplate.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -767,7 +767,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 158, ../sass/_mainBoilerplate.scss */
+/* line 158, ../_sass/_mainBoilerplate.scss */
 .invisible {
   visibility: hidden;
 }
@@ -783,7 +783,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 175, ../sass/_mainBoilerplate.scss */
+/* line 175, ../_sass/_mainBoilerplate.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -792,7 +792,7 @@ textarea {
   /* 2 */
 }
 
-/* line 180, ../sass/_mainBoilerplate.scss */
+/* line 180, ../_sass/_mainBoilerplate.scss */
 .clearfix:after {
   clear: both;
 }
@@ -801,7 +801,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 189, ../sass/_mainBoilerplate.scss */
+/* line 189, ../_sass/_mainBoilerplate.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -820,7 +820,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 213, ../sass/_mainBoilerplate.scss */
+  /* line 213, ../_sass/_mainBoilerplate.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -829,18 +829,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 221, ../sass/_mainBoilerplate.scss */
+  /* line 221, ../_sass/_mainBoilerplate.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 225, ../sass/_mainBoilerplate.scss */
+  /* line 225, ../_sass/_mainBoilerplate.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 229, ../sass/_mainBoilerplate.scss */
+  /* line 229, ../_sass/_mainBoilerplate.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -848,33 +848,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 239, ../sass/_mainBoilerplate.scss */
+  /* line 239, ../_sass/_mainBoilerplate.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 244, ../sass/_mainBoilerplate.scss */
+  /* line 244, ../_sass/_mainBoilerplate.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 249, ../sass/_mainBoilerplate.scss */
+  /* line 249, ../_sass/_mainBoilerplate.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 254, ../sass/_mainBoilerplate.scss */
+  /* line 254, ../_sass/_mainBoilerplate.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 258, ../sass/_mainBoilerplate.scss */
+  /* line 258, ../_sass/_mainBoilerplate.scss */
   img {
     max-width: 100% !important;
   }
@@ -883,7 +883,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 268, ../sass/_mainBoilerplate.scss */
+  /* line 268, ../_sass/_mainBoilerplate.scss */
   p,
   h2,
   h3 {
@@ -891,13 +891,13 @@ textarea {
     widows: 3;
   }
 
-  /* line 274, ../sass/_mainBoilerplate.scss */
+  /* line 274, ../_sass/_mainBoilerplate.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-/* line 14, ../sass/style.scss */
+/* line 14, ../_sass/style.scss */
 #hackerNewsButton {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 700;
@@ -916,29 +916,29 @@ textarea {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 29, ../sass/style.scss */
+/* line 29, ../_sass/style.scss */
 #hackerNewsButton:hover {
   background-color: #cc4800;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 34, ../_sass/style.scss */
 a {
   color: #28b98d;
   text-decoration: none;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 39, ../_sass/style.scss */
 a:visited {
   color: #8abdad;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 43, ../_sass/style.scss */
 a:hover {
   background-color: #28b98d;
   color: #ffffff;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 48, ../_sass/style.scss */
 body {
   background-color: #fffdf2;
   font-family: 'Signika Negative', sans-serif;
@@ -950,7 +950,7 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 59, ../sass/style.scss */
+/* line 59, ../_sass/style.scss */
 p {
   color: #4c5351;
   width: 100%;
@@ -959,45 +959,48 @@ p {
   line-height: 34px;
   padding: 0 0 20px 0;
 }
-/* line 66, ../sass/style.scss */
+/* line 66, ../_sass/style.scss */
 p a {
   padding: 0 3px;
 }
-/* line 69, ../sass/style.scss */
+/* line 69, ../_sass/style.scss */
 p .callOut {
   padding: 0 10px 20px 60px;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 74, ../_sass/style.scss */
 .postImageFull {
   margin: 0 0 20px 0;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 78, ../_sass/style.scss */
 .postImageGutter {
   float: right;
-  margin: 0 0 20px 40px;
+  margin: 0 0 40px 40px;
+  clear: both;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 84, ../_sass/style.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 88, ../_sass/style.scss */
 .label, h2, h3 {
   font-family: 'Kreon', serif;
   font-weight: 700;
   color: #1e2221;
   padding: 0;
+  margin-top: 80px;
+  clear: both;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 97, ../_sass/style.scss */
 .blogContent {
   padding-top: 40px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 101, ../_sass/style.scss */
 #header {
   background-color: #37e6b1;
   width: 100%;
@@ -1005,7 +1008,7 @@ strong {
   padding: 80px 0 80px 0;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 108, ../_sass/style.scss */
 .wrapper {
   width: 90%;
   max-width: 960px;
@@ -1015,21 +1018,21 @@ strong {
   overflow: hidden;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 117, ../_sass/style.scss */
 .topPadding {
   padding: 80px 0 20px 0;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 121, ../_sass/style.scss */
 .colorStripe {
   width: 100%;
 }
-/* line 120, ../sass/style.scss */
+/* line 123, ../_sass/style.scss */
 .colorStripe img {
   position: absolute;
   right: 0px;
 }
-/* line 123, ../sass/style.scss */
+/* line 126, ../_sass/style.scss */
 .colorStripe img#previewImage {
   bottom: -140px;
   -webkit-transform: rotate(60deg);
@@ -1038,17 +1041,17 @@ strong {
   -o-transform: rotate(60deg);
   transform: rotate(60deg);
 }
-/* line 127, ../sass/style.scss */
+/* line 130, ../_sass/style.scss */
 .colorStripe img#mainImage {
   top: 20px;
 }
-/* line 131, ../sass/style.scss */
+/* line 134, ../_sass/style.scss */
 .colorStripe #blogTitle {
   width: 100%;
   max-width: 600px;
   padding: 60px 0 60px 0;
 }
-/* line 135, ../sass/style.scss */
+/* line 138, ../_sass/style.scss */
 .colorStripe #blogTitle span {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
@@ -1056,7 +1059,7 @@ strong {
   color: #fffdf2;
   line-height: 100px;
 }
-/* line 141, ../sass/style.scss */
+/* line 144, ../_sass/style.scss */
 .colorStripe #blogTitle span.date {
   font-size: 20px;
   line-height: 20px;
@@ -1065,7 +1068,7 @@ strong {
   display: block;
   padding: 10px 0 0 0;
 }
-/* line 152, ../sass/style.scss */
+/* line 155, ../_sass/style.scss */
 .colorStripe:hover #previewImage {
   bottom: 20px;
   -webkit-transform: rotate(0deg);
@@ -1074,56 +1077,56 @@ strong {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 156, ../sass/style.scss */
+/* line 159, ../_sass/style.scss */
 .colorStripe:hover #blogTitle span.date {
   left: 40px;
 }
-/* line 161, ../sass/style.scss */
+/* line 164, ../_sass/style.scss */
 .colorStripe#post01 {
   background-color: #37d7e6;
 }
-/* line 163, ../sass/style.scss */
+/* line 166, ../_sass/style.scss */
 .colorStripe#post01 span.date {
   color: #37d7e6;
 }
-/* line 166, ../sass/style.scss */
+/* line 169, ../_sass/style.scss */
 .colorStripe#post01:hover {
   background-color: #1ac0d0;
 }
-/* line 168, ../sass/style.scss */
+/* line 171, ../_sass/style.scss */
 .colorStripe#post01:hover span.date {
   color: #0f6d75;
 }
-/* line 171, ../sass/style.scss */
+/* line 174, ../_sass/style.scss */
 .colorStripe#post01:hover.postPage {
   background-color: #37d7e6;
 }
-/* line 173, ../sass/style.scss */
+/* line 176, ../_sass/style.scss */
 .colorStripe#post01:hover.postPage span.date {
   left: 0px;
 }
-/* line 178, ../sass/style.scss */
+/* line 181, ../_sass/style.scss */
 .colorStripe#post01.postPage span.date {
   color: #0f6d75;
 }
-/* line 183, ../sass/style.scss */
+/* line 186, ../_sass/style.scss */
 .colorStripe#post02 {
   background-color: #e59d37;
 }
-/* line 185, ../sass/style.scss */
+/* line 188, ../_sass/style.scss */
 .colorStripe#post02 span.date {
   color: #e59d37;
 }
-/* line 188, ../sass/style.scss */
+/* line 191, ../_sass/style.scss */
 .colorStripe#post02:hover {
   background-color: #ce841b;
 }
-/* line 190, ../sass/style.scss */
+/* line 193, ../_sass/style.scss */
 .colorStripe#post02:hover span.date {
   color: #744a0f;
 }
 
-/* line 198, ../sass/style.scss */
+/* line 201, ../_sass/style.scss */
 .colorStripe:hover *, .colorStripe * {
   -webkit-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
   -moz-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
@@ -1131,7 +1134,7 @@ strong {
   transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
 }
 
-/* line 202, ../sass/style.scss */
+/* line 205, ../_sass/style.scss */
 .colorStripe:hover img#previewImage, .colorStripe img#previewImage, .colorStripe {
   -webkit-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
   -moz-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
@@ -1139,7 +1142,7 @@ strong {
   transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
 }
 
-/* line 207, ../sass/style.scss */
+/* line 210, ../_sass/style.scss */
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 18px;
@@ -1152,7 +1155,7 @@ code {
   border: 1px solid #ebe9df;
 }
 
-/* line 4, ../sass/_forms.scss */
+/* line 4, ../_sass/_forms.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -1160,18 +1163,18 @@ button:focus {
   outline: none;
 }
 
-/* line 8, ../sass/_forms.scss */
+/* line 8, ../_sass/_forms.scss */
 form {
   margin: 10px 0 40px 0;
 }
-/* line 10, ../sass/_forms.scss */
+/* line 10, ../_sass/_forms.scss */
 form div {
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
 }
 
-/* line 18, ../sass/_forms.scss */
+/* line 18, ../_sass/_forms.scss */
 input {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 300;
@@ -1182,13 +1185,13 @@ input {
   border-radius: 3px;
   border: 1px solid #37e6b1;
 }
-/* line 26, ../sass/_forms.scss */
+/* line 26, ../_sass/_forms.scss */
 input[type=email] {
   padding: 0 10px;
   width: 300px;
   background-color: #fff;
 }
-/* line 31, ../sass/_forms.scss */
+/* line 31, ../_sass/_forms.scss */
 input[type=submit] {
   border: none;
   padding: 0 20px;
@@ -1198,30 +1201,30 @@ input[type=submit] {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-/* line 39, ../sass/_forms.scss */
+/* line 39, ../_sass/_forms.scss */
 input[type=submit]:hover {
   cursor: pointer;
   background-color: #1ad099;
 }
 
-/* line 46, ../sass/_forms.scss */
+/* line 46, ../_sass/_forms.scss */
 .focusField {
   color: #4c5351;
 }
 
-/* line 49, ../sass/_forms.scss */
+/* line 49, ../_sass/_forms.scss */
 .idleField {
   color: #e5e4da;
   border: solid 1px #e5e4da;
 }
 
-/* line 53, ../sass/_forms.scss */
+/* line 53, ../_sass/_forms.scss */
 .completedField {
   color: #4c5351;
   border: solid 1px #e5e4da;
 }
 
-/* line 1, ../sass/_jessechapologo.scss */
+/* line 1, ../_sass/_jessechapologo.scss */
 #jessePhoto {
   width: 0px;
   height: 0px;
@@ -1238,7 +1241,7 @@ input[type=submit]:hover {
   transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
 }
 
-/* line 12, ../sass/_jessechapologo.scss */
+/* line 12, ../_sass/_jessechapologo.scss */
 #box {
   width: 244px;
   padding: 0;
@@ -1246,22 +1249,22 @@ input[type=submit]:hover {
   text-align: center;
   position: relative;
 }
-/* line 18, ../sass/_jessechapologo.scss */
+/* line 18, ../_sass/_jessechapologo.scss */
 #box:hover {
   width: 334px;
 }
-/* line 20, ../sass/_jessechapologo.scss */
+/* line 20, ../_sass/_jessechapologo.scss */
 #box:hover #jessePhoto {
   width: 92px;
   height: 92px;
   margin-top: -34px;
 }
-/* line 25, ../sass/_jessechapologo.scss */
+/* line 25, ../_sass/_jessechapologo.scss */
 #box:hover .banner {
   width: 324px;
 }
 
-/* line 31, ../sass/_jessechapologo.scss */
+/* line 31, ../_sass/_jessechapologo.scss */
 .banner {
   width: 234px;
   height: 38px;
@@ -1269,7 +1272,7 @@ input[type=submit]:hover {
   margin-left: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
-/* line 37, ../sass/_jessechapologo.scss */
+/* line 37, ../_sass/_jessechapologo.scss */
 .banner span {
   background-color: #fffdf2;
   font-size: 20px;
@@ -1283,7 +1286,7 @@ input[type=submit]:hover {
   vertical-align: top;
 }
 
-/* line 51, ../sass/_jessechapologo.scss */
+/* line 51, ../_sass/_jessechapologo.scss */
 #box, .banner, .banner span {
   -webkit-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
   -moz-transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
@@ -1291,19 +1294,19 @@ input[type=submit]:hover {
   transition: all 400ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
 }
 
-/* line 55, ../sass/_jessechapologo.scss */
+/* line 55, ../_sass/_jessechapologo.scss */
 .ribbon {
   width: 10px;
   height: 38px;
   background: #fffdf2;
   position: absolute;
 }
-/* line 60, ../sass/_jessechapologo.scss */
+/* line 60, ../_sass/_jessechapologo.scss */
 .ribbon.left {
   top: 0;
   left: 0;
 }
-/* line 63, ../sass/_jessechapologo.scss */
+/* line 63, ../_sass/_jessechapologo.scss */
 .ribbon.left:before {
   content: "";
   position: absolute;
@@ -1315,7 +1318,7 @@ input[type=submit]:hover {
   border-top: 0 solid transparent;
   border-bottom: 37.5px solid transparent;
 }
-/* line 74, ../sass/_jessechapologo.scss */
+/* line 74, ../_sass/_jessechapologo.scss */
 .ribbon.left:after {
   content: "";
   position: absolute;
@@ -1327,12 +1330,12 @@ input[type=submit]:hover {
   border-top: 37.5px solid transparent;
   border-bottom: 0 solid transparent;
 }
-/* line 86, ../sass/_jessechapologo.scss */
+/* line 86, ../_sass/_jessechapologo.scss */
 .ribbon.right {
   top: 0;
   right: 10px;
 }
-/* line 89, ../sass/_jessechapologo.scss */
+/* line 89, ../_sass/_jessechapologo.scss */
 .ribbon.right:before {
   content: "";
   position: absolute;
@@ -1344,7 +1347,7 @@ input[type=submit]:hover {
   border-top: 0 solid transparent;
   border-bottom: 37.5px solid transparent;
 }
-/* line 100, ../sass/_jessechapologo.scss */
+/* line 100, ../_sass/_jessechapologo.scss */
 .ribbon.right:after {
   content: "";
   position: absolute;
@@ -1357,7 +1360,7 @@ input[type=submit]:hover {
   border-bottom: 0 solid transparent;
 }
 
-/* line 2, ../sass/_footnotes.scss */
+/* line 2, ../_sass/_footnotes.scss */
 a[rel="footnote"], a[rev="footnote"] {
   border-bottom: none;
   font-family: 'Kreon', serif;
@@ -1370,23 +1373,23 @@ a[rel="footnote"], a[rev="footnote"] {
   letter-spacing: 2px;
 }
 
-/* line 14, ../sass/_footnotes.scss */
+/* line 14, ../_sass/_footnotes.scss */
 a[rel="footnote"]:hover, a[rev="footnote"]:hover {
   background-color: #28b98d;
   color: #fffdf2;
 }
 
-/* line 19, ../sass/_footnotes.scss */
+/* line 19, ../_sass/_footnotes.scss */
 a[rel="footnote"]:before {
   content: "[";
 }
 
-/* line 23, ../sass/_footnotes.scss */
+/* line 23, ../_sass/_footnotes.scss */
 a[rel="footnote"]:after {
   content: "]";
 }
 
-/* line 27, ../sass/_footnotes.scss */
+/* line 27, ../_sass/_footnotes.scss */
 hr {
   color: #e1e1e1;
   background-color: #e1e1e1;
@@ -1396,24 +1399,30 @@ hr {
   margin-bottom: 20px;
 }
 
-/* line 36, ../sass/_footnotes.scss */
+/* line 36, ../_sass/_footnotes.scss */
 li {
   color: #656e6b;
-  font-size: 16px;
-  padding: 10px 0 20px 0;
+  padding: 20px 0 40px 0;
 }
 
-/* line 42, ../sass/_footnotes.scss */
+/* line 41, ../_sass/_footnotes.scss */
 ol {
   counter-reset: li;
   /* Initiate a counter */
   margin-left: 0;
   padding-left: 0;
   padding: 20px 0 70px 0;
-  width: 600px;
+  width: 100%;
+  max-width: 660px;
+  line-height: 32px;
+}
+/* line 49, ../_sass/_footnotes.scss */
+ol.footnotes {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-/* line 50, ../sass/_footnotes.scss */
+/* line 55, ../_sass/_footnotes.scss */
 ol > li {
   position: relative;
   margin: 0 0 10px 46px;
@@ -1422,7 +1431,7 @@ ol > li {
   list-style: none;
 }
 
-/* line 57, ../sass/_footnotes.scss */
+/* line 62, ../_sass/_footnotes.scss */
 ol > li:before {
   content: counter(li);
   /* Use the counter as content */

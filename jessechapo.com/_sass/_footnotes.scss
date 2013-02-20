@@ -35,8 +35,7 @@ hr {
 
 li {
 	color: #656e6b;
-	font-size: 16px;
-	padding: 10px 0 20px 0;
+	padding: 20px 0 40px 0;
 }
 
 ol {
@@ -44,7 +43,13 @@ ol {
     margin-left: 0; 
     padding-left: 0; 
     padding: 20px 0 70px 0;
-    width: 600px;
+    width: 100%;
+    max-width: 660px;
+    line-height: 32px;
+    &.footnotes {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 ol > li {

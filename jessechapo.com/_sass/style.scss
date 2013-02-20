@@ -77,7 +77,8 @@ p {
 
 .postImageGutter {
 	float: right;
-	margin: 0 0 20px 40px;
+	margin: 0 0 40px 40px;
+	clear: both;
 }
 
 strong {
@@ -89,6 +90,8 @@ strong {
     font-weight: 700;
     color: #1e2221;
     padding: 0;
+    margin-top: 80px;
+    clear: both;
 }
 
 .blogContent {
