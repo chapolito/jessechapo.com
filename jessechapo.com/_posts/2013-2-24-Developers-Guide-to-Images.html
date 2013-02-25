@@ -8,7 +8,7 @@ title: Developers Guide to Images
 			
 			<div id="blogTitle">
 				<span>A Developer's Guide to Images</span>
-				<span class="date">February 20, 2013</span>
+				<span class="date">February 26, 2013</span>
 			</div>
 			<img src="/img/Developers-Guide-to-Images/cutout.png" id="mainImage" width="300" height="300">
 		</div>
@@ -57,7 +57,7 @@ title: Developers Guide to Images
 		<img src="/img/Developers-Guide-to-Images/truecolor-pixel-data.png" class="postImageFull">
 		
 		<p>
-			Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on filesize. The numbers of colors you can have in a PNG-8 image can be anything from 2-256, below is a selection:<sup id="fnref:two"><a href="#fn:two" rel="footnote">2</a></sup>
+			Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on file size. The numbers of colors you can have in a PNG-8 image can be anything from 2-256, below is a selection:<sup id="fnref:two"><a href="#fn:two" rel="footnote">2</a></sup>
 		</p>
 
 		<img src="/img/Developers-Guide-to-Images/bird-different-colors.png" class="postImageFull">
@@ -125,11 +125,11 @@ title: Developers Guide to Images
 
 		<h3>What to pay attention to: JPG</h3>
 		<p>
-			<strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in filesize and below 60 things start to look bad. Definitely don’t go below 51 otherwise photoshop starts to implement an additional compression technique that really destroys quality.<sup id="fnref:six"><a href="#fn:six" rel="footnote">6</a></sup>
+			<strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise photoshop starts to implement an additional compression technique that really destroys quality.<sup id="fnref:six"><a href="#fn:six" rel="footnote">6</a></sup>
 		</p>
 		
 		<p>
-			<strong>Progressive</strong> means that the JPG is downloaded and displayed in chunks and gets more and more details as it goes. This is a better experience on the web, I always use it and it generally doesn’t impact filesize much, but keep an eye on the filesize in case.
+			<strong>Progressive</strong> means that the JPG is downloaded in chunks and after only a little of the image has downloaded it will be displayed full size, but blurry. As more of the file is download the image will rerender with a higher degree of clarity. Without progressive JPGs need to completely download before displaying, leaving a glaring open space on your page. Having something there, even if it is a chunky and blurry version, is a better experience. I always use progressive and it generally doesn’t impact files ize much, but keep an eye on the file size in case.
 		</p>
 		<p>
 			<strong>Convert to sRGB - keep checked for both JPG and PNG.</strong> sRGB is the standard color space of web/monitors/printers/etc, keep checked for all .<sup id="fnref:seven"><a href="#fn:seven" rel="footnote">7</a></sup>
