@@ -70,7 +70,7 @@ title: Developers Guide to Images
 			<strong>Alpha</strong> can be one of two states: 
 		</p>
 		<p class="callOut">
-			<strong class="label">1-bit:</strong> either a pixel is a 100% opaque or 100% transparent (this is the only transparency GIFs support) 
+			<strong class="label">1-bit:</strong> either a pixel is 100% opaque or 100% transparent (this is the only transparency GIFs support) 
 		</p>
 		<p class="callOut">
 			<strong class="label">8-bit:</strong> each pixel can have a value of see-through-ness ranging from 0 (transparent) to 255 (opaque).<sup id="fnref:three"><a href="#fn:three" rel="footnote">3</a></sup>
@@ -97,7 +97,7 @@ title: Developers Guide to Images
 					Select all the layers that comprise the single graphic you are cutting
 				</li>
 				<li>
-					Merge the layers <code>Layer>Merge Layers | &#8984;+e</code> If your image changes appearence in this step its likely your blending modes that are causing this. Masking is probably your solution: <a href="http://designshack.net/articles/graphics/a-complete-beginners-guide-to-masking-in-photoshop/" rel="nofollow">A Complete Beginner’s Guide to Masking in Photoshop</a>
+					Merge the layers <code>Layer>Merge Layers | &#8984;+e</code> If your image changes appearence in this step its likely that your blending modes are causing this. Masking is probably your solution: <a href="http://designshack.net/articles/graphics/a-complete-beginners-guide-to-masking-in-photoshop/" rel="nofollow">A Complete Beginner’s Guide to Masking in Photoshop</a>
 				<li>
 					Select all <code>Select>All | &#8984;+a</code> 
 				</li>
@@ -114,11 +114,11 @@ title: Developers Guide to Images
 					Save for Web <code>File>Save for Web | shift+alt+&#8984;+s</code>
 				</li>
 			</ol>
-			Now you’ve got the file complete isolated and ready to save. 
+			Now you’ve got the file completely isolated and ready to save. 
 		</p>
 		<h3>Save for Web</h3>
 		<p>
-			By now you should have a good idea of when you will want to use PNG or JPG; however, in some cases the best format is unclear. For example, and illustration that doesn’t need any transparency might look fine as both a PNG-8 or a JPG&mdash;Save for Web helps you make this decision by giving you the file size of each format. <strong>Whichever format has the smallest file size while still being an acceptable quality will be the best choice.</strong> Remember though, if you need any transparency then you’ll want to use a PNG. Below is what you should see once you open up Save for Web:
+			By now you should have a good idea of when you will want to use PNG or JPG; however, in some cases the best format is unclear. For example, an illustration that doesn’t need any transparency might look fine as both a PNG-8 or a JPG&mdash;Save for Web helps you make this decision by giving you the file size of each format. <strong>Whichever format has the smallest file size while still being an acceptable quality will be the best choice.</strong> Remember though, if you need any transparency then you’ll want to use a PNG. Below is what you should see once you open up Save for Web:
 		</p>
 		
 		<img src="/img/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg" class="postImageFull">
@@ -201,7 +201,7 @@ title: Developers Guide to Images
 		<ol class="footnotes">
 			<hr>
 			<li id="fn:one">
-				There are actually so really cool things being done with animated GIFs called Cinemagraphs, check out: <a href="http://en.wikipedia.org/wiki/Cinemagraph" rel="nofollow">http://en.wikipedia.org/wiki/Cinemagraph</a> <a href="#fnref:one" rev="footnote" title="Jump back to footnote 1 in the text">↩</a>
+				There are actually some really cool things being done with animated GIFs called Cinemagraphs, check out: <a href="http://en.wikipedia.org/wiki/Cinemagraph" rel="nofollow">http://en.wikipedia.org/wiki/Cinemagraph</a> <a href="#fnref:one" rev="footnote" title="Jump back to footnote 1 in the text">↩</a>
 			</li>
 			<li id="fn:two">
 				PNG actually supports color depths up to 48-bits (aka deep color)  providing you billions of different colors; however, the vast majority of consumer monitors and screens do not support more than 24-bit, so this is, for the most part, useless to us. Also note that the terms indexed and paletted can be used interchangeably. <a href="#fnref:two" rev="footnote" title="Jump back to footnote 2 in the text">↩</a>
@@ -210,7 +210,7 @@ title: Developers Guide to Images
 				 You may at times see a reference to a 32-bit PNG, this is because they are counting the 8-bit alpha with the color, commonly referred to as RGBA (8 Red, 8 Green, 8 Blue, 8 Alpha). <a href="#fnref:three" rev="footnote" title="Jump back to footnote 3 in the text">↩</a>
 			</li>
 			<li id="fn:four">
-				It really bugs me when I hear of designers handing off PSD files to developers, this is the designer’s responsibility. Laziness is no excuse, we are the ones that generally have a better understanding of image formats and especially the settings of Photoshop. Its like cooking a gourmet meal and then serving it in a plastic bowl. Additionally, it forces designers to  think more about how a site is going to built, which I see too little of. <a href="#fnref:four" rev="footnote" title="Jump back to footnote 4 in the text">↩</a>
+				It really bugs me when I hear of designers handing off PSD files to developers, this is the designer’s responsibility. Laziness is no excuse, we are the ones that generally have a better understanding of image formats and especially the settings of Photoshop. Its like cooking a gourmet meal and then serving it in a plastic bowl. Additionally, it forces designers to  think more about how a site is going to be built, which I see too little of. <a href="#fnref:four" rev="footnote" title="Jump back to footnote 4 in the text">↩</a>
 			</li>
 			<li id="fn:five">
 				There is the slice tool specifically for cutting up images, but I find it a bit frustrating to use and not very applicable for today’s sites. <a href="#fnref:five" rev="footnote" title="Jump back to footnote 5 in the text">↩</a>
