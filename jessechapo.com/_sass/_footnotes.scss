@@ -1,3 +1,9 @@
+sup{
+    padding: 0 1px 2px 1px;
+    &:target {
+        background-color: #fff9d9;
+    }
+}
 
 a[rel="footnote"], a[rev="footnote"] {
     border-bottom: none;
@@ -9,12 +15,12 @@ a[rel="footnote"], a[rev="footnote"] {
     line-height: 0;
     padding: 4px 0 2px 2px;
    	letter-spacing: 2px;
-}
-
-a[rel="footnote"]:hover, a[rev="footnote"]:hover  {
-	background-color: #28b98d;
-	color: #fffdf2;	
-}
+    cursor: pointer;
+    &:hover{
+        background-color: #28b98d;
+        color: #fffdf2; 
+    }
+}	
 
 a[rel="footnote"]:before {
     content: "[";
@@ -35,11 +41,13 @@ hr {
 
 li {
 	color: #656e6b;
-	padding: 20px 0 40px 0;
+    &:target {
+        background-color: #fff9d9;
+    }
 }
 
 ol {
-    counter-reset: li; /* Initiate a counter */
+    counter-reset: li; 
     margin-left: 0; 
     padding-left: 0; 
     padding: 20px 0 70px 0;
@@ -54,14 +62,14 @@ ol {
 
 ol > li {
     position: relative; 
-    margin: 0 0 10px 46px; /* Give each list item a left margin to make room for the numbers */
-    padding: 0 10px 10px 10px; 
+    margin: 0 0 10px 46px; 
+    padding: 10px; 
     list-style: none; 
 }
 
 ol > li:before {
-    content: counter(li); /* Use the counter as content */
-    counter-increment: li; /* Increment the counter by 1 */
+    content: counter(li); 
+    counter-increment: li; 
     position: absolute;
     width: 20px;
     left: -28px;
@@ -70,4 +78,22 @@ ol > li:before {
     font-family: 'Kreon', serif;
     font-weight: 700;
     text-align: center;
+}
+
+#currentFootnote {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #fff9d9;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 99;
+    display: none;
+    text-align: center;
+    div {
+        max-width: 600px;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
 }

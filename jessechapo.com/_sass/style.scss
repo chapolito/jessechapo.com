@@ -1,7 +1,6 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+css dopeness.
+*/
 
 @import "compass/reset";
 @import "compass/css3";
@@ -16,8 +15,8 @@
 	font-weight: 700;
 	font-size: 18px; 
 	height: auto;
-	width: 300px;
-	@include border-radius(3px);
+	max-width: 260px;
+	@include border-radius(5px);
 	border: none;
 	padding: 10px 20px;
 	background-color: $hackerNewsOrange;
@@ -31,6 +30,10 @@
 	&:hover {
 		background-color: lighten($hackerNewsOrange, 10%)
 	}
+}
+
+p, span, ol, h1, h2, h3, .label {
+	-webkit-transform: translate3d(0,0,0);
 }
 
 p#discuss {
@@ -64,7 +67,6 @@ body {
 	text-align: center;  
 	padding: 0 0 80px 0;
 	margin: 0;
-	-webkit-transform: translate3d(0,0,0);
 	@media screen and (max-width: 768px) {
 		font-size: 20px;
 	}
@@ -143,6 +145,7 @@ strong {
 
 .colorStripe {
     width: 100%;
+    //@include animation(expand 2s ease-out 1 normal);
     img{
     	position: absolute;
 		right: 0px;
@@ -151,17 +154,22 @@ strong {
 				bottom: -140px;
 		    	@include rotate(60deg);
 			}
+			@media screen and (max-width: 320px) {
+				position: relative;
+				margin: -30px 0 40px 140px;
+			}
 		}
 		&#mainImage {
 		    top: 20px;
     		@media screen and (max-width: 320px) {
 				top: 0;
 			}
+			@media screen and (max-width: 320px) {
+				position: relative;
+				margin: 0 0 -50px 140px;
+			}
 		}
-		@media screen and (max-width: 320px) {
-			position: relative;
-			margin: 0 0 -50px 140px;
-		}
+		
 		@media screen and (max-width: 900px) {
 			width: 150px;
 			height: 150px;
@@ -250,7 +258,15 @@ strong {
 			}
 	    }
 	}
-	
+}
+
+@include keyframes (expand) {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: auto;
+	}
 }
 
 .colorStripe:hover *, .colorStripe * {

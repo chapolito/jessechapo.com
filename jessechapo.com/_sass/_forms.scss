@@ -24,7 +24,7 @@ input {
 	@include border-radius(3px);
 
 	border: 1px solid $brightGreen;  
-	&[type="email"] {
+	&[type=email] {
 		padding: 0 10px;
 		width: 260px;
 		background-color: #fff;

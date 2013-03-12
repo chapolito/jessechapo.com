@@ -1,7 +1,6 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+css dopeness.
+*/
 /* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -897,16 +896,16 @@ textarea {
     page-break-after: avoid;
   }
 }
-/* line 14, ../_sass/style.scss */
+/* line 13, ../_sass/style.scss */
 #hackerNewsButton {
   font-family: 'Signika Negative', sans-serif;
   font-weight: 700;
   font-size: 18px;
   height: auto;
-  width: 300px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  max-width: 260px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: none;
   padding: 10px 20px;
   background-color: #ff6600;
@@ -918,12 +917,17 @@ textarea {
   margin: 0 auto;
   margin-top: 30px;
 }
-/* line 31, ../_sass/style.scss */
+/* line 30, ../_sass/style.scss */
 #hackerNewsButton:hover {
   background-color: #ff8533;
 }
 
-/* line 36, ../_sass/style.scss */
+/* line 35, ../_sass/style.scss */
+p, span, ol, h1, h2, h3, .label {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 39, ../_sass/style.scss */
 p#discuss {
   padding: 0;
   margin: 0;
@@ -933,24 +937,24 @@ p#discuss {
   margin: 0 auto;
 }
 
-/* line 45, ../_sass/style.scss */
+/* line 48, ../_sass/style.scss */
 a {
   color: #28b98d;
   text-decoration: none;
 }
 
-/* line 50, ../_sass/style.scss */
+/* line 53, ../_sass/style.scss */
 a:visited {
   color: #8abdad;
 }
 
-/* line 54, ../_sass/style.scss */
+/* line 57, ../_sass/style.scss */
 a:hover {
   background-color: #28b98d;
   color: #ffffff;
 }
 
-/* line 59, ../_sass/style.scss */
+/* line 62, ../_sass/style.scss */
 body {
   background-color: #fffdf2;
   font-family: 'Signika Negative', sans-serif;
@@ -959,16 +963,15 @@ body {
   text-align: center;
   padding: 0 0 80px 0;
   margin: 0;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 @media screen and (max-width: 768px) {
-  /* line 59, ../_sass/style.scss */
+  /* line 62, ../_sass/style.scss */
   body {
     font-size: 20px;
   }
 }
 
-/* line 73, ../_sass/style.scss */
+/* line 75, ../_sass/style.scss */
 p {
   color: #4c5351;
   width: 100%;
@@ -977,30 +980,30 @@ p {
   line-height: 34px;
   padding: 0 0 20px 0;
 }
-/* line 80, ../_sass/style.scss */
+/* line 82, ../_sass/style.scss */
 p a {
   padding: 0 3px;
 }
-/* line 83, ../_sass/style.scss */
+/* line 85, ../_sass/style.scss */
 p .callOut {
   padding: 0 10px 20px 60px;
 }
 
-/* line 88, ../_sass/style.scss */
+/* line 90, ../_sass/style.scss */
 .postImageFull {
   margin: 0 0 20px 0;
   max-width: 100%;
   height: auto;
 }
 
-/* line 94, ../_sass/style.scss */
+/* line 96, ../_sass/style.scss */
 .postImageGutter {
   float: right;
   margin: 0 0 40px 40px;
   clear: both;
 }
 @media screen and (max-width: 560px) {
-  /* line 94, ../_sass/style.scss */
+  /* line 96, ../_sass/style.scss */
   .postImageGutter {
     float: none;
     margin: 0 auto;
@@ -1009,12 +1012,12 @@ p .callOut {
   }
 }
 
-/* line 106, ../_sass/style.scss */
+/* line 108, ../_sass/style.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 110, ../_sass/style.scss */
+/* line 112, ../_sass/style.scss */
 .label, h2, h3 {
   font-family: 'Kreon', serif;
   font-weight: 700;
@@ -1024,18 +1027,18 @@ strong {
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../_sass/style.scss */
+  /* line 112, ../_sass/style.scss */
   .label, h2, h3 {
     margin: 40px 0 14px 0;
   }
 }
 
-/* line 123, ../_sass/style.scss */
+/* line 125, ../_sass/style.scss */
 .blogContent {
   padding-top: 40px;
 }
 
-/* line 127, ../_sass/style.scss */
+/* line 129, ../_sass/style.scss */
 .wrapper {
   width: 90%;
   max-width: 960px;
@@ -1045,27 +1048,27 @@ strong {
   overflow: hidden;
 }
 
-/* line 136, ../_sass/style.scss */
+/* line 138, ../_sass/style.scss */
 .postOverflow {
   overflow: visible;
 }
 
-/* line 140, ../_sass/style.scss */
+/* line 142, ../_sass/style.scss */
 .topPadding {
   padding: 80px 0 20px 0;
 }
 
-/* line 144, ../_sass/style.scss */
+/* line 146, ../_sass/style.scss */
 .colorStripe {
   width: 100%;
 }
-/* line 146, ../_sass/style.scss */
+/* line 149, ../_sass/style.scss */
 .colorStripe img {
   position: absolute;
   right: 0px;
 }
 @media screen and (min-width: 900px) {
-  /* line 149, ../_sass/style.scss */
+  /* line 152, ../_sass/style.scss */
   .colorStripe img#previewImage {
     bottom: -140px;
     -webkit-transform: rotate(60deg);
@@ -1075,58 +1078,65 @@ strong {
     transform: rotate(60deg);
   }
 }
-/* line 155, ../_sass/style.scss */
+@media screen and (max-width: 320px) {
+  /* line 152, ../_sass/style.scss */
+  .colorStripe img#previewImage {
+    position: relative;
+    margin: -30px 0 40px 140px;
+  }
+}
+/* line 162, ../_sass/style.scss */
 .colorStripe img#mainImage {
   top: 20px;
 }
 @media screen and (max-width: 320px) {
-  /* line 155, ../_sass/style.scss */
+  /* line 162, ../_sass/style.scss */
   .colorStripe img#mainImage {
     top: 0;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 146, ../_sass/style.scss */
-  .colorStripe img {
+  /* line 162, ../_sass/style.scss */
+  .colorStripe img#mainImage {
     position: relative;
     margin: 0 0 -50px 140px;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 146, ../_sass/style.scss */
+  /* line 149, ../_sass/style.scss */
   .colorStripe img {
     width: 150px;
     height: 150px;
     top: 30px;
   }
 }
-/* line 171, ../_sass/style.scss */
+/* line 179, ../_sass/style.scss */
 .colorStripe #blogTitle {
   width: 100%;
   max-width: 600px;
   padding: 60px 0 60px 0;
 }
 @media screen and (max-width: 900px) {
-  /* line 171, ../_sass/style.scss */
+  /* line 179, ../_sass/style.scss */
   .colorStripe #blogTitle {
     max-width: 360px;
     padding: 40px 0 40px 0;
   }
 }
 @media screen and (max-width: 520px) {
-  /* line 171, ../_sass/style.scss */
+  /* line 179, ../_sass/style.scss */
   .colorStripe #blogTitle {
     max-width: 200px;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 171, ../_sass/style.scss */
+  /* line 179, ../_sass/style.scss */
   .colorStripe #blogTitle {
     max-width: 300px;
     padding: 30px 0 20px 0;
   }
 }
-/* line 186, ../_sass/style.scss */
+/* line 194, ../_sass/style.scss */
 .colorStripe #blogTitle span {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
@@ -1135,13 +1145,13 @@ strong {
   line-height: 100px;
 }
 @media screen and (max-width: 900px) {
-  /* line 186, ../_sass/style.scss */
+  /* line 194, ../_sass/style.scss */
   .colorStripe #blogTitle span {
     font-size: 32px;
     line-height: 50px;
   }
 }
-/* line 196, ../_sass/style.scss */
+/* line 204, ../_sass/style.scss */
 .colorStripe #blogTitle span.date {
   font-size: 20px;
   line-height: 20px;
@@ -1150,7 +1160,7 @@ strong {
   display: block;
   padding: 10px 0 0 0;
 }
-/* line 207, ../_sass/style.scss */
+/* line 215, ../_sass/style.scss */
 .colorStripe:hover #previewImage {
   bottom: 20px;
   -webkit-transform: rotate(0deg);
@@ -1159,62 +1169,110 @@ strong {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 211, ../_sass/style.scss */
+/* line 219, ../_sass/style.scss */
 .colorStripe:hover #blogTitle span.date {
   left: 40px;
 }
-/* line 216, ../_sass/style.scss */
+/* line 224, ../_sass/style.scss */
 .colorStripe#post01 {
   background-color: #37d7e6;
 }
-/* line 218, ../_sass/style.scss */
+/* line 226, ../_sass/style.scss */
 .colorStripe#post01 span.date {
   color: #37d7e6;
 }
 @media screen and (max-width: 900px) {
-  /* line 218, ../_sass/style.scss */
+  /* line 226, ../_sass/style.scss */
   .colorStripe#post01 span.date {
     color: #0f6d75;
   }
 }
-/* line 224, ../_sass/style.scss */
+/* line 232, ../_sass/style.scss */
 .colorStripe#post01:hover {
   background-color: #1ac0d0;
 }
-/* line 226, ../_sass/style.scss */
+/* line 234, ../_sass/style.scss */
 .colorStripe#post01:hover span.date {
   color: #0f6d75;
 }
-/* line 229, ../_sass/style.scss */
+/* line 237, ../_sass/style.scss */
 .colorStripe#post01:hover.postPage {
   background-color: #37d7e6;
 }
-/* line 231, ../_sass/style.scss */
+/* line 239, ../_sass/style.scss */
 .colorStripe#post01:hover.postPage span.date {
   left: 0px;
 }
-/* line 236, ../_sass/style.scss */
+/* line 244, ../_sass/style.scss */
 .colorStripe#post01.postPage span.date {
   color: #0f6d75;
 }
-/* line 241, ../_sass/style.scss */
+/* line 249, ../_sass/style.scss */
 .colorStripe#post02 {
   background-color: #e59d37;
 }
-/* line 243, ../_sass/style.scss */
+/* line 251, ../_sass/style.scss */
 .colorStripe#post02 span.date {
   color: #e59d37;
 }
-/* line 246, ../_sass/style.scss */
+/* line 254, ../_sass/style.scss */
 .colorStripe#post02:hover {
   background-color: #ce841b;
 }
-/* line 248, ../_sass/style.scss */
+/* line 256, ../_sass/style.scss */
 .colorStripe#post02:hover span.date {
   color: #744a0f;
 }
 
-/* line 256, ../_sass/style.scss */
+@-moz-keyframes expand {
+  /* line 264, ../_sass/style.scss */
+  0% {
+    height: 0;
+  }
+
+  /* line 267, ../_sass/style.scss */
+  100% {
+    height: auto;
+  }
+}
+
+@-webkit-keyframes expand {
+  /* line 264, ../_sass/style.scss */
+  0% {
+    height: 0;
+  }
+
+  /* line 267, ../_sass/style.scss */
+  100% {
+    height: auto;
+  }
+}
+
+@-o-keyframes expand {
+  /* line 264, ../_sass/style.scss */
+  0% {
+    height: 0;
+  }
+
+  /* line 267, ../_sass/style.scss */
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes expand {
+  /* line 264, ../_sass/style.scss */
+  0% {
+    height: 0;
+  }
+
+  /* line 267, ../_sass/style.scss */
+  100% {
+    height: auto;
+  }
+}
+
+/* line 272, ../_sass/style.scss */
 .colorStripe:hover *, .colorStripe * {
   -webkit-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
   -moz-transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
@@ -1222,7 +1280,7 @@ strong {
   transition: all 600ms cubic-bezier(0.53, 1.635, 0.85, 0.82);
 }
 
-/* line 260, ../_sass/style.scss */
+/* line 276, ../_sass/style.scss */
 .colorStripe:hover img#previewImage, .colorStripe img#previewImage, .colorStripe {
   -webkit-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
   -moz-transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
@@ -1230,7 +1288,7 @@ strong {
   transition: all 600ms cubic-bezier(0, 0, 0.01, 1);
 }
 
-/* line 264, ../_sass/style.scss */
+/* line 280, ../_sass/style.scss */
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 18px;
@@ -1275,7 +1333,7 @@ input {
   border: 1px solid #37e6b1;
 }
 /* line 27, ../_sass/_forms.scss */
-input[type="email"] {
+input[type=email] {
   padding: 0 10px;
   width: 260px;
   background-color: #fff;
@@ -1469,7 +1527,16 @@ input[type=submit]:hover {
   border-bottom: 0 solid transparent;
 }
 
-/* line 2, ../_sass/_footnotes.scss */
+/* line 1, ../_sass/_footnotes.scss */
+sup {
+  padding: 0 1px 2px 1px;
+}
+/* line 3, ../_sass/_footnotes.scss */
+sup:target {
+  background-color: #fff9d9;
+}
+
+/* line 8, ../_sass/_footnotes.scss */
 a[rel="footnote"], a[rev="footnote"] {
   border-bottom: none;
   font-family: 'Kreon', serif;
@@ -1480,25 +1547,25 @@ a[rel="footnote"], a[rev="footnote"] {
   line-height: 0;
   padding: 4px 0 2px 2px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
-
-/* line 14, ../_sass/_footnotes.scss */
+/* line 19, ../_sass/_footnotes.scss */
 a[rel="footnote"]:hover, a[rev="footnote"]:hover {
   background-color: #28b98d;
   color: #fffdf2;
 }
 
-/* line 19, ../_sass/_footnotes.scss */
+/* line 25, ../_sass/_footnotes.scss */
 a[rel="footnote"]:before {
   content: "[";
 }
 
-/* line 23, ../_sass/_footnotes.scss */
+/* line 29, ../_sass/_footnotes.scss */
 a[rel="footnote"]:after {
   content: "]";
 }
 
-/* line 27, ../_sass/_footnotes.scss */
+/* line 33, ../_sass/_footnotes.scss */
 hr {
   color: #e1e1e1;
   background-color: #e1e1e1;
@@ -1508,16 +1575,18 @@ hr {
   margin-bottom: 20px;
 }
 
-/* line 36, ../_sass/_footnotes.scss */
+/* line 42, ../_sass/_footnotes.scss */
 li {
   color: #656e6b;
-  padding: 20px 0 40px 0;
+}
+/* line 44, ../_sass/_footnotes.scss */
+li:target {
+  background-color: #fff9d9;
 }
 
-/* line 41, ../_sass/_footnotes.scss */
+/* line 49, ../_sass/_footnotes.scss */
 ol {
   counter-reset: li;
-  /* Initiate a counter */
   margin-left: 0;
   padding-left: 0;
   padding: 20px 0 70px 0;
@@ -1525,27 +1594,24 @@ ol {
   max-width: 660px;
   line-height: 32px;
 }
-/* line 49, ../_sass/_footnotes.scss */
+/* line 57, ../_sass/_footnotes.scss */
 ol.footnotes {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 55, ../_sass/_footnotes.scss */
+/* line 63, ../_sass/_footnotes.scss */
 ol > li {
   position: relative;
   margin: 0 0 10px 46px;
-  /* Give each list item a left margin to make room for the numbers */
-  padding: 0 10px 10px 10px;
+  padding: 10px;
   list-style: none;
 }
 
-/* line 62, ../_sass/_footnotes.scss */
+/* line 70, ../_sass/_footnotes.scss */
 ol > li:before {
   content: counter(li);
-  /* Use the counter as content */
   counter-increment: li;
-  /* Increment the counter by 1 */
   position: absolute;
   width: 20px;
   left: -28px;
@@ -1554,4 +1620,24 @@ ol > li:before {
   font-family: 'Kreon', serif;
   font-weight: 700;
   text-align: center;
+}
+
+/* line 83, ../_sass/_footnotes.scss */
+#currentFootnote {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #fff9d9;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 99;
+  display: none;
+  text-align: center;
+}
+/* line 94, ../_sass/_footnotes.scss */
+#currentFootnote div {
+  max-width: 600px;
+  padding: 10px 0;
+  margin: 0 auto;
 }
