@@ -4,7 +4,7 @@ $(document).ready(function() {
     $fn.parent().hide();
     var fnIsDismissed = true;
 
-    $('sup > a').click(function() {
+    $('a[rel=footnote]').click(function() {
         $fnRef = $(this).attr("name");
         $fnText = $($fnRef).html().trim().split('<a href="#')[0];
         if (fnIsDismissed) {
@@ -31,6 +31,7 @@ $(document).ready(function() {
 
         var $window = $(window);
         var $startingScrollHeight = $window.scrollTop();
+        console.log($startingScrollHeight);
         var deltaScroll = 0;
         $(window).scroll(function() {
             deltaScroll = ($window.scrollTop() - $startingScrollHeight);
