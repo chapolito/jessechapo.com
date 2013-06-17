@@ -46,11 +46,10 @@ li {
     }
 }
 
-ol {
+ol, ul {
     counter-reset: li; 
     margin-left: 0; 
     padding-left: 0; 
-    padding: 20px 0 70px 0;
     width: 100%;
     max-width: 660px;
     line-height: 32px;
@@ -60,11 +59,22 @@ ol {
     }
 }
 
-ol > li {
+ol {
+    padding: 20px 0 30px 0;
+}
+
+ol > li, ul > li {
     position: relative; 
     margin: 0 0 10px 46px; 
     padding: 10px; 
+}
+
+ol > li {
     list-style: none; 
+}
+
+ul > li {
+    list-style-type: circle; 
 }
 
 ol > li:before {
