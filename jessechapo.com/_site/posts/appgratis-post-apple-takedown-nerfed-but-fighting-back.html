@@ -15,7 +15,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Jesse Chapo - Reflections on AppGratis</title>
+    <title>AppGratis Post-Apple Takedown - Nerfed but Fighting Back - Jesse Chapo</title>
     <meta name="description" content="A blog about the web, coding &amp; design.">
     <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
     <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,700|Kreon:700|Titillium+Web:200' rel='stylesheet' type='text/css'>
@@ -50,58 +50,63 @@
 	<div class="colorStripe postPage" id="post02">
 		<div class="wrapper postOverflow">
 			<div class="blogTitle">
-				<span>Results of Running a Promo with AppGratis Post-Apple takedown</span>
+				<span>AppGratis Post-Apple Takedown: Nerfed but Fighting Back</span>
 				<span class="date">June 18, 2013</span>
 			</div>
-			<img src="/img/Reflections-on-AppGratis/appgratis-icon.png" id="mainImage" width="300" height="300">
+			<img src="/img/Results-of-AppGratis/appgratis-icon.png" id="mainImage" width="300" height="300" alt="AppGratis iOS icon">
 		</div>
 	</div>
 
 	<div class="wrapper blogContent">
-		<p>
-			On Tuesday, June 11th, <a href="http://thewikigame.com/">The Wiki Game</a> was featured on AppGratis and I felt I’d share the process and results with everyone. At a glance: 
-		</p>
 
+		<p>
+			It's no mystery that the influence AppGratis once weilded was severily nerfed by the <a href="http://appgratis.com/blog/2013/04/09/appgratis-pulled-from-the-app-store-heres-the-full-story/" rel="nofollow">removal from the app store</a> and revoked push notifications, but where exactly does it stand? They deposited $13.5M of funding in January so you can bet they aren't sitting still. In late May they released an Android app and they've been pushing new iOS apps every day through their mailing list. We've been in talks with them since December about featuring our awesome little app <a href="http://thewikigame.com/">The Wiki Game</a> and I thought I'd share the process and results with everyone. At a glance:
+		</p>
 		<ul>
 			<li>42k downloads for our iPhone app and just shy of 4k for the iPad version.</li>
-			<li>88th in the app store for free on June 11 for the iPhone App; 8th in games > word category</li>
-			<li>200 downloads beyond our normal sales for the tail of the promotion</li> 
+			<li>88th in the app store under top free; 8th in the games > word category</li>
+			<li>290 paid downloads beyond our normal sales for the tail of the promotion</li> 
 			<li>16 new ratings/reviews</li>
 		</ul>
 
 		<p>
-			I originally contacted AppGratis back in December hoping that we could get the iPad version of The Wiki Game we were working on featured in their forthcoming iPad app. We’d seen people report of a <a href="https://twitter.com/Mobigame/status/298158392407650304" rel="nofollow">million downloads in a day</a>, and thought even 10% of that would be an insane boost for our visibility. They were enthusiastic and so were we, everything was on track until <a href="http://appgratis.com/blog/2013/04/09/appgratis-pulled-from-the-app-store-heres-the-full-story/" rel="nofollow">Apple pulled their App</a>. They never got a chance to even distribute their iPad app and The Wiki Game HD launched quietly; we sold 20 copies, spent $10 promoting it on Facebook and watched it settle to an average of 4 sales/day since. Even being promoted on AppGratis really had such a minimal effect on the app I’m just going to focus on the iPhone results.
+			Originally we were hoping to promote the new iPad (HD) verison of the app, but AppGratis never got a chance to even distribute their iPad app. Around the time of their app being yanked, The Wiki Game HD had a quiet launch; we sold 20 copies, spent $10 promoting it on Facebook and watched it settle to an average of 4 sales/day. Even being promoted on AppGratis had such a minimal effect on the iPad app I’m just going to focus on the iPhone results.
 		</p>
 		<h2>Sales, Downloads &amp; Reviews</h2>
-		
 		<p>
-			The goal of being featured was to see if we could get some exposure for the apps while realizing a boost of in-app purchases and a solid tail of sales after the day-long promotion ended. We never really nailed the in-app purchases, so our IAP boost was essentially zero.<sup id="fnrefOne"><a name="#fnOne" rel="footnote">1</a></sup> We actually had to run the app as free for 48 hours so that everyone in every timezone had a chance to download it. This meant we missed out on ~15 downloads for two days, not huge by any means. The tail from sales was much stronger, we’ve seen about 225 additional sales since the promo ran. 
+			The goal of being featured was to see if we could get some exposure while realizing a boost of in-app purchases and a solid tail of sales after the day-long promotion ended. We never really nailed the in-app purchases, so our IAP boost was essentially zero.<sup id="fnrefOne"><a name="#fnOne" rel="footnote">1</a></sup> We actually had to run the app as free for 48 hours so that everyone in every timezone had a chance to download it. This meant we missed out on ~15 downloads for two days, not huge by any means. The tail from sales was much stronger, we’ve seen about 290 additional sales since the promo ran. 
 		</p>
-		<img src="/img/Reflections-on-AppGratis/app-store-sales.png" class="postImageFull" width="746" height="342">
+		<img src="/img/Results-of-AppGratis/app-store-sales.png" class="postImageFull" width="746" height="342" alt="Graph showing the sales over the last week of our iOS apps.">
 		
 		<p>
 			The second bonus was 16 new ratings of our app leaving us with 4.5 stars on the new version. Their thoughtfulness left me wondering if I was reading youtube comments.
 		</p>
-		<img src="/img/Reflections-on-AppGratis/wiki-game-iphone-reviews.png" class="postImageFull" width="320" height="320">
+		<img src="/img/Results-of-AppGratis/wiki-game-iphone-reviews.png" class="postImageFull" width="320" height="320" alt="Screenshot of silly reviews from users in the App Store.">
 		<h2>Server Costs &amp; Labor</h2>
 		<p>
-			My partner in crime <a href="http://www.clemesha.org/">Alex Clemesha</a> setup Google App Engine to serve parsed versions of Wikipedia content. Every time someone visits a Wikipedia page in the apps GAE serves a cached version of the page or grabs the page from Wikipedia, parses it and then saves it.<sup id="fnrefTwo"><a name="#fnTwo" rel="footnote">2</a></sup> If the page isn’t already parsed then GAE grabs it from wikipedia.org. Usually the GAE charges are pretty insignificant, but when we get periods of high traffic the bill can grow. The peak in traffic cost us only ~$16, not too bad. Below is a chart showing our requests per a second and how much that actually cost.
+			My partner in crime <a href="http://www.clemesha.org/">Alex Clemesha</a> setup Google App Engine to serve parsed versions of Wikipedia content. Every time someone visits a Wikipedia page in the apps GAE serves a cached version of the page or if there ins't one yet it grabs the page from Wikipedia, parses it and then saves it first. Usually the GAE charges are pretty insignificant, but when we get periods of high traffic the bill can grow. The peak in traffic cost us only ~$19, not too bad. Below is a chart showing our requests per a second and how much that actually cost.
 		</p>
 		
-		<img src="/img/Reflections-on-AppGratis/google-app-engine-requests-per-second.png" class="postImageFull" width="940" height="343">
+		<img src="/img/Results-of-AppGratis/google-app-engine-requests-per-second.png" class="postImageFull" width="940" height="343" alt="Graph showing the Google App Engine request per a second and the associated cost.">
 
 		<p>
-			The second cost, which I’m reluctant to bring up, is our labor. In order to be featured, AppGratis requested that we run ads in the app for two weeks following the promotion as well as throw an ad on thewikigame.com. Fair enough, we figured it was worth the potential gains. Requirements were that new users<sup id="fnrefThree"><a name="#fnThree" rel="footnote">3</a></sup> would be shown the ad the on 1st, 3rd and 6th launch of the app and after which users would never see it again. AppGratis didn’t have any code to share, it would have been great if we could have just popped a class into xcode and made a few changes. No big deal if we just exchanged a few emails and changed the app to free for a day, but we had to make a update to both apps which took a solid day of work.<sup id="fnrefFour"><a name="#fnFour" rel="footnote">4</a></sup>
+			The second cost, which I’m reluctant to bring up, is our labor. In order to be featured, AppGratis requested that we run ads in the app for two weeks following the promotion as well as throw an ad on thewikigame.com. Fair enough, we figured it was worth the potential gains. Requirements were that new users would be shown the ad the on 1st, 3rd and 6th launch of the app and after which users would never see it again. AppGratis didn’t have any code to share, it would have been great if we could have just popped a class into xcode and made a few changes. No big deal if we just exchanged a few emails and changed the app to free for a day, but we had to make a update to both apps which took a solid day of work.
 		</p>
 			
-		<h2>Conclusions</h2>
+		<h2>Bringing it All Together</h2>
 		<p>
-			Let’s bring all the considerations together: Additional app sales <strong>$200 -</strong> Apple’s 30% cut <strong>$60 -</strong> server costs <strong>$20 = $120</strong> extra profit. Add in a handful of good reviews and some decent exposure for a full day’s work and I’d say we did ok. I don’t want to knock the AppGratis guys or what they were able to provide for us, we are very happy with the arrangement and results, but the promo wasn’t quite the home run we were hoping for. If you had asked me how else I was going to obtain 40k downloads I’d probably just stare blankly at you, but its safe to say their current status is quite crippled compared to the influence they once held. Ultimately, this is a bummer for us all—until Apple can properly address app discovery, then success in the App Store will continue to grow out of reach of most iOS developers.
+			Final tally: Additional app sales <strong>$290 -</strong> Apple’s 30% cut <strong>$87 -</strong> server costs <strong>$19 = $184</strong> extra profit. Add in a handful of good reviews and some decent exposure for a full day’s work and I’d say we did ok. 
+		</p>
+		<p>
+			It was nice to hear from them that the ads were actually effective&mdash;they had a clickthrough rate of 7% and gained an estimated 150 people to their mailing list. The cool part is the ad only really targets the organic downloads we got by being ranked so high in the app store, so in theory the effective CTR is much higher. The reality though, 150 subscribers/day is not rapid enough for a company the size of AppGratis, and I'm sure they recognize this. 
+		</p>
+		<p>
+			I don’t mean to knock the AppGratis folks or what they were able to provide for us, we are very happy with the arrangement and results, but the promo wasn’t quite the grand slam we were hoping for. If you had asked me how else I was going to obtain 40k downloads I’d probably just stare blankly at you, but its safe to say their current status is quite crippled compared to before. Ultimately, this is a bummer for us all&mdash;until Apple can properly address app discovery, then success in the App Store will continue to grow out of reach of most iOS developers. 
 		</p>
 
-		<a href="http://news.ycombinator.com/item?id=5287101" rel="nofollow"><div id="hackerNewsButton">Discuss this post on Hacker News</div></a>
+		<a href="https://news.ycombinator.com/item?id=5902198" rel="nofollow"><div id="hackerNewsButton">Discuss this post on Hacker News</div></a>
 		<p id="discuss">
-			or tweet <a href="https://twitter.com/intent/tweet?in_reply_to=306460784832172033" rel="nofollow">@chapolito</a>
+			or tweet your thoughts <a href="https://twitter.com/intent/tweet?in_reply_to=306460784832172033" rel="nofollow">@chapolito</a>
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</p>
 
@@ -109,15 +114,6 @@
 			<hr>
 			<li id="fnOne">
 				We’ve tried a pay for additional content model as well as in-app currency (keys) to help you advance forward in the game. Keys have done much better, but still weren’t implemented correctly and we’ve yet to make even $100 on them.
-			</li>
-			<li id="fnTwo">
-				Recently Googlebot found a link to a page from the app (separate subdomain of thewikigame.com). Since everything is linked relatively it proceeded to crawl all of wikipedia through our subdomain and parse each page. ended with a $50 GAE bill.
-			</li>
-			<li id="fnThree">
-				  We were able to check if AppDelegate had been run previously and if there were any user defaults already set.
-			</li>
-			<li id="fnFour">
-				Work == fighting with xcode.
 			</li>
 		</ol>
 	</div>
