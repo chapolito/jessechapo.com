@@ -3,7 +3,7 @@ layout: post
 title: Developers Guide to Images
 ---
 	<div id="currentFootnote" class="scrollblock"><div>hello!</div></div>
-	
+
 	<div class="colorStripe postPage" id="post01">
 		<div class="wrapper postOverflow">
 			<div class="blogTitle">
@@ -16,61 +16,61 @@ title: Developers Guide to Images
 
 	<div class="wrapper blogContent">
 		<p>
-			I’ve regularly received questions from developer friends who are a bit baffled with images and the somewhat confusing formats. I’ve also heard from various developers that they hate receiving a PSD with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when you are actually trying to save images from Photoshop. 
+			I’ve regularly received questions from developer friends who are a bit baffled with images and their confusing formats. I’ve also heard that they hate receiving a PSD with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when while saving images from Photoshop.
 		</p>
 
 		<h2>Part 1: Getting Familiar with JPG &amp; PNG</h2>
 		<p>
-			There are basically two types of images you will use when coding - PNGs and JPGs. Between these two we will be able cover the gamut of any web or mobile app. Obligatory pun: check.
+			There are only two types of images you will use when developing for the web—PNGs and JPGs. Between these two we will be able cover the gamut of any web or mobile app.
 		</p>
-		
-		<h3>JPGs are for Photos.</h3> 
+
+		<h3>JPGs are for Photos.</h3>
 		<p>
-			If you have a photo it should be a JPG format. This part is pretty simple. JPGs do not support transparency and are lossy, meaning that while saving the photo through Photoshop the color information of some pixels will be approximated from the color information of surrounding pixels and result in some artifacts and fuzziness. This is generally great for photos because the fuzziness will get masked by the complexity/variations of color and luminance in photos while simultaneously keeping file sizes low. 
+			If you have a photo it should be a JPG format. This part is pretty simple. JPGs do not support transparency and are lossy, meaning that while saving the photo through Photoshop the color information of some pixels will be approximated from the color information of surrounding pixels and result in some artifacts and fuzziness. This is great for photos because the fuzziness will get masked by the complexity/variations of color and luminance in photos while simultaneously keeping file sizes low.
 		</p>
-		
-		<h3>PNGs are for Graphics.</h3> 
+
+		<h3>PNGs are for Graphics.</h3>
 		<p>
-			Generally, any graphic (icon, interface element, texture, etc.) you have will be a PNG, unfortunately this isn’t as clear of a rule as with JPGs, as we’ll touch on later. They are lossless, meaning all of the color information for every pixel is retained. This is both good and bad - good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a lot of colors (AKA a large gamut).
+			Generally, any graphic (icon, interface element, texture, etc.) you have will be a PNG. Unfortunately this isn’t as clear of a rule as with JPGs, as we’ll touch on later. PNGs are lossless, meaning all of the color information for every pixel is retained. This is both good and bad - good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a ton of colors (AKA a large gamut).
 		</p>
-		
-		<h3>What About GIFs?</h3> 
+
+		<h3>What About GIFs?</h3>
 		<p>
-			Don’t use GIFs, they are an old standard that has been replaced by PNG. Except they have the ability to support animation, so they aren’t going anywhere, but for the average web or mobile app this isn’t applicable.<sup id="fnrefOne"><a name="#fnOne" rel="footnote">1</a></sup>
+			Don’t use GIFs, they are an old standard that has been replaced by PNG. Except...they have the ability to support animation, so they aren’t going anywhere, but for the average web or mobile app this isn’t applicable.<sup id="fnrefOne"><a name="#fnOne" rel="footnote">1</a></sup>
 		</p>
-		
+
 		<h3>Alpha &amp; Color-Depth of PNGs</h3>
 		<p>
 			There are two main components to a PNG - the color information and the alpha (AKA opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
 		</p>
-			
+
 		<p>
-			<strong>Color</strong> can be one of two main bit depths: 8 and 24. PNG-8 gives you max 256 indexed colors and PNG-24 gives you 16 million non-indexed colors. What are indexed and non-indexed colors? It has to do with the file structure of the colors. Both PNG-8 and PNG-24 save the color information as 24-bits (8 Red, 8 Green, 8 Blue). The difference is that with indexed files (PNG-8) this color information is saved in a separate area called the palette and each pixel has 8-bits that reference one of those colors. 
+			<strong>Color</strong> can be one of two main bit depths: 8 or 24. PNG-8 gives you up to 256 indexed colors and PNG-24 gives you 16 million non-indexed colors. What are indexed and non-indexed colors? It has to do with the file structure of the colors. Both PNG-8 and PNG-24 save the color information as 24-bits (8 Red, 8 Green, &amp; 8 Blue). The difference is that with indexed files (PNG-8) this color information is saved in a separate area called the palette and each pixel has 8-bits that reference one of those colors.
 		</p>
 
 		<img src="/img/Developers-Guide-to-Images/indexed-pixel-data.png" class="postImageFull" width="702" height="394">
-		
+
 		<p>
-			Non-indexed (aka, truecolor) color means that the information for each pixel is the 24-bits of color information. 
+			Non-indexed (AKA truecolor) color means that the information for each pixel is the 24-bits of color information.
 		</p>
 
 		<img src="/img/Developers-Guide-to-Images/truecolor-pixel-data.png" class="postImageFull" width="556" height="384">
-		
+
 		<p>
 			Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on file size. The numbers of colors you can have in a PNG-8 image can be anything from 2-256, below is a selection:<sup id="fnrefTwo"><a name="#fnTwo" rel="footnote">2</a></sup>
 		</p>
 
 		<img src="/img/Developers-Guide-to-Images/bird-different-colors.png" class="postImageFull" width="931" height="421">
-		
+
 		<p>
-			The key here is getting a grasp of the tradeoff between loss of quality and improvements in file sizes as you restrict the colors. This is also a great example of why photos should be JPGs&mdash;the file size is comparable to the PNG-8 with 256 colors, but the quality superior.
+			The key here is getting a grasp of the tradeoff between loss of quality and improvements in file sizes as you restrict the colors. This is also a great example of why photos should be JPGs—the file size is comparable to the PNG-8 with 256 colors, but the quality superior.
 		</p>
 
 		<p>
-			<strong>Alpha</strong> can be one of two states: 
+			<strong>Alpha</strong> can be one of two states:
 		</p>
 		<p class="callOut">
-			<strong class="label">1-bit:</strong> either a pixel is 100% opaque or 100% transparent (this is the only transparency GIFs support) 
+			<strong class="label">1-bit:</strong> either a pixel is 100% opaque or 100% transparent (this is the only transparency GIFs support)
 		</p>
 		<p class="callOut">
 			<strong class="label">8-bit:</strong> each pixel can have a value of see-through-ness ranging from 0 (transparent) to 255 (opaque).<sup id="fnrefThree"><a name="#fnThree" rel="footnote">3</a></sup>
@@ -80,10 +80,10 @@ title: Developers Guide to Images
 		</p>
 		<img src="/img/Developers-Guide-to-Images/different-png-alphas-chart.png" class="postImageFull" width="760" height="460">
 		<p>
-			You might have noticed the <strong>Matte Color</strong> from above. If you try to save an image with a range of transparency (for example the 50% opacity circle behind the binoculars) coupled with only 1-bit alpha or no alpha channel then Photoshop needs figure out how to make all the colors fully opaque. The solution is to put a solid color behind the image in order to make pixels either 100% opaque or 100% transparent. This often leads to a halo effect around your image, which can be nasty ugly unless your image is only going to live ontop of your matte color. This leads us to the question, what else should I be aware of when exporting from Photoshop?
+			You might have noticed the <strong>Matte Color</strong> from above. If you try to save an image with a range of transparency (for example the 50% opacity circle behind the binoculars) coupled with only 1-bit alpha or no alpha channel then Photoshop needs figure out how to make all the colors fully opaque. The solution is to put a solid color behind the image in order to make pixels either 100% opaque or 100% transparent. This often leads to a halo effect around your image, which can be downright ugly unless your image is only going to live ontop of your matte color. This leads us to the question, what else should I be aware of when exporting from Photoshop?
 		</p>
-		
-		
+
+
 		<h2>Part 2: Saving Images from Photoshop</h2>
 		<img src="/img/Developers-Guide-to-Images/scalpel-cutting-image.png" class="postImageGutter" width="220" height="336">
 		<p>
@@ -101,7 +101,7 @@ title: Developers Guide to Images
 					Copy Merged <code>alt+&#8984;+e</code> creates a new layer with all of your layers merged together. This is better than simply Merge <code>Layer>Merge Layers | &#8984;+e</code> because it does not destroy any of the design you are working with. If your image changes appearence in this step its likely that your blending modes are causing this. Masking is probably your solution: <a href="http://designshack.net/articles/graphics/a-complete-beginners-guide-to-masking-in-photoshop/" rel="nofollow">A Complete Beginner’s Guide to Masking in Photoshop</a>
 				</li>
 				<li>
-					Select all <code>Select>All | &#8984;+a</code> 
+					Select all <code>Select>All | &#8984;+a</code>
 				</li>
 				<li>
 					Cut <code>Edit>Cut | &#8984;+x</code>
@@ -116,20 +116,20 @@ title: Developers Guide to Images
 					Save for Web <code>File>Save for Web | shift+alt+&#8984;+s</code>
 				</li>
 			</ol>
-			Now you’ve got the file completely isolated and ready to save. 
+			Now you’ve got the file completely isolated and ready to save.
 		</p>
 		<h3>Save for Web</h3>
 		<p>
 			By now you should have a good idea of when you will want to use PNG or JPG; however, in some cases the best format is unclear. For example, an illustration that doesn’t need any transparency might look fine as both a PNG-8 or a JPG&mdash;Save for Web helps you make this decision by giving you the file size of each format. <strong>Whichever format has the smallest file size while still being an acceptable quality will be the best choice.</strong> Remember though, if you need any transparency then you’ll want to use a PNG. Below is what you should see once you open up Save for Web:
 		</p>
-		
+
 		<img src="/img/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg" class="postImageFull" width="940" height="716">
 
 		<h3>What to pay attention to: JPG</h3>
 		<p>
 			<strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise photoshop starts to implement an additional compression technique that really destroys quality.<sup id="fnrefSix"><a name="#fnSix" rel="footnote">6</a></sup>
 		</p>
-		
+
 		<p>
 			<strong>Progressive</strong> means that the JPG is downloaded in chunks and after only a little of the image has downloaded it will be displayed full size, but blurry. As more of the file is download the image will rerender with a higher degree of clarity. Without progressive JPGs need to completely download before displaying, leaving a glaring open space on your page. Having something there, even if it is a chunky and blurry version, is a better experience. I always use progressive and it generally doesn’t impact files ize much, but keep an eye on the file size in case.
 		</p>
@@ -142,7 +142,7 @@ title: Developers Guide to Images
 		<p>
 			<strong>Embed Color Profile - uncheck.</strong> this information gets ignored by browsers.
 		</p>
-		
+
 		<h3>PNG-8</h3>
 		<img src="/img/Developers-Guide-to-Images/save-for-web-photoshop-dialog-png8.png" class="postImageGutter" width="312" height="542">
 		<p>
@@ -155,14 +155,14 @@ title: Developers Guide to Images
 			<strong>Web Snap</strong> - remember when we had to use websafe colors only...haha, <strong>leave at 0%</strong>.
 		</p>
 		<p>
-			<strong>Interlaced</strong> - same idea as progressive for jpgs but for PNGs, <strong>check it</strong>.
+			<strong>Interlaced</strong> - same idea as progressive for JPGs but for PNGs, <strong>check it</strong>.
 		</p>
 		<img src="/img/Developers-Guide-to-Images/dither-explained.png" class="postImageGutter" width="340" height="114">
 		<p>
 			<strong>Dithering</strong> is the process of adding noise between colors and really useful when working with limited palettes like in PNG-8's. You can see in the buttons that with the same amount of color we get much smoother gradients and defined details. <strong>Just leave dithering slammed at 100%</strong>.
 		</p>
-		
-		
+
+
 
 		<h3>PNG-24</h3>
 		<img src="/img/Developers-Guide-to-Images/save-for-web-photoshop-dialog-png24.png" class="postImageGutter" width="312" height="304">
@@ -171,26 +171,26 @@ title: Developers Guide to Images
 		</p>
 		<p>
 			Everything else follow the same guidelines provided for PNG-8s.
-		
-		
+
+
 
 		<h3>PNG-8 + 8-bit Alpha</h3>
-		
+
 		<p>
 
 			Here is the frustrating part of all of this, Photoshop doesn’t support the export of indexed PNGs coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/" rel="nofollow">ImageAlpha</a> that has a great GUI for converting these. I’m sure many of you would prefer to use the command line...and you can use <a href="http://pngquant.org/" rel="nofollow">PNGQuant</a>...but <strong>I highly recommend you use a GUI</strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as PNG-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make PNGs with alpha that degrade nicely in IE6.<sup id="fnrefEight"><a name="#fnEight" rel="footnote">8</a></sup>
 		</p>
 		<h3>Optimization</h3>
 		<p>
-			This only applies images destine for the web and for the most part only PNGs as the gains for JPGs are negligible.<sup id="fnrefNine"><a name="#fnNine" rel="footnote">9</a></sup> Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable with GUIs, I use <a href="http://imageoptim.com/" rel="nofollow">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/" rel="nofollow">PNGCrush</a>. Mostly what the optimization is doing is stripping unneccessary metadata. Below you can see the gains from using optimization on various files:
+			This only applies images destined for the web and for the most part only PNGs as the gains for JPGs are negligible.<sup id="fnrefNine"><a name="#fnNine" rel="footnote">9</a></sup> Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable with GUIs, I use <a href="http://imageoptim.com/" rel="nofollow">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/" rel="nofollow">PNGCrush</a>. Below you can see the gains from using optimization on various files:
 		</p>
-			
+
 		<img src="/img/Developers-Guide-to-Images/optimized-images.png" class="postImageFull" width="782" height="353">
 
 		<p>
 			Look at the savings with <a href="http://www.thewikigame.com">The Wiki Game</a> icon in particular - we shaved 75% of the file size! That said, look closely at the pixels and you will see the dithering. Whether this acceptable or not is up to you. Also, coupled with sprites you can see how powerful this becomes.
 		</p>
-		
+
 		<h3>The End.</h3>
 		<p>
 			I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop CS6 and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load...
@@ -217,7 +217,7 @@ title: Developers Guide to Images
 				There is the slice tool specifically for cutting up images, but I find it a bit frustrating to use and not very applicable for today’s sites. <a href="#fnrefFive" rev="footnote" title="Jump back to footnote 5 in the text">↩</a>
 			</li>
 			<li id="fnSix">
-				Flip between 50 and 51 and you will be able to see the difference. 1-50 quality use what is called chroma sub-sampling, dive deeper: <a href="http://www.impulseadventure.com/photo/chroma-subsampling.html" rel="nofollow">http://www.impulseadventure.com/photo/chroma-subsampling.html</a>  <a href="#fnrefSix" rev="footnote" title="Jump back to footnote 6 in the text">↩</a>
+				Flip between 50 and 51 and you will be able to see the difference. 1-50 quality use what is called chroma sub-sampling. Feeling adventurous? Dive deeper: <a href="http://www.impulseadventure.com/photo/chroma-subsampling.html" rel="nofollow">http://www.impulseadventure.com/photo/chroma-subsampling.html</a>  <a href="#fnrefSix" rev="footnote" title="Jump back to footnote 6 in the text">↩</a>
 			</li>
 			<li id="fnSeven">
 				Without converting you will be saving in Adobe RGB which is a larger spectrum but is kind of useless unless you have a special monitor or printer. Adobe RGB images will display certain reds and cyans as muddy on a normal screen. <a href="#fnrefSeven" rev="footnote" title="Jump back to footnote 7 in the text">↩</a>
