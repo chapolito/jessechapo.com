@@ -16,19 +16,17 @@ form {
 
 
 input {
-	font-family: 'Signika Negative', sans-serif;
-	font-weight: 300;
-	font-size: 18px; 
+	font-size: 18px;
 	height: 40px;
 	margin: 10px 0;
 	@include border-radius(3px);
 
-	border: 1px solid $brightGreen;  
+	border: 1px solid $brightGreen;
 	&[type=email] {
 		padding: 0 10px;
 		width: 260px;
 		background-color: #fff;
-	}	
+	}
 	&[type=submit] {
 		border: none;
 		padding: 0 20px;
@@ -44,14 +42,14 @@ input {
 	}
 }
 
-.focusField{   
-    color: $textGreen;  
-}  
-.idleField{  
-    color: #e5e4da;  
-    border: solid 1px #e5e4da; 
-} 
-.completedField{  
-    color: $textGreen;  
-    border: solid 1px #e5e4da; 
-} 
+.focusField{
+    color: $textGreen;
+}
+.idleField{
+    color: #e5e4da;
+    border: solid 1px #e5e4da;
+}
+.completedField{
+    color: $textGreen;
+    border: solid 1px #e5e4da;
+}

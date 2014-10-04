@@ -1,0 +1,6 @@
+@mixin font-feature-settings($str) {
+  -webkit-font-feature-settings: #{$str};
+  -moz-font-feature-settings: #{$str};
+  -o-font-feature-settings: #{$str};
+  animation: #{$str};
+}
