@@ -1,0 +1,62 @@
+
+// Fonts
+
+@mixin font-feature-settings($str) {
+  -webkit-font-feature-settings: #{$str};
+  -moz-font-feature-settings: #{$str};
+  -o-font-feature-settings: #{$str};
+  font-feature-settings: #{$str};
+}
+
+@mixin font-mercury-body {
+  font-family: 'Mercury SSm A', 'Mercury SSm B', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-mercury-small-caps {
+  font-family: 'Mercury SSm SC A', 'Mercury SSm SC B', serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin font-petala-bold {
+  font-family: 'petala-pro', 'Arial Black', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  @include font-feature-settings('"ss01", "ss02", "ss03", "ss04", "ss06", "ss07", "ss09", "ss10", "ss11", "dlig", "onum"');
+}
+
+
+// Retina Images
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url(image-path($file + '.' + $type));
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    & {
+      background-image: url(image-path($file + '@2x.' + $type));
+      -webkit-background-size: $width $height;
+    }
+  }
+}
+
+
+// Media Quiries
+
+$small: 480px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+@mixin at-least($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content
+  }
+}
+
+@mixin until($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content
+  }
+}

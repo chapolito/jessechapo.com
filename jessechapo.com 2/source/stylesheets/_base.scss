@@ -1,0 +1,153 @@
+
+body {
+  @include font-mercury-body;
+  background-color: $color-beige-white;
+  font-size: 18px;
+  //text-align: center;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+
+  @include until($medium) {
+    font-size: 16px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: $footerBeige;
+  padding: 30px 0 80px 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+// Typography ************************* //
+
+p {
+  color: $color-copy;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0;
+  margin: 1.5em 0;
+
+  a {
+    padding: 0 3px;
+  }
+
+  .callOut {
+    padding: 0 10px 20px 60px;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $color-links;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-links-visited;
+  }
+
+  &:hover {
+    color: $color-links-hover;
+  }
+}
+
+h1, h2, h3 {
+  @include font-petala-bold;
+  padding: 0;
+  color: $color-heading;
+  line-height: 1.3;
+}
+
+code {
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-size: 16px;
+  color: #71aebd;
+  @include border-radius(3px);
+  padding: 1px 4px;
+  background-color: #f7f5eb;
+  border: 1px solid #ebe9df;
+}
+
+@font-face {
+  font-family: 'GoudyBookletter1911Regular';
+  src: url(font-path('goudybookletter1911-openamp.eot'));
+  src: url(font-path('goudybookletter1911-openamp.eot?iefix')) format('eot'),
+       url(font-path('goudybookletter1911-openamp.woff')) format('woff'),
+       url(font-path('goudybookletter1911-openamp.ttf')) format('truetype'),
+       url(font-path('goudybookletter1911-openamp.svg#webfont0ZQvEa4G')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.openamp {
+  font-family: GoudyBookletter1911Regular;
+  font-size: 1.2em;
+  line-height: .8;
+}
+
+
+// Lists ************************* //
+
+li {
+  color: #656e6b;
+
+  &:target {
+    background-color: #fff9d9;
+  }
+}
+
+ol, ul {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+  max-width: 660px;
+}
+
+ol {
+  padding: 20px 0 30px 0;
+}
+
+ol > li, ul > li {
+  position: relative;
+  margin: 0 0 10px 46px;
+  padding: 10px;
+}
+
+ol > li {
+  list-style: none;
+}
+
+ul > li {
+  list-style-type: circle;
+}
+
+ol > li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  width: 20px;
+  left: -28px;
+  margin-right: 10px;
+  padding: 4px;
+  text-align: center;
+}

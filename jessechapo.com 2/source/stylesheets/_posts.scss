@@ -1,0 +1,180 @@
+
+
+.monogram-blog-logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.post-title {
+  width: 100%;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  margin: 0 auto;
+
+  h1 {
+    @include font-petala-bold;
+    font-size: 3.4em;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+
+    @include until($medium) {
+      font-size: 2em;
+    }
+  }
+}
+
+.date {
+  @include font-mercury-small-caps;
+  text-transform: lowercase;
+  font-size: 0.8em;
+  line-height: 1.2;
+  left: 0px;
+  position: relative;
+  display: block;
+  padding: 10px 0 0 0;
+  margin-bottom: 20px;
+}
+
+.post-title .date {
+  font-size: 0.95em;
+
+  &:after {
+    content: ' —';
+    color: rgba(0,0,0,0.2);
+  }
+
+  &:before {
+    content: '— ';
+    color: rgba(0,0,0,0.2);
+  }
+}
+
+.read-time {
+  @include font-mercury-small-caps;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 3px 0;
+  font-size: 0.8em;
+  color: rgba(0,0,0,0.6);
+}
+
+.blog-content p:first-of-type {
+  font-size: 1.2em;
+
+  &:first-letter {
+    float: left;
+    color: $color-accent;
+    font-weight: 700;
+    font-size: 3.2em;
+    line-height: .9;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+}
+
+.post-image-full {
+  margin: 0 0 20px 0;
+  max-width: 100%;
+  height: auto;
+
+  @include at-least($medium) {
+    max-width: $medium * .85;
+  }
+  @include at-least($large) {
+    max-width: $large * .80;
+  }
+  @include at-least($extra-large) {
+    max-width: $extra-large * .75;
+  }
+}
+
+.post-image-gutter {
+  float: right;
+  clear: right;
+  max-width: 50%;
+  height: auto;
+  margin: 0 0 20px 20px;
+
+  @include at-least($medium) {
+    margin: 0 10% 40px 40px;
+  }
+  @include at-least($large) {
+    margin-right: -20%;
+  }
+  @include at-least($extra-large) {
+
+  }
+}
+
+.blog-content {
+
+  h2, h3 {
+    margin: 1.5em 0 .8em 0
+  }
+
+  h3 ~ p, h2 ~ p {
+    margin-top: .8em;
+  }
+}
+
+.post-overflow {
+  overflow: visible;
+}
+
+.topPadding {
+  padding: 80px 0 20px 0;
+}
+
+.bio {
+  border: 1px solid #babab5;
+  border-width: 1px 0;
+  padding: 1em;
+  margin-bottom: 2em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.social-links-wrapper {
+  color: #abada9;
+  font-style: italic;
+  margin: 10px 0;
+  text-align: left;
+  display: block;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0;
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+.portrait {
+  width: 116px;
+  height: 116px;
+  background: url(image-path('jesse-chapo-portrait.png')) no-repeat center;
+  @include background-image-retina('jesse-chapo-portrait', 'png', 116px, 116px);
+  float: left;
+  margin-right: 1em;
+}
+
+.small-caps-link {
+  @include font-mercury-small-caps;
+}
+
+.image-comment {
+  margin-top: -10px;
+  font-size: .8rem;
+  font-style: italic;
+  color: $color-comment;
+}
+
+.preface-info {
+  color: $color-comment;
+}

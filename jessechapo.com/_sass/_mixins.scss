@@ -4,3 +4,16 @@
   -o-font-feature-settings: #{$str};
   animation: #{$str};
 }
+
+@mixin mercury-small-caps {
+  font-family: 'Mercury SSm SC A', 'Mercury SSm SC B', serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin petala-bold {
+  @include font-feature-settings('ss01');
+  font-family: 'petala-pro', 'Arial Black', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}

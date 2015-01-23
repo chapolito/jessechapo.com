@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+/*
+
+The Chapolito Style Guide
+
+  - Please keep your CSS clean & organized.
+    - 1 space after colons
+    - 1 blank line between definitions
+    - 2 spaces indentation
+    - single quotes
+
+  - Naming
+    - Name classes and variables for what the element is, not what it looks like.
+    - prepend any name with a relevant category i.e. icon-, font-, button-, color-, etc.
+
+  - Best Practices
+    - Try to use translate for animations instead of adjusting margins or padding,
+      creates smoother animations, but watch your cpu consumption
+    - avoid id's because they get precedence (and it gets messy)
+
+  - Have fun, smile, break shit.
+
+*/
+
+// Vendor
+@import 'compass/reset';
+@import 'compass/css3';
+@import 'compass/typography';
+@import 'compass/utilities';
+@import 'bootstrap-custom';
+@import 'variables';
+@import 'normalizeBoilerplate';
+@import 'mainBoilerplate';
+
+// Sitewide Custom
+@import 'mixins';
+@import 'base';
+@import 'forms';
+
+// IMPORTS
+@import 'posts';
+@import 'home';
+@import 'footnotes';
+
+

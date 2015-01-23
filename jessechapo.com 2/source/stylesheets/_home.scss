@@ -1,0 +1,129 @@
+
+
+.monogram-home-logo {
+  float: left;
+  margin-right: 15px;
+}
+
+.homepage-banner {
+  padding: 30px 0 26px 0;
+
+  h1 {
+    font-size: 1.6rem;
+    margin: -2px 0 4px 3px;
+  }
+
+  h5 {
+    font-style: italic;
+    color: #646464;
+    margin-top: 0;
+  }
+
+  @include until($large) {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include at-least($large) {
+    padding: 80px 0;
+  }
+}
+
+.homepage-bio .bio {
+  border: 0;
+  padding: 0;
+  min-height: 116px;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 85%;
+    margin-bottom: 2em;
+  }
+
+  @include at-least($medium) {
+
+    .social-link {
+      margin: 0 0 20px 0;
+
+      &:first-of-type {
+        clear: left;
+      }
+    }
+  }
+
+  @include at-least($large) {
+
+    .portrait {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.posts-list {
+
+  a {
+    color: $color-heading;
+
+    &:hover {
+      color: $color-links;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-preview {
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.4em 0 .25em 0;
+  }
+
+  .date {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 12px 0 10px 0;
+  }
+
+  &:first-of-type {
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  @include at-least($large) {
+
+    h2 {
+      font-size: 2.3rem;
+      margin: 2.4em 0 .25em 0;
+    }
+
+    &:first-of-type {
+
+      h2 {
+        font-size: 2.9rem;
+      }
+    }
+  }
+}
+
+.read-more-link {
+  margin: 0;
+  a {
+    color: $color-links;
+
+    &:hover {
+      color: $color-links-hover;
+    }
+  }
+}
+

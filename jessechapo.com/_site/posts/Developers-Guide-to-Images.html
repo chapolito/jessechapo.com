@@ -1,4 +1,4 @@
-   <!--
+ <!--
  __     __   __     ______   ______     ______     __     __     ______     ______     ______
 /\ \   /\ "-.\ \   /\__  _\ /\  ___\   /\  == \   /\ \  _ \ \   /\  ___\   /\  == \   /\  ___\
 \ \ \  \ \ \-.  \  \/_/\ \/ \ \  __\   \ \  __<   \ \ \/ ".\ \  \ \  __\   \ \  __<   \ \___  \
@@ -18,20 +18,19 @@
   <title>Developers Guide to Images - Jesse Chapo</title>
   <meta name="description" content="A blog about the web, coding &amp; design.">
   <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
   <script src="//use.typekit.net/mjn7mcb.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6969912/679386/css/fonts.css" />
 </head>
-<body>
-  <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
 
+
+
+  <body id="post01">
   <div id="header">
     Jesse Chapo
-<!--     <img class="stars" src="/img/stars1.png" id="stars1">
+    <!-- <img class="stars" src="/img/stars1.png" id="stars1">
     <img class="stars" src="/img/stars2.png" id="stars2">
     <img class="stars" src="/img/stars3.png" id="stars3">
     <a href="/">
@@ -47,17 +46,10 @@
     </a> -->
   </div>
 
-
-  	<div id="currentFootnote" class="scrollblock"><div>hello!</div></div>
-
-	<div class="colorStripe postPage" id="post01">
-		<div class="wrapper postOverflow">
-			<div class="blogTitle">
-				<span>A Developer's Guide to Images</span>
-				<span class="date">February 26, 2013</span>
-			</div>
-			<img src="/img/Developers-Guide-to-Images/cutout.png" id="mainImage" width="300" height="300">
-		</div>
+  	<div class="postTitle">
+		<span>A Developer's Guide to Images</span>
+		<span class="date">February 26, 2013</span>
+		<span id="read-time">25 min read</span>
 	</div>
 
 	<div class="wrapper blogContent">
@@ -87,7 +79,7 @@
 
 		<h3>Alpha &amp; Color-Depth of PNGs</h3>
 		<p>
-			There are two main components to a PNG - the color information and the alpha (AKA opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
+			There are two main components to a PNG—the color information and the alpha (AKA opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
 		</p>
 
 		<p>
@@ -103,7 +95,7 @@
 		<img src="/img/Developers-Guide-to-Images/truecolor-pixel-data.png" class="postImageFull" width="556" height="384">
 
 		<p>
-			Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on file size. The numbers of colors you can have in a PNG-8 image can be anything from 2-256, below is a selection:<sup id="fnrefTwo"><a name="#fnTwo" rel="footnote">2</a></sup>
+			Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on file size. The numbers of colors you can have in a PNG-8 image can be anything from 2–256, below is a selection:<sup id="fnrefTwo"><a name="#fnTwo" rel="footnote">2</a></sup>
 		</p>
 
 		<img src="/img/Developers-Guide-to-Images/bird-different-colors.png" class="postImageFull" width="931" height="421">
@@ -241,9 +233,8 @@
 		<p>
 			I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop CS6 and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load...
 		</p>
-		<a href="http://news.ycombinator.com/item?id=5287101" rel="nofollow"><div id="hackerNewsButton">Discuss this post on Hacker News</div></a>
 		<p id="discuss">
-			or tweet <a href="https://twitter.com/intent/tweet?in_reply_to=306460784832172033" rel="nofollow">@chapolito</a>
+			tweet your thoughts <a href="https://twitter.com/intent/tweet?in_reply_to=306460784832172033" rel="nofollow">@chapolito</a>
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</p>
 

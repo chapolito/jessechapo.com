@@ -16,10 +16,11 @@ body {
 }
 
 p {
-  color: $textGreen;
+  color: $color-copy;
   width: 100%;
   max-width: 660px;
   text-align: left;
+  font-size: 1em;
   line-height: 34px;
   padding: 0 0 20px 0;
 
@@ -50,6 +51,14 @@ a {
   }
 }
 
+h2, h3 {
+  font-family: "petala-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0;
+  color: $color-heading;
+}
+
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-size: 16px;
@@ -64,4 +73,17 @@ footer {
   width: 100%;
   background-color: $footerBeige;
   padding: 30px 0 80px 0;
+}
+
+p, span, ol, h1, h2, h3, .label {
+  //-webkit-transform: translate3d(0,0,0);
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
 }

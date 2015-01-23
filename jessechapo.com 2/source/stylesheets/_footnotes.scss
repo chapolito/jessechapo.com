@@ -1,0 +1,62 @@
+
+.footnote-marker {
+  @include font-petala-bold;
+  padding: 0 1px 2px 1px;
+  color: $color-accent;
+}
+
+.post-preview .footnote-marker {
+  display: none;
+}
+
+.footnote {
+  word-wrap: break-word;
+
+  .footnote-text {
+    font-size: .8em;
+    padding-left: 30px;
+    color: lighten($color-copy, 20%);
+  }
+
+  .footnote-marker {
+    margin: 0 0 .3em 0;
+    float: left;
+  }
+
+  h5 {
+    @include font-petala-bold;
+    margin: 0 0 10px 0;
+  }
+
+  @include at-least($large) {
+    @include transition(opacity 300ms ease-in);
+    @include opacity(0.3);
+    float: right;
+    width: 32%;
+    clear: right;
+    padding: 0 20px 0 0;
+    margin: 0 -30% 10px 20px;
+
+    &:hover {
+      @include opacity(1);
+    }
+
+    .footnote-marker {
+      float: none;
+    }
+
+    .footnote-text {
+      font-size: .7em;
+      padding-left: 0;
+    }
+  }
+
+  @include at-least($extra-large) {
+    width: 36%;
+    margin-right: -40%;
+  }
+}
+
+
+
+
