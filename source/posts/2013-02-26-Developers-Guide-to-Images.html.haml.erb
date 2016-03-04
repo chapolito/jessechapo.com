@@ -3,24 +3,25 @@ title: Developers Guide to Images
 read_time: 19
 ---
 
-%p
+:markdown
   I regularly receive questions from developer friends who are a bit baffled with images and their confusing formats. I’ve also heard that they hate receiving a PSD with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when while saving images from Photoshop.
 
-%h2 Part 1: Getting Familiar with JPG &amp; PNG
-%p
+  ## Part 1: Getting Familiar with JPG &amp; PNG
+
   There are only two types of images you will use when developing for the web—PNGs and JPGs. Between these two we will be able cover the gamut of any web or mobile app.
 
-%h3 JPGs are for Photos
-%p
+  ### JPGs are for Photos
+
   If you have a photo it should be a JPG format. This part is pretty simple. JPGs do not support transparency and are lossy, meaning that while saving the photo through Photoshop the color information of some pixels will be approximated from the color information of surrounding pixels. This approximation results smaller file sizes but at the expense of artifacts and fuzziness. This is great for photos because the fuzziness will get masked by the complexity/variations of color and luminance in photos.
 
-%h3 PNGs are for Graphics
-%p
+  ### PNGs are for Graphics
+
   Generally, any graphic (icon, interface element, texture, etc.) you have will be a PNG. Unfortunately this isn’t as clear of a rule as with JPGs, as we’ll touch on later. PNGs are lossless, meaning all of the color information for every pixel is retained. This is both good and bad&mdash;good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a ton of colors (AKA a large gamut).
 
-%h3 What About GIFs?
+  ### What About GIFs?
+
 %p
-  Don’t use GIFs, they are an old standard that has been replaced by PNG. Except...they have the ability to support animation, so they aren’t going anywhere, but for the average web or mobile app this isn’t applicable.
+  Don’t use GIFs, they are an old standard that has been replaced by PNG. Except&hellip;they have the ability to support animation, so they aren’t going anywhere, but for the average web or mobile app this isn’t applicable.
   %sup.footnote-marker 1
 .footnote
   .footnote-marker 1
@@ -28,11 +29,13 @@ read_time: 19
     There are actually some really cool things being done with animated GIFs called Cinemagraphs, check out:
     = link_to 'http://en.wikipedia.org/wiki/Cinemagraph', 'http://en.wikipedia.org/wiki/Cinemagraph'
 
-%h3 Alpha &amp; Color-Depth of PNGs
-%p
-  There are two main components to a PNG&mdash;the color information and the alpha (AKA opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
-%p
-  <strong>Color</strong> can be one of two main bit depths: 8 or 24. PNG-8 gives you up to 256 indexed colors and PNG-24 gives you 16 million non-indexed colors. Indexed and non-indexed refers to the file structure of the colors. Both PNG-8 and PNG-24 save the color information as 24-bits (8 Red, 8 Green, &amp; 8 Blue). The difference is that with indexed files (PNG-8) this color information is saved in a separate area called the palette and each pixel has 8-bits that reference one of those colors.
+:markdown
+  ### Alpha &amp; Color-Depth of PNGs
+
+  There are two main components to a PNG&mdash;the color information and the alpha (AKA opacity or transparency). **Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.** First, What are they and what are your needs?
+
+  **Color** can be one of two main bit depths: 8 or 24. PNG-8 gives you up to 256 indexed colors and PNG-24 gives you 16 million non-indexed colors. Indexed and non-indexed refers to the file structure of the colors. Both PNG-8 and PNG-24 save the color information as 24-bits (8 Red, 8 Green, &amp; 8 Blue). The difference is that with indexed files (PNG-8) this color information is saved in a separate area called the palette and each pixel has 8-bits that reference one of those colors.
+
 %img{ :src => '/images/Developers-Guide-to-Images/indexed-pixel-data.png', :class => 'post-image-full', :width => '702', :height => '394' }
 %p
   Non-indexed (AKA truecolor) color means that the information for each pixel is the full 24-bits of color information.
@@ -85,29 +88,24 @@ read_time: 19
   .footnote-marker 5
   .footnote-text
     There is the slice tool specifically for cutting up images, but I find it a bit frustrating to use and not very applicable for today’s sites.
-%ol
-  %li
-    Select all the layers that comprise the single graphic you are cutting
-  %li
-    Copy Merged <code>alt+&#8984;+e</code> creates a new layer with all of your layers merged together. This is better than simply Merge <code>Layer>Merge Layers | &#8984;+e</code> because it does not destroy any of the design you are working with. If your image changes appearence in this step it's likely that your blending modes are causing this. Masking is probably your solution:
-    = link_to 'A Complete Beginner’s Guide to Masking in Photoshop', 'http://designshack.net/articles/graphics/a-complete-beginners-guide-to-masking-in-photoshop/'
-  %li
-    Select all <code>Select>All | &#8984;+a</code>
-  %li
-    Cut <code>Edit>Cut | &#8984;+x</code>
-  %li
-    New Document <code>File>New | &#8984;+n</code> Photoshop automatically fills in the dimensions of the graphic you just cut, but change the Background Contents to Transparent.
-  %li
-    Paste <code>Edit>Paste | &#8984;+v</code>
-  %li
-    Save for Web <code>File>Save for Web | shift+alt+&#8984;+s</code> Now you’ve got the file completely isolated and ready to save.
 
-%h3 Save for Web
-%p
-  By now you should have a good idea of when you will want to use PNG or JPG; however, in some cases the best format is unclear. For example, an illustration that doesn’t need any transparency might look fine as both a PNG-8 or a JPG&mdash;Save for Web helps you make this decision by giving you the file size of each format. <strong>Whichever format has the smallest file size while still being an acceptable quality will be the best choice.</strong> Remember, if you need any transparency then you’ll want to use a PNG. Below is what you should see once you open up Save for Web:
+:markdown
+  1. Select all the layers that comprise the single graphic you are cutting
+  2. Copy Merged `alt+&#8984;+e` creates a new layer with all of your layers merged together. This is better than simply Merge `Layer>Merge Layers | &#8984;+e` because it does not destroy any of the design you are working with. If your image changes appearence in this step it's likely that your blending modes are causing this. Masking is probably your solution: [A Complete Beginner’s Guide to Masking in Photoshop](http://designshack.net/articles/graphics/a-complete-beginners-guide-to-masking-in-photoshop/)
+  3. Select all `Select>All | &#8984;+a`
+  4. Cut `Edit>Cut | &#8984;+x`
+  5. New Document `File>New | &#8984;+n` Photoshop automatically fills in the dimensions of the graphic you just cut, but change the Background Contents to Transparent.
+  6. Paste `Edit>Paste | &#8984;+v`
+  7. Save for Web `File>Save for Web | shift+alt+&#8984;+s` Now you’ve got the file completely isolated and ready to save.
 
-%img{ :src => '/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg', :class => 'post-image-full', :width => '940', :height => '716' }
-%h3 What to pay attention to: JPG
+  ### Save for Web
+
+  By now you should have a good idea of when you will want to use PNG or JPG; however, in some cases the best format is unclear. For example, an illustration that doesn’t need any transparency might look fine as both a PNG-8 or a JPG&mdash;Save for Web helps you make this decision by giving you the file size of each format. **Whichever format has the smallest file size while still being an acceptable quality will be the best choice.** Remember, if you need any transparency then you’ll want to use a PNG. Below is what you should see once you open up Save for Web:
+
+  <img class="post-image-full" height="716" src="/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg" width="940">
+
+  ### What to pay attention to: JPG
+
 %p
   <strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise Photoshop starts to implement an additional compression technique that really destroys quality.
   %sup.footnote-marker 6
@@ -152,7 +150,7 @@ read_time: 19
 
 %h3 PNG-8 + 8-bit Alpha
 %p
-  Here is the frustrating part of all of this, Photoshop doesn’t support the export of indexed PNGs coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great GUI for converting these. I’m sure many of you would prefer to use the command line...and you can use <a href="http://pngquant.org/" >PNGQuant</a>...but <strong>I highly recommend you use a GUI</strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as PNG-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make PNGs with alpha that degrade nicely in IE6.
+  Here is the frustrating part of all of this, Photoshop doesn’t support the export of indexed PNGs coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great GUI for converting these. I’m sure many of you would prefer to use the command line&hellip;and you can use <a href="http://pngquant.org/" >PNGQuant</a>&hellip;but <strong>I highly recommend you use a GUI</strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as PNG-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make PNGs with alpha that degrade nicely in IE6.
   %sup.footnote-marker 8
 .footnote
   .footnote-marker 8
@@ -168,10 +166,11 @@ read_time: 19
   .footnote-marker 9
   .footnote-text
     Bjango wrote a clear article on the way iOS makes image compression virtually useless. <a href="http://bjango.com/articles/pngcompression/">http://bjango.com/articles/pngcompression/</a>
-%p
-  Look at the savings with <a href="http://www.thewikigame.com">The Wiki Game</a> icon in particular&mdash;we shaved 75% of the file size! That said, look closely at the pixels and you will see the dithering. Whether this acceptable or not is up to you. Also, coupled with sprites you can see how powerful this becomes.
 
-%h3
-%p
+:markdown
+  Look at the savings with [The Wiki Game](http://www.thewikigame.com) icon in particular&mdash;we shaved 75% of the file size! That said, look closely at the pixels and you will see the dithering. Whether this acceptable or not is up to you. Also, coupled with sprites you can see how powerful this becomes.
+
+  ### Conclusion
+
   I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop CS6 and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load&hellip;
 
