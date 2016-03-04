@@ -18,5 +18,5 @@
     :javascript
       try{Typekit.load();}catch(e){}
 
-  %body{ class: '<%= page_classes %>', id: '<%= current_page.data.post_id %>' }
+  %body( class='#{page_classes}' )
     = yield

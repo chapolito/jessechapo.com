@@ -1,0 +1,24 @@
+---
+title: The 26 Column Grid
+read_time: 3
+---
+:markdown
+  The 12 column grid has been a staple in my toolbox for years, first with [960.gs](http://960.gs/) and more recently with [bootstrap scaffolding](http://getbootstrap.com/css/#grid). It has been incredibly helpful and allowed a quick start to many projects. But when I recently sat down to redesign [chapolito.com](https://www.chapolito.com) I wanted something that was more balanced. 
+
+  Imbalance in the traditional 12 column results from margins widths that are independent of column widths. My idea was to **control margins with columns** so that there was a spatial relationship between both. This would provide horizontal rhythm to all elements on page. 
+
+  The goal was to achieve the same flexibility and alignment with 1, 2, 3, or 4 columns but with columns AND margins all being a multiple of 1. The magic number was 13, that was easy! It allows for each margin to be one column wide and for the content to fit perfectly for 1–4 columns.
+
+  <img src="/images/26-column-grid/13-column-grid.svg" class="post-image-full" alt="Copy and graphics harmoniously laid out in 26 columns" width="1430" height="719">
+
+  At first glance this looks great, but I was increasingly hitting the limitations of supporting content blocks that were spaced apart. Spaced apart works great for copy as it supplies ample negative space, but what about when I wanted to adjoin images in a grid? No dice, 13 is prime.
+
+  The solution (which seems so obvious now, but took hours of head bashing and sketching) was to split each column for a total of 26. This provides the flexibility to grid graphics and copy in a way that is harmonious. 
+
+  <img src="/images/26-column-grid/26-column-grid-copy-and-images.png" class="post-image-full" alt="Copy and graphics harmoniously laid out in 26 columns" width="1430" height="1736">
+
+  Implementing was a snap, I forked the SCSS version of [Flexbox Grid](http://flexboxgrid.com/), set the number of columns to 26 and margins to 0.
+
+  Admittedly, the applications of this grid are limited. it works excellent for content-focused sites like blogs and portfolios—I’m very happy with the layout of [chapolito.com](https://www.chapolito.com). But you wouldn’t want to build a complex UI with 26 columns, it would be a nuisance and force awkward alignment.
+
+
