@@ -117,7 +117,9 @@
 }
 
 .read-more-link {
+  @include font-feature-settings('"smcp", "c2sc"');
   margin: 0;
+  
   a {
     color: $color-links;
 

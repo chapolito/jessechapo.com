@@ -4,18 +4,18 @@ read_time: 6
 ---
 
 %p
-  It's no mystery that the influence AppGratis once wielded was severely nerfed by the <a href="http://appgratis.com/blog/2013/04/09/appgratis-pulled-from-the-app-store-heres-the-full-story/">removal from the app store</a> and revoked push notifications, but where exactly does it stand? They deposited $13.5M of funding in January so you can bet they aren't sitting still. In late May they released an Android app and they've been pushing new iOS apps every day through their mailing list. We've been in talks with them since December about featuring our awesome little app <a href="http://thewikigame.com/">The Wiki Game</a> and I thought I'd share the process and results with everyone. At a glance:
+  It's no mystery that the influence AppGratis once wielded was severely nerfed by the <a href="http://appgratis.com/blog/2013/04/09/appgratis-pulled-from-the-app-store-heres-the-full-story/">removal from the app store</a> and revoked push notifications, but where exactly does it stand? They deposited $13.5<abbr>M</abbr> of funding in January so you can bet they aren't sitting still. In late May they released an Android app and they've been pushing new iOS apps every day through their mailing list. We've been in talks with them since December about featuring our awesome little app <a href="http://thewikigame.com/">The Wiki Game</a> and I thought I'd share the process and results with everyone. At a glance:
 %ul
   %li 42k downloads for our iPhone app and just shy of 4k for the iPad version.
-  %li 88th in the app store under top free; 8th in the games > word category
+  %li 88<sup>th</sup> in the app store under top free; 8<sup>th</sup> in the games > word category
   %li 290 paid downloads beyond our normal sales for the tail of the promotion
   %li 16 new ratings/reviews
 %p
-  Originally we were hoping to promote the new iPad (HD) version of the app, but AppGratis never got a chance to even distribute their iPad app. Around the time of their app being yanked, The Wiki Game HD had a quiet launch; we sold 20 copies, spent $10 promoting it on Facebook and watched it settle to an average of 4 sales/day. Even being promoted on AppGratis had such a minimal effect on the iPad app I’m just going to focus on the iPhone results.
+  Originally we were hoping to promote the new iPad (<abbr>HD</abbr>) version of the app, but AppGratis never got a chance to even distribute their iPad app. Around the time of their app being yanked, The Wiki Game <abbr>HD</abbr> had a quiet launch; we sold 20 copies, spent $10 promoting it on Facebook and watched it settle to an average of 4 sales/day. Even being promoted on AppGratis had such a minimal effect on the iPad app I’m just going to focus on the iPhone results.
 
 %h2 Sales, Downloads &amp; Reviews
 %p
-  The goal of being featured was to see if we could get some exposure while realizing a boost of in-app purchases and a solid tail of sales after the day-long promotion ended. We never really nailed the in-app purchases, so our IAP boost was essentially zero.
+  The goal of being featured was to see if we could get some exposure while realizing a boost of in-app purchases and a solid tail of sales after the day-long promotion ended. We never really nailed the in-app purchases, so our <abbr>IAP</abbr> boost was essentially zero.
   %sup.footnote-marker 1
   We actually had to run the app as free for 48 hours so that everyone in every timezone had a chance to download it. This meant we missed out on ~15 downloads for two days, not huge by any means. The tail from sales was much stronger, we’ve seen about 290 additional sales since the promo ran.
 %img{ :src => '/images/Results-of-AppGratis/app-store-sales.png', :class => 'post-image-full', :alt => 'Graph showing the sales over the last week of our iOS apps.', :height => '342', :width => '746' }
@@ -29,7 +29,7 @@ read_time: 6
 
 %h2 Server Costs &amp; Labor
 %p
-  My partner in crime <a href="http://www.clemesha.org/">Alex Clemesha</a> setup Google App Engine to serve parsed versions of Wikipedia content. Every time someone visits a Wikipedia page in the iOS apps GAE serves a cached version of the page or if there isn't one yet it grabs the page from Wikipedia, parses it and then saves it first. Usually the GAE charges are pretty insignificant, but when we get periods of high traffic the bill can grow. The peak in traffic cost us only ~$19, not too bad. Below is a chart showing our requests per a second and how much that actually cost.
+  My partner in crime <a href="http://www.clemesha.org/">Alex Clemesha</a> setup Google App Engine to serve parsed versions of Wikipedia content. Every time someone visits a Wikipedia page in the iOS apps <abbr>GAE</abbr> serves a cached version of the page or if there isn't one yet it grabs the page from Wikipedia, parses it and then saves it first. Usually the <abbr>GAE</abbr> charges are pretty insignificant, but when we get periods of high traffic the bill can grow. The peak in traffic cost us only ~$19, not too bad. Below is a chart showing our requests per a second and how much that actually cost.
 %img{ :src => '/images/Results-of-AppGratis/google-app-engine-requests-per-second.png', :class => 'post-image-full', :alt => 'Graph showing the Google App Engine request per a second and the associated cost', :height => '343', :width => '940' }
 %p
   The second cost, which I’m reluctant to bring up, is our labor. In order to be featured, AppGratis requested that we run ads in the app for two weeks following the promotion as well as throw an ad on thewikigame.com. Fair enough, we figured it was worth the potential gains. Requirements were that new users would be shown the ad the on 1st, 3rd and 6th launch of the app and after which users would never see it again. AppGratis didn’t have any code to share, it would have been great if we could have just popped a class into xcode and made a few changes. No big deal if we just exchanged a few emails and changed the app to free for a day, but we had to make a update to both apps which took a solid day of work.
@@ -38,6 +38,6 @@ read_time: 6
 %p
   Final tally: Additional app sales <strong>$290 -</strong> Apple’s 30% cut <strong>$87 -</strong> server costs <strong>$19 = $184</strong> extra profit. Add in a handful of good reviews and some decent exposure for a full day’s work and I’d say we did ok.
 %p
-  It was nice to hear from them that the ads were actually effective&mdash;they had a clickthrough rate of 7% and gained an estimated 150 people to their mailing list. The cool part is the ad only really targets the organic downloads we got by being ranked so high in the app store, so in theory the effective CTR is much higher. The reality though, 150 subscribers/day is not rapid enough for a company the size of AppGratis, and I'm sure they recognize this.
+  It was nice to hear from them that the ads were actually effective&mdash;they had a clickthrough rate of 7% and gained an estimated 150 people to their mailing list. The cool part is the ad only really targets the organic downloads we got by being ranked so high in the app store, so in theory the effective <abbr>CTR</abbr> is much higher. The reality though, 150 subscribers/day is not rapid enough for a company the size of AppGratis, and I'm sure they recognize this.
 %p
   I don’t mean to knock the AppGratis folks or what they were able to provide for us, we are very happy with the arrangement and results, but the promo wasn’t quite the grand slam we were hoping for. If you had asked me how else I was going to obtain 40k downloads I’d probably just stare blankly at you, but its safe to say their current status is quite crippled compared to before. Ultimately, this is a bummer for us all&mdash;until Apple can properly address app discovery, then success in the App Store will continue to grow out of reach of most iOS developers.

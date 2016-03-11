@@ -18,10 +18,10 @@ read_time: 3
 
   <img src="/images/26-column-grid/26-column-grid-copy-and-images.png" class="post-image-full" alt="Copy and graphics harmoniously laid out in 26 columns" width="1430" height="1736">
 
-  Implementing was a snap, I forked the SCSS version of [Flexbox Grid](http://flexboxgrid.com/), set the number of columns to 26 and margins to 0.
+  Implementing was a snap, I forked the <abbr>SCSS</abbr> version of [Flexbox Grid](http://flexboxgrid.com/), set the number of columns to 26 and margins to 0.
 
   Then I wrote this article and received honest feedback (thank you!) that made me realize there was a lot simpler way to achieve this and, tad-da, it’s a 12 column grid! Talk about full circle. 26 remains a quasi-magic number because each row and column needs to have padding that is (1/26)% wide. You should be able to implement this grid system simply by setting `$grid-gutter-width: percentage(1/26);` in your [bootstrap-sass](https://github.com/twbs/bootstrap-sass) customizations. *note: While it is 12 columns, this will render the 6 & 12 column layouts virtually unusable for copy/content because the padding takes up half or more of the available space.*
 
   <img src="/images/26-column-grid/12-column-grid.svg" class="post-image-full" alt="The final 12 column grid." width="1430" height="719">
 
-  Admittedly, the applications of this grid are limited. it works excellent for content-focused sites like blogs and portfolios—I’m very happy with the layout of [chapolito.com](https://www.chapolito.com). But you wouldn’t want to build a complex UI with it, working with all the white space would be a nuisance and force awkward alignment.
+  Admittedly, the applications of this grid are limited. it works excellent for content-focused sites like blogs and portfolios—I’m very happy with the layout of [chapolito.com](https://www.chapolito.com). But you wouldn’t want to build a complex <abbr>UI</abbr> with it, working with all the white space would be a nuisance and force awkward alignment.

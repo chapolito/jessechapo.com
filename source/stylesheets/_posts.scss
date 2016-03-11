@@ -25,7 +25,8 @@
 }
 
 .date {
-  @include font-mercury-small-caps;
+  @include font-feature-settings('"smcp", "c2sc"');
+  font-weight: 700;
   text-transform: lowercase;
   font-size: 0.8em;
   line-height: 1.2;
@@ -51,7 +52,8 @@
 }
 
 .read-time {
-  @include font-mercury-small-caps;
+  @include font-feature-settings('"smcp", "c2sc"');
+  font-weight: 700;
   border-top: 1px solid rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 3px 0;
@@ -165,7 +167,8 @@
 }
 
 .small-caps-link {
-  @include font-mercury-small-caps;
+  @include font-feature-settings('"smcp", "c2sc"');
+  font-style: normal;
 }
 
 .image-comment {

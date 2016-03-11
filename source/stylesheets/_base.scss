@@ -1,9 +1,9 @@
 
 body {
-  @include font-mercury-body;
+  //@include font-mercury-body;
+  @include font-adriane-body;
   background-color: $color-beige-white;
   font-size: 18px;
-  //text-align: center;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -103,6 +103,7 @@ code {
   font-size: 1.2em;
   line-height: .8;
 }
+
 
 
 // Lists ************************* //

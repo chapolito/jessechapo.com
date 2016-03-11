@@ -4,7 +4,7 @@ read_time: 19
 ---
 
 %p
-  I regularly receive questions from developer friends who are a bit baffled with images and their confusing formats. I’ve also heard that they hate receiving a PSD with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when while saving images from Photoshop.
+  I regularly receive questions from developer friends who are a bit baffled with images and their confusing formats. I’ve also heard that they hate receiving a <abbr>PSD</abbr> with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when while saving images from Photoshop.
 
 %h2 Part 1: Getting Familiar with JPG &amp; PNG
 %p
@@ -16,7 +16,7 @@ read_time: 19
 
 %h3 PNGs are for Graphics
 %p
-  Generally, any graphic (icon, interface element, texture, etc.) you have will be a PNG. Unfortunately this isn’t as clear of a rule as with JPGs, as we’ll touch on later. PNGs are lossless, meaning all of the color information for every pixel is retained. This is both good and bad&mdash;good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a ton of colors (AKA a large gamut).
+  Generally, any graphic (icon, interface element, texture, etc.) you have will be a PNG. Unfortunately this isn’t as clear of a rule as with JPGs, as we’ll touch on later. PNGs are lossless, meaning all of the color information for every pixel is retained. This is both good and bad&mdash;good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a ton of colors (<abbr>AKA</abbr> a large gamut).
 
 %h3 What About GIFs?
 %p
@@ -30,12 +30,12 @@ read_time: 19
 
 %h3 Alpha &amp; Color-Depth of PNGs
 %p
-  There are two main components to a PNG&mdash;the color information and the alpha (AKA opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
+  There are two main components to a PNG&mdash;the color information and the alpha (<abbr>AKA</abbr> opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
 %p
   <strong>Color</strong> can be one of two main bit depths: 8 or 24. PNG-8 gives you up to 256 indexed colors and PNG-24 gives you 16 million non-indexed colors. Indexed and non-indexed refers to the file structure of the colors. Both PNG-8 and PNG-24 save the color information as 24-bits (8 Red, 8 Green, &amp; 8 Blue). The difference is that with indexed files (PNG-8) this color information is saved in a separate area called the palette and each pixel has 8-bits that reference one of those colors.
 %img{ :src => '/images/Developers-Guide-to-Images/indexed-pixel-data.png', :class => 'post-image-full', :width => '702', :height => '394' }
 %p
-  Non-indexed (AKA truecolor) color means that the information for each pixel is the full 24-bits of color information.
+  Non-indexed (<abbr>AKA</abbr> truecolor) color means that the information for each pixel is the full 24-bits of color information.
 %img{ :src => '/images/Developers-Guide-to-Images/truecolor-pixel-data.png', :class => 'post-image-full', :width => '556', :height => '384' }
 %p
   Since the color information is stored separately in the palette, reducing the number of colors in your PNG-8 files makes a noticeable impact on file size. The numbers of colors you can have in a PNG-8 image can be anything from 2&ndash;256, below is a selection:
@@ -44,7 +44,7 @@ read_time: 19
 .footnote
   .footnote-marker 2
   .footnote-text
-    PNG supports color depths up to 48-bits (aka deep color) providing you billions of different colors; however, the vast majority of consumer monitors and screens do not support more than 24-bit, so this is, for the most part, useless to us. Also note that the terms indexed and paletted can be used interchangeably.
+    PNG supports color depths up to 48-bits (<abbr>AKA</abbr> deep color) providing you billions of different colors; however, the vast majority of consumer monitors and screens do not support more than 24-bit, so this is, for the most part, useless to us. Also note that the terms indexed and paletted can be used interchangeably.
 %p
   The key here is getting a grasp of the tradeoff between loss of quality and improvements in file sizes as you restrict the colors. This is also a great example of why photos should be JPGs—the file size is comparable to the PNG-8 with 256 colors, but the quality superior.
 %p
@@ -59,7 +59,7 @@ read_time: 19
 .footnote
   .footnote-marker 3
   .footnote-text
-    You may at times see a reference to a 32-bit PNG, this is because they are counting the 8-bit alpha with the color, commonly referred to as RGBA (8 Red, 8 Green, 8 Blue, 8 Alpha).
+    You may at times see a reference to a 32-bit PNG, this is because they are counting the 8-bit alpha with the color, commonly referred to as <abbr>RGBA</abbr> (8 Red, 8 Green, 8 Blue, 8 Alpha).
 %p
   This leads us to the question&mdash;which alpha should be used? As a general rule if you have a graphic that is going to only show up against one solid color or has pixel-sharp edges you should use 1-bit, this is actually not very common. If you have a graphic that has any sort of softness/fading/gradation in the transparency you will need an 8-bit alpha layer. Below is a chart that demonstrates what to expect with the different alpha layers.
 %img{ :src => '/images/Developers-Guide-to-Images/different-png-alphas-chart.png', :class => 'post-image-full', :width => '760', :height => '460' }
@@ -69,7 +69,7 @@ read_time: 19
 
 %h2 Part 2: Saving Images from Photoshop
 %p
-  At some point you’re probably going to need to crack open Photoshop either when a designer hands you a PSD file or when you’re working on your own project and there isn’t a designer yet.
+  At some point you’re probably going to need to crack open Photoshop either when a designer hands you a <abbr>PSD</abbr> file or when you’re working on your own project and there isn’t a designer yet.
   %sup.footnote-marker 4
   But there are a ton of settings in Photoshop that get extremely overwhelming, so I’ll do my best to explain what you should pay attention to and the rest you can ignore.
 .footnote
@@ -114,7 +114,7 @@ read_time: 19
 .footnote
   .footnote-marker 6
   .footnote-text
-    Flip between 50 and 51 and you will be able to see the difference. 1&ndash;50 quality use what is called chroma sub-sampling. Feeling adventurous? Dive deeper: <a href="http://www.impulseadventure.com/photo/chroma-subsampling.html" rel="nofollow">http://www.impulseadventure.com/photo/chroma-subsampling.html</a>
+    Flip between 50 and 51 and you will be able to see the difference. 1&ndash;50 quality use what is called chroma sub-sampling. Feeling adventurous? Dive deeper: <a href="http://www.impulseadventure.com/photo/chroma-subsampling.html">http://www.impulseadventure.com/photo/chroma-subsampling.html</a>
 %p
   <strong>Progressive</strong> means that the JPG is downloaded in chunks and after only a little of the image has downloaded it will be displayed full size, but blurry. As more of the file is download the image will rerender with a higher degree of clarity. Without progressive JPGs need to completely download before displaying, leaving a glaring open space on your page. Having something there, even if it is a chunky and blurry version, is a better experience. I always use progressive and it generally doesn’t impact file size much, but keep an eye on the size in case.
 %p
@@ -152,7 +152,7 @@ read_time: 19
 
 %h3 PNG-8 + 8-bit Alpha
 %p
-  Here is the frustrating part of all of this, Photoshop doesn’t support the export of indexed PNGs coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great GUI for converting these. I’m sure many of you would prefer to use the command line...and you can use <a href="http://pngquant.org/" >PNGQuant</a>...but <strong>I highly recommend you use a GUI</strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as PNG-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make PNGs with alpha that degrade nicely in IE6.
+  Here is the frustrating part of all of this, Photoshop doesn’t support the export of indexed PNGs coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great <abbr>GUI</abbr> for converting these. I’m sure many of you would prefer to use the command line...and you can use <a href="http://pngquant.org/" >PNGQuant</a>...but <strong>I highly recommend you use a <abbr>GUI</abbr></strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as PNG-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make PNGs with alpha that degrade nicely in <abbr>IE6</abbr>.
   %sup.footnote-marker 8
 .footnote
   .footnote-marker 8
@@ -162,7 +162,7 @@ read_time: 19
 %p
   This only applies to images destined for the web and for the most part only PNGs as the gains for JPGs are negligible.
   %sup.footnote-marker 9
-  Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable with GUIs, I use <a href="http://imageoptim.com/" rel="nofollow">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/" rel="nofollow">PNGCrush</a>. Below you can see the gains from using optimization on various files:
+  Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable using a <abbr>GUI</abbr>, I use <a href="http://imageoptim.com/">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/">PNGCrush</a>. Below you can see the gains from using optimization on various files:
 %img{ :src => '/images/Developers-Guide-to-Images/optimized-images.png', :class => 'post-image-full', :width => '782', :height => '353' }
 .footnote
   .footnote-marker 9
@@ -173,4 +173,4 @@ read_time: 19
 
 %h3 Conclusion
 %p
-  I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop CS6 and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load&hellip;
+  I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop <abbr>CS6</abbr> and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load&hellip;

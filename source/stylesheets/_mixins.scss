@@ -8,16 +8,10 @@
   font-feature-settings: #{$str};
 }
 
-@mixin font-mercury-body {
-  font-family: 'Mercury SSm A', 'Mercury SSm B', serif;
+@mixin font-adriane-body {
+  font-family: 'adriane', 'times', serif;
   font-style: normal;
   font-weight: 400;
-}
-
-@mixin font-mercury-small-caps {
-  font-family: 'Mercury SSm SC A', 'Mercury SSm SC B', serif;
-  font-style: normal;
-  font-weight: 500;
 }
 
 @mixin font-petala-bold {

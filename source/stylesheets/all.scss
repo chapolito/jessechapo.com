@@ -30,15 +30,18 @@ The Chapolito Style Guide
 @import 'compass/utilities';
 @import 'bootstrap-custom';
 @import 'variables';
-@import 'normalizeBoilerplate';
-@import 'mainBoilerplate';
 
-// Sitewide Custom
+// Resets & Boilerplates
+@import 'resets/normalize';
+@import 'resets/normalize-opentype';
+@import 'resets/mainBoilerplate';
+
+// Global
 @import 'mixins';
 @import 'base';
 @import 'forms';
 
-// IMPORTS
+// Views
 @import 'posts';
 @import 'home';
 @import 'footnotes';

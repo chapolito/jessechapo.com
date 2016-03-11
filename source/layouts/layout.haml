@@ -9,8 +9,7 @@
       = current_page.data.title || 'Jesse Chapo'
     %meta{ name: 'description', content: 'A blog about the design, code & career.' }
 
-    = stylesheet_link_tag '//cloud.typography.com/6969912/679386/css/fonts.css'
-    = stylesheet_link_tag 'normalize', 'all'
+    = stylesheet_link_tag 'all'
     - if current_page.data.cononical_url
       %link{ :rel => 'canonical', :url => current_page.data.cononical_url }
 
