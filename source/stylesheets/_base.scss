@@ -32,6 +32,17 @@ footer {
 
 // Typography ************************* //
 
+// Type Scale
+// Scale is 1:1.618 with an interval of 2
+$h1: 66.77px; // 16px * 1.618^(6/2)
+$h2: 53.28px; // 16px * 1.618^(5/2)
+$h3: 41.89px; // 16px * 1.618^(4/2)
+$h4: 32.93px; // 16px * 1.618^(3/2)
+$h5: 25.89px; // 16px * 1.618^(2/2)
+$h6: 20.35px; // 16px * 1.618^(1/2)
+$body: 16px;  // 16px * 1.618^(0/2)
+$xs: 12.58px; // 16px * 1.618^(-1/2)
+
 p {
   color: $color-copy;
   text-align: left;
@@ -104,7 +115,9 @@ code {
   line-height: .8;
 }
 
-
+abbr {
+  letter-spacing: 0.08em;
+}
 
 // Lists ************************* //
 
