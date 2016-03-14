@@ -1,22 +1,21 @@
 
-body {
-  //@include font-mercury-body;
-  @include font-adriane-body;
-  background-color: $color-beige-white;
-  font-size: 18px;
+html, body {
   padding: 0;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  min-height: 100%;
+}
 
-  @include until($medium) {
-    font-size: 16px;
-  }
+body {
+  @include font-adriane-body;
+  background-color: $color-beige-white;
+  -webkit-font-smoothing: antialiased;
 }
 
 footer {
   width: 100%;
   background-color: $footerBeige;
-  padding: 30px 0 80px 0;
+  padding: rem($baseline) 0 rem($baseline * 3) 0;
 }
 
 .wrapper {
@@ -29,27 +28,81 @@ footer {
 }
 
 
-
 // Typography ************************* //
 
 // Type Scale
-// Scale is 1:1.618 with an interval of 2
-$h1: 66.77px; // 16px * 1.618^(6/2)
-$h2: 53.28px; // 16px * 1.618^(5/2)
-$h3: 41.89px; // 16px * 1.618^(4/2)
-$h4: 32.93px; // 16px * 1.618^(3/2)
-$h5: 25.89px; // 16px * 1.618^(2/2)
-$h6: 20.35px; // 16px * 1.618^(1/2)
+
+// Mobile Scale is 1:1.618 with an interval of 3
+$h1: 42.89px; // 16px * 1.618^(6/2)
+$h2: 35.68px; // 16px * 1.618^(5/2)
+$h3: 30.39px; // 16px * 1.618^(4/2)
+$h4: 25.89px; // 16px * 1.618^(3/2)
+$h5: 22.05px; // 16px * 1.618^(2/2)
+$h6: 18.78px; // 16px * 1.618^(1/2)
 $body: 16px;  // 16px * 1.618^(0/2)
-$xs: 12.58px; // 16px * 1.618^(-1/2)
+$xs: 13.62px; // 16px * 1.618^(-1/2)
+
+
+// Larger Devices Scale is 1:1.618 with an interval of 2
+$h1_md: 66.77px; // 16px * 1.618^(6/2)
+$h2_md: 53.28px; // 16px * 1.618^(5/2)
+$h3_md: 41.89px; // 16px * 1.618^(4/2)
+$h4_md: 32.93px; // 16px * 1.618^(3/2)
+$h5_md: 25.89px; // 16px * 1.618^(2/2)
+$h6_md: 20.35px; // 16px * 1.618^(1/2)
+$xs_md: 12.58px; // 16px * 1.618^(-1/2)
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, .small, li, ul, ol {
+  line-height: rem($baseline);
+  margin-top:  0;
+  margin-bottom: rem($baseline);
+}
+
+h1, h2, h3, h4, h5 {
+  @include font-petala-bold;
+  color: $color-heading;
+}
+
+h1, h2 {
+  line-height: rem($baseline * 2);
+}
+
+h1 {
+  font-size:  rem($h1); 
+}
+
+h2 {
+  font-size: rem($h2);
+}
+
+h3 {
+  font-size: rem($h3);
+}
+
+h4 {
+  font-size: rem($h4);
+}
+
+h5 {
+  font-size: rem($h5);
+}
+
+h6 {
+  font-size: rem($h6);
+}
+
+.small {
+  font-size: rem($xs);
+}
 
 p {
+  font-size: rem($body);
   color: $color-copy;
   text-align: left;
-  font-size: 1em;
-  line-height: 1.6;
   padding: 0;
-  margin: 1.5em 0;
 
   a {
     padding: 0 3px;
@@ -57,6 +110,41 @@ p {
 
   .callOut {
     padding: 0 10px 20px 60px;
+  }
+}
+
+@include at-least ($medium) {
+
+  
+
+  h1 {
+    font-size:  rem($h1_md);
+    line-height: rem($baseline * 3);
+  }
+
+  h2 {
+    font-size: rem($h2_md);
+  }
+
+  h3 {
+    font-size: rem($h3_md);
+    line-height: rem($baseline * 2);
+  }
+
+  h4 {
+    font-size: rem($h4_md);
+  }
+
+  h5 {
+    font-size: rem($h5_md);
+  }
+
+  h6 {
+    font-size: rem($h6_md);
+  }
+
+  .small {
+    font-size: rem($xs_md);
   }
 }
 
@@ -79,13 +167,6 @@ a {
   &:hover {
     color: $color-links-hover;
   }
-}
-
-h1, h2, h3 {
-  @include font-petala-bold;
-  padding: 0;
-  color: $color-heading;
-  line-height: 1.3;
 }
 
 code {

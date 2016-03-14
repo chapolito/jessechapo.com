@@ -6,19 +6,19 @@ read_time: 19
 %p
   I regularly receive questions from developer friends who are a bit baffled with images and their confusing formats. I’ve also heard that they hate receiving a <abbr>PSD</abbr> with no instructions and having to wade through the overwhelming options of Photoshop. This short guide is aimed at explaining the basics of image formats and giving you some simple rules that you can apply everyday when while saving images from Photoshop.
 
-%h2 Part 1: Getting Familiar with <abbr>JPG</abbr> <span class="openamp">&amp;</span> <abbr>PNG</abbr>
+%h3 Part 1: Getting Familiar with <abbr>JPG</abbr> <span class="openamp">&amp;</span> <abbr>PNG</abbr>
 %p
   There are only two types of image formats you will use when developing for the web: <abbr>PNG</abbr> and <abbr>JPG</abbr>. Between these two we will be able cover the gamut of any web or mobile app.
 
-%h3 <abbr>JPG</abbr> is for Photos
+%h5 <abbr>JPG</abbr> is for Photos
 %p
   If you have a photo it should be a <abbr>JPG</abbr> format. This part is pretty simple. <abbr>JPG</abbr> does not support transparency and is lossy, meaning that while saving the photo through Photoshop the color information of some pixels will be approximated from the color information of surrounding pixels. This approximation results smaller file sizes but at the expense of artifacts and fuzziness. This is great for photos because the fuzziness will get masked by the complexity/variations of color and luminance in photos.
 
-%h3 <abbr>PNG</abbr> is for Graphics
+%h5 <abbr>PNG</abbr> is for Graphics
 %p
   Generally, any graphic (icon, interface element, texture, etc.) you have will be a <abbr>PNG</abbr>. Unfortunately this isn’t as clear of a rule as with <abbr>JPG</abbr>, as we’ll touch on later. <abbr>PNG</abbr> is lossless, meaning all of the color information for every pixel is retained. This is both good and bad&mdash;good because you are guaranteed to have crisp and clean graphics, bad because this often results in larger file sizes when you have a ton of colors (<abbr>AKA</abbr> a large gamut).
 
-%h3 What About <abbr>GIF</abbr>?
+%h5 What About <abbr>GIF</abbr>?
 %p
   Don’t use <abbr>GIF</abbr>, it is an old standard that has been replaced by <abbr>PNG</abbr>. Except&hellip;it has the ability to support animation, so it isn’t going anywhere, but for the average web or mobile app <abbr>GIF</abbr> isn’t applicable.
   %sup.footnote-marker 1
@@ -28,7 +28,7 @@ read_time: 19
     There are actually some really cool things being done with animated <abbr>GIF</abbr> called Cinemagraphs, check out:
     = link_to 'http://en.wikipedia.org/wiki/Cinemagraph', 'http://en.wikipedia.org/wiki/Cinemagraph'
 
-%h3 Alpha <span class="openamp">&amp;</span> Color-Depth of <abbr>PNG</abbr>
+%h5 Alpha <span class="openamp">&amp;</span> Color-Depth of <abbr>PNG</abbr>
 %p
   There are two main components to a <abbr>PNG</abbr>&mdash;color and alpha (<abbr>AKA</abbr> opacity or transparency). <strong>Both color and alpha information can have different bit-depths which are independent of each other and can be swapped to meet your needs.</strong> First, What are they and what are your needs?
 %p
@@ -67,7 +67,7 @@ read_time: 19
   You might have noticed the <strong>Matte Color</strong> from above. If you try to save an image with a range of transparency (for example the 50% opacity circle behind the binoculars) coupled with only 1-bit alpha or no alpha channel then Photoshop needs figure out how to make all the colors fully opaque. The solution is to put a solid color behind the image in order to make pixels either 100% opaque or 100% transparent. This often leads to a halo effect around your image, which can be downright ugly unless your image is only going to live ontop of your matte color. This leads us to the question, what else should I be aware of when exporting from Photoshop?
 %img{ :src => '/images/Developers-Guide-to-Images/scalpel-cutting-image.png', :class => 'post-image-gutter', :width => '220', :height => '336' }
 
-%h2 Part 2: Saving Images from Photoshop
+%h3 Part 2: Saving Images from Photoshop
 %p
   At some point you’re probably going to need to crack open Photoshop either when a designer hands you a <abbr>PSD</abbr> file or when you’re working on your own project and there isn’t a designer yet.
   %sup.footnote-marker 4
@@ -76,7 +76,7 @@ read_time: 19
   .footnote-marker 4
   .footnote-text
     It grinds my gears when I hear of designers handing off PSD files to developers, it's our responsibility. Laziness is no excuse, designers have a better understanding of image formats and Photoshop settings. Additionally, it forces us to think more about how a site will be built.
-%h3 Preparing to Save
+%h5 Preparing to Save
 %p
   This is not the most orthodox method, but it works for me and it is pretty straightforward.
   %sup.footnote-marker 5
@@ -102,12 +102,12 @@ read_time: 19
   %li
     Save for Web <code>File>Save for Web | shift+alt+&#8984;+s</code> Now you’ve got the file completely isolated and ready to save.
 
-%h3 Save for Web
+%h5 Save for Web
 %p
   By now you should have a good idea of when you will want to use <abbr>PNG</abbr> or <abbr>JPG</abbr>; however, in some cases the best format is unclear. For example, an illustration that doesn’t need any transparency might look fine as both a <abbr>PNG</abbr>-8 or a <abbr>JPG</abbr>&mdash;Save for Web helps you make this decision by giving you the file size of each format. <strong>Whichever format has the smallest file size while still being an acceptable quality will be the best choice.</strong> Remember, if you need any transparency then you’ll want to use a <abbr>PNG</abbr>. Below is what you should see once you open up Save for Web:
 
 %img{ :src => '/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg', :class => 'post-image-full', :width => '940', :height => '716' }
-%h3 What to pay attention to: <abbr>JPG</abbr>
+%h5 What to pay attention to: <abbr>JPG</abbr>
 %p
   <strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise Photoshop starts to implement an additional compression technique that really destroys quality.
   %sup.footnote-marker 6
@@ -129,7 +129,7 @@ read_time: 19
 %p
   <strong>Embed Color Profile&mdash;uncheck.</strong> this information gets ignored by browsers.
 
-%h3 <abbr>PNG</abbr>-8
+%h5 <abbr>PNG</abbr>-8
 %img{ :src => '/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-png8.png', :class => 'post-image-gutter', :width => '312', :height => '542' }
 %p
   <strong>Colors</strong> - If you cut down on the colors the file size will shrink. However, if you lowered the colors to 128 when there are only 120 colors it won’t make a difference on the file size. Remember, number of colors can be anything from 2-256, not just the options they give you&mdash;its an editable drop down.
@@ -143,14 +143,14 @@ read_time: 19
 %p
   <strong>Dithering</strong> is the process of adding noise between colors and is really useful when working with limited palettes like in <abbr>PNG</abbr>-8's. You can see in the buttons that with the same amount of color we get much smoother gradients and defined details. <strong>Just leave dithering slammed at 100%</strong>.
 
-%h3 <abbr>PNG</abbr>-24
+%h5 <abbr>PNG</abbr>-24
 %img{ :src => '/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-png24.png', :class => 'post-image-gutter', :width => '312', :height => '304' }
 %p
   <strong>Transparency</strong> - check if there is any transparency to the image, will be 8-bit alpha.
 %p
   Everything else follow the same guidelines provided for <abbr>PNG</abbr>-8s.
 
-%h3 <abbr>PNG</abbr>-8 + 8-bit Alpha
+%h5 <abbr>PNG</abbr>-8 + 8-bit Alpha
 %p
   Here is the frustrating part of all of this, Photoshop doesn’t support the export of an indexed <abbr>PNG</abbr> coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great <abbr>GUI</abbr> for converting these. I’m sure many of you would prefer to use the command line&hellip;and you can use <a href="http://pngquant.org/" ><abbr>PNG</abbr>Quant</a>&hellip;but <strong>I highly recommend you use a <abbr>GUI</abbr></strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as <abbr>PNG</abbr>-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make a <abbr>PNG</abbr> with alpha that degrade nicely in <abbr>IE6</abbr>.
   %sup.footnote-marker 8
@@ -158,7 +158,7 @@ read_time: 19
   .footnote-marker 8
   .footnote-text
     Kornel Lesiński (same dude who made ImageOptim &amp; ImageAlpha) wrote a great article that touched on browser compatibility in more detail: <a href="http://calendar.perfplanet.com/2010/png-that-works/">http://calendar.perfplanet.com/2010/png-that-works/</a>
-%h3 Optimization
+%h5 Optimization
 %p
   This only applies to images destined for the web and for the most part only <abbr>PNG</abbr> as the gains for <abbr>JPG</abbr> are negligible.
   %sup.footnote-marker 9
@@ -171,6 +171,6 @@ read_time: 19
 %p
   Look at the savings with <a href="http://www.thewikigame.com">The Wiki Game</a> icon in particular&mdash;we shaved 75% of the file size! That said, look closely at the pixels and you will see the dithering. Whether this acceptable or not is up to you. Also, coupled with sprites you can see how powerful this becomes.
 
-%h3 Conclusion
+%h5 Conclusion
 %p
   I hope this has helped clear up any confusion you've had about images. I'd just like to note that I'm using Photoshop <abbr>CS6</abbr> and the settings may be slightly different on other versions. Now go make beautiful images that are super fast to load&hellip;

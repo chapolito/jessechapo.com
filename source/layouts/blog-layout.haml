@@ -2,25 +2,24 @@
   = link_to '/', class: 'monogram-blog-logo' do
     = partial(:monogram, :locals => { :color => 'f97a2d', :width => 63 })
 
-  .post-title
-    .container
+  .container-fluid
+    .post-title
       .row
         .col-xs-12.col-lg-offset-1.col-lg-10
           %h1
             = current_page.data.title
-          .date
+          .date.small
             = current_page.date.strftime('%B ')
             = precede current_page.date.mday do
               %sup= add_ordinals(current_page.date.mday)
             = current_page.date.strftime(' %Y')
 
-          %span.read-time
+          %span.read-time.small
             = current_page.data.read_time
             min read
 
-  .container
     .row.blog-content
-      .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-2.col-md-8.col-lg-offset-3.col-lg-6
+      .col-xs-12.col-sm-offset-2.col-sm-8.col-md-offset-3.col-md-6.col-lg-offset-4.col-lg-4
         = yield
         %p
           = partial(:monogram, :locals => { :color => 'e8e8e1', :width => 36 })

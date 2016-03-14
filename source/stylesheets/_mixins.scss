@@ -1,4 +1,11 @@
 
+$baseline: 26px;
+$baseFontSize: 16px;
+
+@function rem($px, $base: $baseFontSize) {
+  @return ($px / $base) * 1rem;
+}
+
 // Fonts
 
 @mixin font-feature-settings($str) {

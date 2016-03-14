@@ -16,9 +16,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 # Middleman Blog Extension
 gem "middleman-blog"
 
-# Twitter Bootstrap
-gem 'bootstrap-sass', :require => false
-
 # Use SCSS for stylesheets
 gem 'compass-rails', :require => false
 

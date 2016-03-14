@@ -2,13 +2,13 @@
 pageable: false
 ---
 
-.container.homepage
+.container-fluid.homepage
   .row.homepage-banner
     .col-xs-12.col-lg-offset-1.col-lg-11
       .monogram-home-logo
         = partial(:monogram, :locals => { :color => 'f97a2d', :width => 81 })
       %h1 Jesse Chapo
-      %h5 thoughts on design, code, <span class="openamp">&amp;</span> career
+      .small thoughts on design, code, <span class="openamp">&amp;</span> career
 
   .row
     .col-md-2.col-lg-offset-1.homepage-bio
@@ -19,11 +19,11 @@ pageable: false
         .post-preview
           %h2
             = link_to article.title, article, class: 'homepage-title'
-          %span.date
+          %span.date.small
             = article.date.strftime('%B ')
             = precede article.date.mday do
               %sup= add_ordinals(article.date.mday)
             = article.date.strftime(' %Y')
-          = article.summary(200)
+          = article.summary(250)
           .read-more-link
             = link_to 'read more &raquo;', article
