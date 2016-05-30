@@ -10,7 +10,7 @@ read_time: 3
 
   The goal was to achieve the same flexibility and alignment with 1, 2, 3, or 4 columns but with columns *and* margins all being a multiple of 1. The magic number was 13, that was easy! It allows for each margin to be one column wide and for the content to fit perfectly for 1–4 columns.
 
-  <img src="/images/26-column-grid/13-column-grid.svg" class="post-image-full" alt="The layout with 13 columns that I was after" width="1430" height="719">
+  <img src="/images/26-column-grid/13-column-grid.svg" class="post-image-full" alt="The layout with 13 columns that I was after" width="1146" height="572">
 
   At first glance this looks great, but I was increasingly hitting the limitations of supporting content blocks that were spaced apart. Spaced apart works great for copy as it supplies ample negative space, but what about when I wanted to adjoin images in a grid? No dice, 13 is prime.
 
@@ -22,6 +22,6 @@ read_time: 3
 
   Then I wrote this article and received honest feedback (thank you!) that made me realize there was a lot simpler way to achieve this and, tad-da, it’s a 12 column grid! Talk about full circle. 26 remains a quasi-magic number because each row and column needs to have padding that is (1/26)% wide. You should be able to implement this grid system simply by setting `$grid-gutter-width: percentage(1/26);` in your [bootstrap-sass](https://github.com/twbs/bootstrap-sass) customizations. *note: While it is 12 columns, this will render the 6 & 12 column layouts virtually unusable for copy/content because the padding takes up half or more of the available space.*
 
-  <img src="/images/26-column-grid/12-column-grid.svg" class="post-image-full" alt="The final 12 column grid." width="1430" height="719">
+  <img src="/images/26-column-grid/12-column-grid.svg" class="post-image-full" alt="The final 12 column grid." width="1146" height="572">
 
   Admittedly, the applications of this grid are limited. it works excellent for content-focused sites like blogs and portfolios—I’m very happy with the layout of [chapolito.com](https://www.chapolito.com). But you wouldn’t want to build a complex <abbr>UI</abbr> with it, working with all the white space would be a nuisance and force awkward alignment.

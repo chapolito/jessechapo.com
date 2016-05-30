@@ -68,17 +68,20 @@
 
 .post-image-full {
   margin: 0 0 rem($baseline * 2) 0;
-  max-width: 100%;
+  width: 100vw;
+  margin-left:  -100vw * 2 / 26;
   height: auto;
+  display: block;
 
   @include at-least($medium) {
-    max-width: 78vw;
+    margin-left:  -100vw * 5 / 26;
   }
   @include at-least($large) {
-    max-width: 70vw;
+    margin-left:  -100vw * 7 / 26;
   }
   @include at-least($extra-large) {
-    max-width: 62vw;
+    width: 100vw * 20 / 26;
+    margin-left: -100vw * 5 / 26;
   }
 }
 
@@ -118,9 +121,14 @@
 
 .image-comment {
   margin-top: -10px;
-  font-size: .8rem;
+  font-size: rem($xs);
+  line-height: rem($baseline * 1.5);
   font-style: italic;
   color: $color-comment;
+
+  @include at-least($medium) {
+    font-size: rem($xs_md);
+  }
 }
 
 .preface-info {
