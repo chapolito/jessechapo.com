@@ -56,13 +56,22 @@
 
   &:first-letter {
     float: left;
-    color: $color-accent;
+    color: $color-background;
+    background-color: $color-accent;
+    background-image: url(image-path('drop-cap-bg.svg'));
+    background-size: cover;
+    background-repeat: no-repeat;
     font-weight: 700;
-    font-size: 4rem;
-    line-height: rem($h6);
-    padding-top: rem($h6);
-    padding-right: 8px;
-    padding-left: 3px;
+    font-size: rem($h6 * 2);
+    line-height: rem($baseline * 3);
+    padding: rem($h6 * 0.75) rem($baseline * 2);
+    margin-right: rem($baseline * 0.75);
+    margin-top: 4px;
+
+    @include at-least ($medium) {
+      font-size: rem($h6_md * 3);
+      padding: rem($h6_md * 0.75) rem($baseline * 2);
+    }
   }
 }
 
@@ -74,15 +83,20 @@
   display: block;
 
   @include at-least($medium) {
-    margin-left:  -100vw * 5 / 26;
+    margin-left:  -100vw * 4 / 26;
   }
   @include at-least($large) {
-    margin-left:  -100vw * 7 / 26;
+    margin-left:  -100vw * 6 / 26;
   }
   @include at-least($extra-large) {
     width: 100vw * 20 / 26;
     margin-left: -100vw * 5 / 26;
   }
+}
+
+.post-image-column-wide {
+  margin: 0 0 rem($baseline * 2) 0;
+  display: block;
 }
 
 .post-image-gutter {
