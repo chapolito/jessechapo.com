@@ -109,7 +109,7 @@ read_time: 19
 %img{ :src => '/images/Developers-Guide-to-Images/save-for-web-photoshop-dialog-jpg.jpg', :class => 'post-image-full', :width => '940', :height => '716' }
 %h5 What to pay attention to: <abbr>JPG</abbr>
 %p
-  <strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60-85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise Photoshop starts to implement an additional compression technique that really destroys quality.
+  <strong>Quality</strong> is up to your tastes&mdash;you’ll just need to move the slider around to see what looks acceptable while not being an overly large file. I’ve found that <strong>the sweet spot is 60&ndash;85.</strong> Beyond 85 you can’t tell the difference except in file size and below 60 things start to look bad. Definitely don’t go below 51 otherwise Photoshop starts to implement an additional compression technique that really destroys quality.
   %sup.footnote-marker 6
 .footnote
   .footnote-marker 6
@@ -123,7 +123,7 @@ read_time: 19
 .footnote
   .footnote-marker 7
   .footnote-text
-    Without converting you'll be saving in Adobe <abbr>RGB</abbr> which is a larger spectrum but useless without a special monitor or printer. Adobe RGB images will display certain reds and cyans as muddy on normal screens.
+    Without converting you'll be saving in Adobe RGB which is a larger spectrum but useless without a special monitor or printer. Adobe RGB images will display certain reds and cyans as muddy on normal screens.
 %p
   <strong>Metadata</strong> - unless these are photos that you want to make sure retain copyright information, I leave this at none.
 %p
@@ -152,7 +152,7 @@ read_time: 19
 
 %h5 <abbr>PNG</abbr>-8 + 8-bit Alpha
 %p
-  Here is the frustrating part of all of this, Photoshop doesn’t support the export of an indexed <abbr>PNG</abbr> coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great <abbr>GUI</abbr> for converting these. I’m sure many of you would prefer to use the command line&hellip;and you can use <a href="http://pngquant.org/" ><abbr>PNG</abbr>Quant</a>&hellip;but <strong>I highly recommend you use a <abbr>GUI</abbr></strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as <abbr>PNG</abbr>-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make a <abbr>PNG</abbr> with alpha that degrade nicely in <abbr>IE6</abbr>.
+  Here is the frustrating part of all of this, Photoshop doesn’t support the export of an indexed <abbr>PNG</abbr> coupled with 8-bit Alpha layers, which conveniently is the most useful combination for web images. Luckily, there is a free Mac app <a href="http://pngmini.com/">ImageAlpha</a> that has a great <abbr>GUI</abbr> for converting these. I’m sure many of you would prefer to use the command line&hellip;and you can use <a href="http://pngquant.org/" >PNGQuant</a>&hellip;but <strong>I highly recommend you use a <abbr>GUI</abbr></strong>. By trying out different numbers of colors to find the lowest acceptable quality you can really shave down the file sizes. Be sure to export files from Photoshop as <abbr>PNG</abbr>-24 before converting them otherwise you won’t get the alpha channel. Both of these options also allow you to make a <abbr>PNG</abbr> with alpha that degrade nicely in <abbr>IE6</abbr>.
   %sup.footnote-marker 8
 .footnote
   .footnote-marker 8
@@ -162,7 +162,7 @@ read_time: 19
 %p
   This only applies to images destined for the web and for the most part only <abbr>PNG</abbr> as the gains for <abbr>JPG</abbr> are negligible.
   %sup.footnote-marker 9
-  Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable using a <abbr>GUI</abbr>, I use <a href="http://imageoptim.com/">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/"><abbr>PNG</abbr>Crush</a>. Below you can see the gains from using optimization on various files:
+  Once you have your files exported the last step is to run them through an image optimizer. There are a ton of options for achieving this, and as I feel most comfortable using a <abbr>GUI</abbr>, I use <a href="http://imageoptim.com/">ImageOptim</a>. The command line alternative is <a href="http://pmt.sourceforge.net/pngcrush/">PNGCrush</a>. Below you can see the gains from using optimization on various files:
 %img{ :src => '/images/Developers-Guide-to-Images/optimized-images.png', :class => 'post-image-full', :width => '782', :height => '353' }
 .footnote
   .footnote-marker 9

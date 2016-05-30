@@ -1,6 +1,6 @@
 
 .footnote-marker {
-  @include font-petala-bold;
+  @include font-stack-headings;
   padding: 0 1px 2px 1px;
   color: $color-accent;
 }
@@ -13,19 +13,23 @@
   word-wrap: break-word;
 
   .footnote-text {
-    font-size: .8em;
-    padding-left: 30px;
-    color: lighten($color-copy, 20%);
+    font-size: rem($xs);
+    padding-left: rem($baseline * 2);
+    color: $color-light-text;
+
+    @include at-least($medium) {
+      font-size: rem($xs_md);
+    }
   }
 
   .footnote-marker {
-    margin: 0 0 .3em 0;
+    margin: 0 0 0.3em 0;
     float: left;
   }
 
   h5 {
-    @include font-petala-bold;
-    margin: 0 0 10px 0;
+    @include font-stack-headings;
+    margin: 0 0 rem($baseline) 0;
   }
 
   @include at-least($large) {
@@ -46,7 +50,6 @@
     }
 
     .footnote-text {
-      font-size: .7em;
       padding-left: 0;
     }
   }

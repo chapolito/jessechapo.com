@@ -65,6 +65,12 @@ end
 #   end
 # end
 
+# Syntax Hilighting
+activate :syntax
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 set :haml, { :ugly => true, :format => :html5 }
 
 set :css_dir, 'stylesheets'
@@ -102,16 +108,18 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets

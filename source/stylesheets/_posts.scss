@@ -2,13 +2,13 @@
 
 .monogram-blog-logo {
   position: absolute;
-  top: rem($baseline);
-  left: 25px;
+  top: rem($baseline * 2);
+  left: percentage(1 / 26);
 }
 
 .post-title {
   width: 100%;
-  padding: rem($baseline * 4) 0 rem($baseline) 0;
+  padding: rem($baseline * 8) 0 rem($baseline * 2) 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -22,32 +22,37 @@
   display: block;
   padding: 0;
   margin-bottom: 20px;
+  color: $color-light-text;
 }
 
 .post-title .date {
 
   &:after {
     content: ' —';
-    color: rgba(0,0,0,0.2);
+    color: $color-ui-light;
   }
 
   &:before {
     content: '— ';
-    color: rgba(0,0,0,0.2);
+    color: $color-ui-light;
   }
 }
 
 .read-time {
   @include font-feature-settings('"smcp", "c2sc"');
   font-weight: 700;
-  border-top: 1px solid rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid $color-ui-light;
+  border-bottom: 1px solid $color-ui-light;
   padding: 3px 0;
-  color: rgba(0,0,0,0.6);
+  color: $color-comment;
 }
 
 .blog-content p:first-of-type {
   font-size: rem($h6);
+
+  @include at-least ($medium) {
+    font-size: rem($h6_md);
+  }
 
   &:first-letter {
     float: left;
@@ -62,7 +67,7 @@
 }
 
 .post-image-full {
-  margin: 0 0 rem($baseline) 0;
+  margin: 0 0 rem($baseline * 2) 0;
   max-width: 100%;
   height: auto;
 
@@ -98,55 +103,12 @@
 .blog-content {
 
   h2, h3, h4, h5 {
-    margin-top: rem($baseline * 2);
+    margin-top: rem($baseline * 4);
   }
 }
 
 .post-overflow {
   overflow: visible;
-}
-
-.topPadding {
-  padding: rem($baseline * 3) 0 rem($baseline) 0;
-}
-
-.bio {
-  border: 1px solid #babab5;
-  border-width: 1px 0;
-  padding: rem($baseline);
-  margin-bottom: rem($baseline * 2);
-
-  p {
-    margin: 0;
-  }
-}
-
-.social-links-wrapper {
-  color: #abada9;
-  font-style: italic;
-  margin: rem($baseline * 0.5) 0 0 0;
-  text-align: left;
-  display: block;
-}
-
-.social-link {
-  display: inline-block;
-  margin: 0;
-  line-height: rem($baseline * 0.75);
-  margin-bottom: 0;
-
-  &:first-of-type {
-    margin-right: rem($baseline);
-  }
-}
-
-.portrait {
-  width: 116px;
-  height: 116px;
-  background: url(image-path('jesse-chapo-portrait.png')) no-repeat center;
-  @include background-image-retina('jesse-chapo-portrait', 'png', 116px, 116px);
-  float: left;
-  margin-right: rem($baseline);
 }
 
 .small-caps-link {
@@ -163,6 +125,6 @@
 
 .preface-info {
   color: $color-comment;
-  margin-bottom: rem($baseline);
+  margin-bottom: rem($baseline * 2);
   display: block;
 }

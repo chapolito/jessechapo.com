@@ -22,3 +22,9 @@ gem 'compass-rails', :require => false
 gem 'haml'
 
 gem 'nokogiri'
+
+# Markdown Interpreter
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+
+# Syntax highlighting
+gem "middleman-syntax"

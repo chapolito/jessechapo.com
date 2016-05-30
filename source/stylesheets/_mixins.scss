@@ -1,5 +1,5 @@
 
-$baseline: 26px;
+$baseline: 15px;
 $baseFontSize: 16px;
 
 @function rem($px, $base: $baseFontSize) {
@@ -15,14 +15,14 @@ $baseFontSize: 16px;
   font-feature-settings: #{$str};
 }
 
-@mixin font-adriane-body {
-  font-family: 'adriane', 'times', serif;
+@mixin font-stack-body {
+  font-family: 'cronos-pro', 'adriane', 'times', serif;
   font-style: normal;
   font-weight: 400;
 }
 
-@mixin font-petala-bold {
-  font-family: 'petala-pro', 'Arial Black', sans-serif;
+@mixin font-stack-headings {
+  font-family: 'prenton', 'petala-pro', 'Arial Black', sans-serif;
   font-style: normal;
   font-weight: 700;
   @include font-feature-settings('"ss01", "ss02", "ss03", "ss04", "ss06", "ss07", "ss09", "ss10", "ss11", "dlig", "onum"');
@@ -56,8 +56,3 @@ $extra-large: 1200px;
   }
 }
 
-@mixin until($device-width) {
-  @media screen and (max-width: $device-width - 1) {
-    @content
-  }
-}

@@ -1,0 +1,110 @@
+
+.bio {
+  border-top: 1px solid $color-ui-light;
+  border-width: 1px 0;
+  padding: rem($baseline * 2);
+  margin-bottom: rem($baseline * 4);
+  color: $color-comment;
+
+  p {
+    margin: 0;
+    color: $color-comment;
+    margin-bottom: rem($baseline * 2);
+  }
+}
+
+.portrait {
+  width: 100%;
+  height: 116px;
+  background: url(image-path('jesse-chapo-portrait.png')) no-repeat center;
+  @include background-image-retina('jesse-chapo-portrait', 'png', 116px, 116px);
+  margin-bottom: rem($baseline * 2);
+}
+
+.social-links-wrapper {
+  font-style: italic;
+  margin: rem($baseline * 0.5) 0 0 0;
+  text-align: left;
+  display: block;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0;
+  line-height: rem($baseline);
+  margin-bottom: 0;
+
+  &:first-of-type {
+    margin-right: rem($baseline * 2);
+  }
+}
+
+.homepage-bio  {
+
+  color: $color-comment;
+
+  .monogram-home-logo {
+    margin-bottom: rem($baseline * 2);
+  }
+
+  h1 {
+    font-size: rem($h5);
+    line-height: rem($baseline * 2);
+    margin-bottom: 0;
+
+    @include at-least ($medium) {
+      font-size: rem($h5_md);
+    }
+  }
+
+  .small {
+    font-style: italic;
+    margin-top: 0;
+    
+  }
+
+  .tagline {
+    margin-bottom: rem($baseline * 5);
+  }
+
+  .bio {
+    border-top: 0;
+    padding: 0;
+    min-height: 116px;
+    margin-bottom: rem($baseline * 5);
+
+    p {
+      font-size: rem($body);
+
+      @include at-least ($medium) {
+        font-size: rem($body_md);
+      }
+    }
+  }
+}
+
+@include at-least($small) {
+  
+  .portrait {
+    width: 116px;
+    float: left;
+    margin-right: rem($baseline * 2);
+  }
+}
+
+@include at-least($large) {
+
+  .homepage-bio {
+
+    .social-link {
+      margin-bottom: rem($baseline * 2);
+    }
+    
+    .portrait {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      background-position: left;
+    }
+  }
+}

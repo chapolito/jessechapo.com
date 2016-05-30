@@ -1,99 +1,37 @@
 
-
-.monogram-home-logo {
-  float: left;
-  margin-right: 15px;
-}
-
-.homepage-banner {
-  padding: rem($baseline) 0;
-
-  h1 {
-    font-size: rem($h4);
-    line-height: rem($baseline);
-    margin-bottom: 0;
-  }
-
-  .small {
-    font-style: italic;
-    color: #646464;
-    margin-top: 0;
-  }
-
-  @include until($large) {
-    h1 {
-      font-size: 1.6rem;
-    }
-  }
-
-  @include at-least($large) {
-    padding: 80px 0;
-  }
-}
-
-.homepage-bio .bio {
-  border: 0;
-  padding: 0;
-  min-height: 116px;
-  margin-bottom: 40px;
-
-  p {
-    margin-bottom: rem($baseline * 0.5);
-  }
-
-  @include at-least($medium) {
-
-    .social-link {
-      margin: 0 0 20px 0;
-
-      &:first-of-type {
-        clear: left;
-      }
-    }
-  }
-
-  @include at-least($large) {
-
-    .portrait {
-      margin-bottom: 40px;
-    }
-  }
-}
-
-.posts-list {
-
-  a {
-    color: $color-heading;
-
-    &:hover {
-      color: $color-links;
-      text-decoration: none;
-    }
-  }
+.homepage {
+  margin-top: rem($baseline * 6)
 }
 
 .post-preview {
-  margin-bottom: rem($baseline * 3);
+  margin-bottom: rem($baseline * 6);
 
-  .date {
-    margin: rem($baseline * 0.5) 0;
-  }
-
-  h2 {
+  h4 {
     margin-bottom: 0;
-  }
-}
 
-.read-more-link {
-  @include font-feature-settings('"smcp", "c2sc"');
-  margin: 0;
-  
-  a {
-    color: $color-links;
+    a {
+      color: $color-heading;
 
-    &:hover {
-      color: $color-links-hover;
+      &:hover {
+        color: $color-accent;
+        text-decoration: none;
+      }
     }
   }
+  
+  .read-more-link {
+    @include font-feature-settings('"smcp", "c2sc"');
+    font-weight: 600;
+    margin: 0;
+  }
 }
+
+
+@include at-least($medium) {
+
+  .posts-list {
+    padding-top: rem($baseline * 5);
+  }
+}
+
 

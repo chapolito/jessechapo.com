@@ -29,7 +29,7 @@ The Chapolito Style Guide
 @import 'compass/typography';
 @import 'compass/utilities';
 @import 'flexboxgrid';
-@import 'variables';
+@import 'colors';
 
 // Resets & Boilerplates
 @import 'resets/normalize';
@@ -40,8 +40,10 @@ The Chapolito Style Guide
 @import 'mixins';
 @import 'base';
 @import 'forms';
+@import 'code_syntax';
 
 // Views
+@import 'bio';
 @import 'posts';
 @import 'home';
 @import 'footnotes';

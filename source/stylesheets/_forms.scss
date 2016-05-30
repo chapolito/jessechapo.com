@@ -34,7 +34,7 @@ input {
 		border: none;
 		padding: 0 20px;
 		background-color: $brightGreen;
-		color: $color-beige-white;
+		color: $color-background;
 		font-weight: 700;
 		letter-spacing: 5px;
 		text-transform: uppercase;
@@ -46,7 +46,7 @@ input {
 }
 
 .focusField {
-  color: $textGreen;
+  color: $color-copy;
 }
 
 .idleField {
@@ -55,6 +55,6 @@ input {
 }
 
 .completedField {
-  color: $textGreen;
+  color: $color-copy;
   border: solid 1px #e5e4da;
 }
