@@ -14,7 +14,9 @@
 
   .footnote-text {
     font-size: rem($xs);
+    line-height: rem($baseline * 1.5);
     padding-left: rem($baseline * 2);
+    margin-bottom: rem($baseline * 2);
     color: $color-light-text;
 
     @include at-least($medium) {
@@ -23,8 +25,9 @@
   }
 
   .footnote-marker {
-    margin: 0 0 0.3em 0;
+    padding: 0;
     float: left;
+    line-height: rem($baseline * 1.5);
   }
 
   h5 {

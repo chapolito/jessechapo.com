@@ -239,8 +239,12 @@ ol {
 
 ol > li, ul > li {
   position: relative;
-  margin: 0 0 10px 46px;
-  padding: 10px;
+  margin: 0 0 rem($baseline) calc(100vw * 2 / 26);
+  padding: rem($baseline) 0;
+
+  @include at-least($medium) {
+    margin: 0 0 rem($baseline) calc(100vw * 1 / 26);
+  }
 }
 
 ol > li {
@@ -255,10 +259,6 @@ ol > li:before {
   content: counter(li);
   counter-increment: li;
   position: absolute;
-  width: 20px;
-  left: -28px;
-  margin-right: 10px;
-  padding: 4px;
-  text-align: center;
+  left: rem($baseline * -2);
 }
 

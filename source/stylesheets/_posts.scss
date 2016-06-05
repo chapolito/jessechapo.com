@@ -1,14 +1,8 @@
 
 
-.monogram-blog-logo {
-  position: absolute;
-  top: rem($baseline * 2);
-  left: percentage(1 / 26);
-}
-
 .post-title {
   width: 100%;
-  padding: rem($baseline * 8) 0 rem($baseline * 2) 0;
+  padding: rem($baseline * 3) 0 rem($baseline * 2) 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -21,7 +15,7 @@
   position: relative;
   display: block;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: rem($baseline);
   color: $color-light-text;
 }
 
@@ -97,6 +91,8 @@
 .post-image-column-wide {
   margin: 0 0 rem($baseline * 2) 0;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .post-image-gutter {

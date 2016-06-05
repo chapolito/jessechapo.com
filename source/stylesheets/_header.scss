@@ -1,0 +1,17 @@
+
+.homepage, .post {
+  margin-top: rem($baseline * 2)
+}
+
+.monogram-logo svg {
+  display: block;
+}
+
+@include at-least($medium) {
+
+  .homepage, .post {
+    margin-top: rem($baseline * 6)
+  }
+}
+
+

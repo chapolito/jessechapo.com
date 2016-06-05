@@ -1,22 +1,24 @@
 = wrap_layout :layout do
-  = link_to '/', class: 'monogram-blog-logo' do
-    = partial(:monogram, :locals => { :color_base => 'FA2D3E', :color_accent => 'B51825', :width => 64 })
+  .container-fluid.post
 
-  .container-fluid
-    .post-title
-      .row
-        .col-xs-12.col-lg-offset-1.col-lg-10
-          %h1
-            = current_page.data.title
-          .date.small
-            = current_page.date.strftime('%B ')
-            = precede current_page.date.mday do
-              %sup= add_ordinals(current_page.date.mday)
-            = current_page.date.strftime(' %Y')
+    .row
+      .col-xs-12
+        = link_to '/', class: 'monogram-logo' do
+          = partial(:monogram, :locals => { :color_base => 'FA2D3E', :color_accent => 'B51825', :width => 64 })
 
-          %span.read-time.small
-            = current_page.data.read_time
-            min read
+    .row.post-title
+      .col-xs-12.col-lg-offset-1.col-lg-10
+        %h1
+          = current_page.data.title
+        .date.small
+          = current_page.date.strftime('%B ')
+          = precede current_page.date.mday do
+            %sup= add_ordinals(current_page.date.mday)
+          = current_page.date.strftime(' %Y')
+
+        %span.read-time.small
+          = current_page.data.read_time
+          min read
 
     .row.blog-content
       .col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-2.col-md-8.col-lg-offset-3.col-lg-6
