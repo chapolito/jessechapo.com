@@ -10,10 +10,16 @@ read_time: 6
 
   ### Perfectly Centered Heading + letter-spacing
 
-  Controlling a type’s tracking with CSS is done with the `letter-spacing` property. Thinking how `line-height` implements [half-leading](http://joshnh.com/weblog/how-does-line-height-actually-work/) you couldn’t be faulted for envisioning the same for tracking: split evenly on each side of the character. However, this inevitably would introduce ugly and inconsistent left-hand alignment. So instead, `letter-spacing` allocates all the spacing to right of characters. 
+  In <abbr>CSS</abbr> a type’s tracking is controlled with the `letter-spacing` property and leading with the `line-height` property. While they both take a single value, there is an important difference in the way they distribute that value. `line-height` implements [half-leading](http://joshnh.com/weblog/how-does-line-height-actually-work/), spreading the value equally above and below the type.<sup class="footnote-marker">1</sup>  You’d think that `letter-spacing` would resemble this and split the spacing evenly on each side of the character. However, this inevitably would introduce ugly and inconsistent left-hand alignment. Instead, `letter-spacing` allocates all the spacing to right of characters. 
 
   <img src="/images/responsible-all-caps/letter-spacing-vs-line-height.png" class="post-image-full" alt="demonstration of the placement of padding and spacing between letter-spacing and line-height" width="1600" height="600">
 
+.footnote
+  .footnote-marker 1
+  .footnote-text
+    Half-leading is interesting because it does not center on a font's midline, but uses it's own calculation that incorporates both ascenders and descenders to draw the line box.
+
+:markdown
   This is fine for the majority of text, but causes issues when center- or right-justifying. The extra padding on the last character shifts text within it’s block-level container resulting in the text being off-center by **half** the value set for `letter-spacing` (full value for right-justified text). To fix this we can translate the whole heading:
 
 .code-results#scoped-content
