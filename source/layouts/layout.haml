@@ -4,7 +4,11 @@
     %meta{ charset: 'utf-8' }
     %meta{ name: 'viewport', content: 'width=device-width' }
 
-    / Use title if it's in the page YAML frontmatter
+    // Add og-image
+    - if current_page.data.og_image
+      %meta{ :property => 'og:image', :content => current_page.data.og_image }
+
+    // Use title if it's in the page YAML frontmatter
     %title
       = current_page.data.title || 'Jesse Chapo'
     %meta{ name: 'description', content: 'A blog about the design, code & career.' }
