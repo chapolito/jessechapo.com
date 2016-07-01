@@ -6,7 +6,7 @@
 
     // Add og-image
     - if current_page.data.og_image
-      %meta{ :property => 'og:image', :content => current_page.data.og_image }
+      %meta{ :property => 'og:image', :content => image_url(current_page.data.og_image) }
 
     // Use title if it's in the page YAML frontmatter
     %title

@@ -45,6 +45,15 @@ helpers do
     end
   end
 
+  # Used for generating absolute URLs 
+  # WARNING: (DOES NOT CARE ABOUT LOCAL HOST?PORT/ETC.
+  # This was built for use with og:image meta tags ONLY
+  set :protocol, "https://"
+  set :host, "www.jessechapo.com"
+  def image_url(source)
+    protocol + host + image_path(source)
+  end
+
 end
 ###
 
