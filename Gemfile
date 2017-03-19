@@ -7,6 +7,9 @@ gem "middleman", "~>3.3.7"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+# json
+gem 'json', github: 'flori/json', branch: 'v1.8'
+
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
