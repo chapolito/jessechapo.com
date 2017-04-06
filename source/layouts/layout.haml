@@ -10,7 +10,7 @@
 
     // Use title if it's in the page YAML frontmatter
     %title
-      = current_page.data.title || 'Jesse Chapo'
+      = current_page.data.title || "Jesse O'Chapo"
     %meta{ name: 'description', content: 'A blog about the design, code & career.' }
 
     = stylesheet_link_tag 'all'
@@ -23,7 +23,7 @@
       try{Typekit.load();}catch(e){}
 
     %script{ src: 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js' }
-    
+
   %body( class='#{page_classes}' )
     = yield
 
